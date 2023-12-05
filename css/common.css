@@ -160,19 +160,19 @@ body small text:    14px = 0.875rem
 @media (max-width: 1199px) {
   .session-title {
     font-size: 36px;
-    font-size: 42px;
+    line-height: 42px;
   }
 }
 @media (max-width: 991px) {
   .session-title {
     font-size: 30px;
-    font-size: 38px;
+    line-height: 38px;
   }
 }
 @media (max-width: 767px) {
   .session-title {
     font-size: 25px;
-    font-size: 33px;
+    line-height: 33px;
   }
 }
 
