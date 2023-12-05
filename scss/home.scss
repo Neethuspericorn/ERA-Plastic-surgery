@@ -192,6 +192,7 @@
     @media ($sm-767){
         background: none;
         padding-top: 0px;
+        padding-bottom: 0;
     }
     .title-pop{
         text-align: center;
@@ -214,6 +215,10 @@
     .steps-wrp{
         display: flex;
         column-gap: 40px;
+        @media ($sm-579){
+            flex-direction: column;
+            column-gap: 0;
+        }
         .steps-blks{
             display: flex;
             flex-wrap: wrap;
