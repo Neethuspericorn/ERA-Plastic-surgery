@@ -255,7 +255,7 @@ body small text:    14px = 0.875rem
 }
 .inner-arrow-list li {
   list-style: none;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   border-bottom: 1px solid var(--divider-line);
   padding-bottom: 5px;
@@ -264,6 +264,18 @@ body small text:    14px = 0.875rem
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+@media (max-width: 1679px) {
+  .inner-arrow-list li {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1481px) {
+  .inner-arrow-list li {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 @media (max-width: 1199px) {
   .inner-arrow-list li {
@@ -291,10 +303,10 @@ body small text:    14px = 0.875rem
   content: "\f054";
   color: var(--primary);
   font-family: "Font Awesome 6 Pro";
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 900;
-  line-height: 18px; /* 150% */
+  line-height: 26px; /* 150% */
   position: absolute;
   right: 0px;
 }

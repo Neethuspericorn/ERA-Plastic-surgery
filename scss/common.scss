@@ -137,7 +137,7 @@ body small text:    14px = 0.875rem
     flex: 1;
     li{
         list-style: none;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 24px;
         border-bottom: 1px solid var(--divider-line);
         padding-bottom: 5px;
@@ -146,6 +146,14 @@ body small text:    14px = 0.875rem
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+        @media ($sm-1679){
+            font-size: 18px;
+            line-height: 22px;
+        }
+        @media ($sm-1481){
+            font-size: 16px;
+            line-height: 22px;
+        }
         @media ($sm-1199){
             font-size: 14px;
             line-height: 22px;
@@ -168,10 +176,10 @@ body small text:    14px = 0.875rem
                 content: "\f054";
                 color: var(--primary);
                 font-family: "Font Awesome 6 Pro";
-                font-size: 14px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 900;
-                line-height: 18px; /* 150% */
+                line-height: 26px; /* 150% */
                 position: absolute;
                 right: 0px;
             }
