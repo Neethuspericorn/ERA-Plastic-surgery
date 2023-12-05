@@ -317,6 +317,11 @@ body small text:    14px = 0.875rem
     padding-right: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .container-padding.mobile-0 {
+    padding: 0px;
+  }
+}
 
 .container-custom {
   max-width: 1440px;

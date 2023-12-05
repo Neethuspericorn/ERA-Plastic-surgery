@@ -160,9 +160,6 @@ body small text:    14px = 0.875rem
                 line-height: 1.875rem; /* 150% */
                 position: absolute;
                 right: 0px;
-                // @media ($sm-1481){
-                //     font-size: 0.8125rem;
-                // }
             }
             &:not(.collapsed){
                 &::after{
@@ -180,7 +177,6 @@ body small text:    14px = 0.875rem
         }
     }
 }
-
 .container-padding{
     padding-left: 120px;
     padding-right: 120px;
@@ -199,6 +195,11 @@ body small text:    14px = 0.875rem
     @media screen and ($sm-991){
         padding-left: 30px;
         padding-right: 30px;
+    }
+    &.mobile-0{
+        @media screen and ($sm-767){
+            padding: 0px;
+        }
     }
 }
 .container-custom{
