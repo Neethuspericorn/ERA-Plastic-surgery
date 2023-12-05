@@ -76,6 +76,67 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
-.nav-link-btn {
+.navbar {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+.navbar .navbar-brand img {
+  max-height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 991px) {
+  .navbar .navbar-collapse {
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: -12.5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    background-color: var(--primary);
+  }
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--text);
+  padding-left: 18px;
+  padding-right: 18px;
+  font-weight: 400;
+}
+@media screen and (max-width: 991px) {
+  .navbar .navbar-nav .nav-link {
+    color: var(--white);
+    font-weight: 700;
+  }
+}
+.navbar .navbar-nav .nav-link-btn {
   text-align: center;
+  color: var(--white);
+}
+.navbar .nav-item .dropdown-menu {
+  top: calc(100% + 18px);
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: clip;
+  border: none;
+}
+@media screen and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar .nav-item .dropdown-menu {
+    background-color: transparent;
+    padding-left: 20px;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar .nav-item .dropdown-menu .dropdown-item {
+    color: var(--white);
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu .dropdown-item:hover, .navbar .nav-item .dropdown-menu .dropdown-item:focus, .navbar .nav-item .dropdown-menu .dropdown-item:active {
+    background-color: var(--light);
+  }
 }
