@@ -91,25 +91,20 @@
 .help-wrp .service-list-wrp {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
-}
-@media (max-width: 767px) {
-  .help-wrp .service-list-wrp {
-    flex-direction: column;
-  }
 }
 .help-wrp .service-list-wrp .services-intro {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex: 0 0 calc(25% - 20px);
 }
 @media (max-width: 767px) {
   .help-wrp .service-list-wrp .services-intro {
-    width: 100%;
+    flex: 0 0 100%;
     flex-direction: row;
-    flex: 1;
   }
 }
 .help-wrp .service-list-wrp .services-intro .thumb-hldr {
@@ -131,7 +126,6 @@
   flex-direction: column;
   width: 100%;
 }
-
 .full-width-wrap {
   display: flex;
 }

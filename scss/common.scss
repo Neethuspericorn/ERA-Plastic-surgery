@@ -49,16 +49,40 @@ body small text:    14px = 0.875rem
     font-weight: 275;
     font-family: $title_font;
     margin-bottom: 20px;
+    @media ($sm-1679){
+        font-size: 3rem; 
+    }
 }
 .session-content{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
+    @media ($sm-1679){
+        font-size: 1.3rem; 
+    }
+    @media ($sm-1481){
+        font-size: 1.2rem; 
+    }
+    @media ($sm-1199){
+        font-size: 1rem;
+    }
 }
 .inner-title{
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.6875;
+    @media ($sm-1679){
+        font-size: 1.3rem; 
+    }
+    @media ($sm-1481){
+        font-size: 1.2rem; 
+    }
+    @media ($sm-1199){
+        font-size: 1.1rem; 
+    }
+    @media ($sm-991){
+        font-size: 1rem; 
+    }
 }
 
 
@@ -75,34 +99,53 @@ body small text:    14px = 0.875rem
         font-size: 1rem;
         line-height: 1.5rem;
         border-bottom: 1px solid var(--divider-line);
-        padding-bottom: 15px;
+        padding-bottom: 5px;
         cursor: pointer;
         position: relative;
         display: flex;
-        align-items: center;
-        @media ($sm-991){
+        align-items: flex-start;
+        flex-direction: column;
+        @media ($sm-1199){
             font-size: 0.875rem;
         }
-        &::after{
-            content: "\f054";
-            color: var(--primary);
-            font-family: "Font Awesome 6 Pro";
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 1.875rem; /* 150% */
+        @media ($sm-767){
+            flex-direction: column;
         }
+        
         .link{
             text-decoration: none;
             color: var(--text);
             display: flex;
             flex: 1;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            position: relative;
+            width: 100%;
+            transition: linear 0.3s;
+            &::after{
+                content: "\f054";
+                color: var(--primary);
+                font-family: "Font Awesome 6 Pro";
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 1.875rem; /* 150% */
+                position: absolute;
+                right: 0px;
+            }
+            &:not(.collapsed){
+                &::after{
+                    transform: rotate(90deg)
+                }
+            }
         }
         &:hover{
             &::after{
-            transition: linear 0.3s;
             transform: rotate(90deg)
             }
+        }
+        .collapse{
+
         }
     }
 }

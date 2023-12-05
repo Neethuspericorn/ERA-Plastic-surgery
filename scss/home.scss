@@ -13,20 +13,18 @@
     .service-list-wrp{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         gap: 20px;
-        @media ($sm-767){
-            flex-direction: column;
-        }
+
         .services-intro{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            flex: 0 0 calc(25% - 20px);
             @media ($sm-767){
-                width: 100%;
+                flex: 0 0 100%;
                 flex-direction: row;
-                flex: 1;
             }
             .thumb-hldr{
                 border-radius :10px;
@@ -44,6 +42,11 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                .inner-arrow-list{
+                    li{
+
+                    }
+                }
             }
         }
     }

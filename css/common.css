@@ -139,17 +139,57 @@ body small text:    14px = 0.875rem
   font-family: "ChampionGothic", sans-serif;
   margin-bottom: 20px;
 }
+@media (max-width: 1679px) {
+  .session-title {
+    font-size: 3rem;
+  }
+}
 
 .session-content {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
 }
+@media (max-width: 1679px) {
+  .session-content {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1481px) {
+  .session-content {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1199px) {
+  .session-content {
+    font-size: 1rem;
+  }
+}
 
 .inner-title {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.6875;
+}
+@media (max-width: 1679px) {
+  .inner-title {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1481px) {
+  .inner-title {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1199px) {
+  .inner-title {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 991px) {
+  .inner-title {
+    font-size: 1rem;
+  }
 }
 
 .inner-arrow-list {
@@ -165,18 +205,35 @@ body small text:    14px = 0.875rem
   font-size: 1rem;
   line-height: 1.5rem;
   border-bottom: 1px solid var(--divider-line);
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   cursor: pointer;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .inner-arrow-list li {
     font-size: 0.875rem;
   }
 }
-.inner-arrow-list li::after {
+@media (max-width: 767px) {
+  .inner-arrow-list li {
+    flex-direction: column;
+  }
+}
+.inner-arrow-list li .link {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+  transition: linear 0.3s;
+}
+.inner-arrow-list li .link::after {
   content: "\f054";
   color: var(--primary);
   font-family: "Font Awesome 6 Pro";
@@ -184,18 +241,15 @@ body small text:    14px = 0.875rem
   font-style: normal;
   font-weight: 900;
   line-height: 1.875rem; /* 150% */
+  position: absolute;
+  right: 0px;
 }
-.inner-arrow-list li .link {
-  text-decoration: none;
-  color: var(--text);
-  display: flex;
-  flex: 1;
-}
-.inner-arrow-list li:hover::after {
-  transition: linear 0.3s;
+.inner-arrow-list li .link:not(.collapsed)::after {
   transform: rotate(90deg);
 }
-
+.inner-arrow-list li:hover::after {
+  transform: rotate(90deg);
+}
 .container-padding {
   padding-left: 120px;
   padding-right: 120px;
