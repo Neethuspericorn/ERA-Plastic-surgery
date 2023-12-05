@@ -28,7 +28,7 @@
             }
             .thumb-hldr{
                 border-radius :10px;
-                margin-bottom:10px;
+                margin-bottom:20px;
                 img {
                     max-width:100%;
                     display:flex;
@@ -58,7 +58,7 @@
     }
     .poster-blk{
         flex: 0 0 50%;
-        aspect-ratio: 2;
+        // aspect-ratio: 2;
         @media ($sm-767){
             flex:0 0 100%;
         }
@@ -184,7 +184,7 @@
 }
 .our-process{
     padding: 70px 0;
-    background: url(/img/our-process-bg.png) no-repeat left bottom;
+    background: url(/img/our-process-bg.png) no-repeat left bottom, linear-gradient(270deg, #CCEBF6 0%, #EEF8FC 48.44%, rgba(255, 255, 255, 0.00) 100%);
     background-size: contain;
     @media ($sm-1199){
         background-size: 60%;

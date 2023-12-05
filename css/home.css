@@ -109,7 +109,7 @@
 }
 .help-wrp .service-list-wrp .services-intro .thumb-hldr {
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .help-wrp .service-list-wrp .services-intro .thumb-hldr img {
   max-width: 100%;
@@ -136,7 +136,6 @@
 }
 .full-width-wrap .poster-blk {
   flex: 0 0 50%;
-  aspect-ratio: 2;
 }
 @media (max-width: 767px) {
   .full-width-wrap .poster-blk {
@@ -262,7 +261,7 @@
 
 .our-process {
   padding: 70px 0;
-  background: url(/img/our-process-bg.png) no-repeat left bottom;
+  background: url(/img/our-process-bg.png) no-repeat left bottom, linear-gradient(270deg, #CCEBF6 0%, #EEF8FC 48.44%, rgba(255, 255, 255, 0) 100%);
   background-size: contain;
 }
 @media (max-width: 1199px) {
