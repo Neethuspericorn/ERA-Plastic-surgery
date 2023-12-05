@@ -73,7 +73,10 @@
 
             @media ($sm-1481){
                 padding: 0 70px;
-                padding-left: 90px;
+                padding-right: 90px;
+            }
+            @media ($sm-1199){
+                padding: 40px 50px;
             }
             .link{
                 color: var(--primary);

@@ -154,7 +154,12 @@
 @media (max-width: 1481px) {
   .full-width-wrap .poster-content .shell-wrp {
     padding: 0 70px;
-    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+@media (max-width: 1199px) {
+  .full-width-wrap .poster-content .shell-wrp {
+    padding: 40px 50px;
   }
 }
 .full-width-wrap .poster-content .shell-wrp .link {
