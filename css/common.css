@@ -142,6 +142,25 @@ body small text:    14px = 0.875rem
 @media (max-width: 1679px) {
   .session-title {
     font-size: 3rem;
+    line-height: 3.2rem;
+  }
+}
+@media (max-width: 1481px) {
+  .session-title {
+    font-size: 2.875rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 1281px) {
+  .session-title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+}
+@media (max-width: 1199px) {
+  .session-title {
+    font-size: 1.875rem;
+    font-size: 2rem;
   }
 }
 
@@ -189,6 +208,26 @@ body small text:    14px = 0.875rem
 @media (max-width: 991px) {
   .inner-title {
     font-size: 1rem;
+  }
+}
+
+.sub-inner-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  color: var(--white);
+}
+@media (max-width: 1481px) {
+  .sub-inner-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 1199px) {
+  .sub-inner-title {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -294,6 +333,10 @@ body small text:    14px = 0.875rem
 
 .primary_bg {
   background-color: var(--primary);
+}
+
+.secondary_bg {
+  background-color: var(--secondary);
 }
 
 .white {

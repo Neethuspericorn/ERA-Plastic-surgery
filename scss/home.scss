@@ -103,3 +103,33 @@
     }
 
 }
+.certifications{
+    padding: 52px 0;
+    .accredit{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        color: #fff;
+        flex-direction: column;
+        height: 100%;
+        max-width: 249px;
+        text-align: center;
+        margin: 0 auto;
+        @media ($sm-767){
+         margin-bottom: 30px;
+         height: auto;
+        }
+        span{
+            display: block;
+        }
+        .icon-wrp{
+            margin-bottom: 13px;
+            display: flex;
+            flex: 1;
+        }
+        .sub-inner-title{
+            flex: 1;
+        }
+    }
+}
