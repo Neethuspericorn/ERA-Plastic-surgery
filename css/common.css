@@ -253,7 +253,7 @@ body small text:    14px = 0.875rem
 }
 @media (max-width: 1199px) {
   .inner-arrow-list li {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
   }
 }
 @media (max-width: 767px) {
