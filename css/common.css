@@ -276,7 +276,7 @@ body small text:    14px = 0.875rem
   content: "\f054";
   color: var(--primary);
   font-family: "Font Awesome 6 Pro";
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 900;
   line-height: 1.875rem; /* 150% */
