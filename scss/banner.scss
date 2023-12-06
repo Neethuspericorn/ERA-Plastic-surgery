@@ -67,9 +67,12 @@
                 font-size: 74px;
                 margin-bottom: 22px;
                 line-height: 72px;
+                max-width: 750px;
                 @media ($sm-1679){
                     font-size: 60px;
                     line-height: 58px;
+                    max-width: 600px;
+                    
                 }
                 @media ($sm-1481){
                     font-size: 54px;
@@ -100,8 +103,12 @@
                 }
             }
             .bnr-desc{
+                max-width: 580px;
+                font-size: 23px;
+                color: var(--text);
                 @media ($sm-1679){
                     font-size: 18px;
+                    max-width: 477px;
                 }
                 @media ($sm-991){
                     font-size: 14px;

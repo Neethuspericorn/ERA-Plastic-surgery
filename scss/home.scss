@@ -9,9 +9,18 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        max-width: 580px;
         margin: 0 auto 50px;
         text-align: center;
+        .session-content
+        {
+            max-width: 700px;
+            @media ($sm-1679)
+            {
+                max-width: 569px;
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
     }
     .service-list-wrp{
         display: flex;
@@ -35,6 +44,13 @@
                 img {
                     max-width:100%;
                     display:flex;
+                    height: 280px;
+                    width: 100%;
+                    object-fit: cover;
+                    @media ($sm-1679)
+                    {
+                        height: 260px;
+                    }
                 }
                 @media ($sm-767){
                     max-width: 110px;
@@ -90,6 +106,15 @@
             .link{
                 color: var(--primary);
                 text-decoration: none;
+            }
+            .session-content
+            {
+                max-width: 500px;
+                @media ($sm-1679)
+                {
+                    max-width: 440px;
+                }
+                
             }
         }
     }
@@ -196,38 +221,56 @@
 }
 .section-transformation-wrappper
 {
-    margin-top: 90px;
+    margin-top: 80px;
+    @media ($sm-1679)
+    {
+        margin-top: 65px;
+    }
     .section-heading
     {
         h3
         {
-            color: #06518E;
-            font-size: 55px;
+            color:var(--primary);
+            font-size:60px;
             font-family:$title_font;
             font-weight:300;
             text-align: center;
             margin-bottom: 16px;
+            @media ($sm-1679)
+            {
+                font-size: 48px;
+                margin-bottom: 10px;
+            }
         }
         h4
         {
-            color: #000;
+            color:var(--text);
             text-align: center;
             font-size: 20px;
             font-weight: 400;
-            max-width: 720px;
             margin: 0 auto;
+            max-width: 670px;
             font-family:$primary_font;
+            @media ($sm-1679)
+            {
+                font-size: 18px;
+                max-width: 625px;
+            }
         }
     }
     .transform-wrapper {
         display: flex;
-        margin-top: 48px;
+        margin-top: 80px;
+        @media ($sm-1679)
+        {
+            margin-top: 70px;
+        }
         .transformation-division {
             display: flex;
             flex-wrap: wrap;
             .trans-outer {
                 width: 50%;
-                padding-right: 40px;
+                padding-right: 65px;
                 padding-bottom: 40px;
                 .heading-txt
                 {
@@ -241,10 +284,26 @@
                         font-weight: 700;
                         line-height: 22px;
                         margin-left: 10px;
+                        @media ($sm-1679)
+                        {
+                            font-size: 18px;
+                        }
                     }
-                    .trans-content {
-                        font-family:$primary_font;
-                        font-size: 16px;
+                   
+                }
+                .trans-content {
+                    font-family:$primary_font;
+                    font-size: 16px;
+                    @media ($sm-1679)
+                    {
+                        font-size: 14px;
+                    }
+                }
+                .trans-img
+                {
+                    img
+                    {
+                        max-width:100%;
                     }
                 }
             }
@@ -259,14 +318,41 @@
         margin-top: 55px;
         margin-bottom: 65px;
         border-radius: 15px;
+        .consult-image-wrapper
+        {
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px;
+            img
+            {
+                max-width:100%;
+                border-top-left-radius: 9px;
+                border-bottom-left-radius: 9px;
+                height: 430px;
+                object-fit: cover;
+                @media ($sm-1679)
+                {
+                    height: 350px;
+                }
+            }
+        }
         .consult-content-wrapper {
-            padding: 30px 35px;
+            padding: 45px 72px 45px 90px;
+            max-height:430px;
+            @media ($sm-1679)
+            {
+                max-height: 350px;
+                padding: 35px 72px 35px 90px;
+            }
             h3
             {
                 color: #06518E;
                 font-size: 47px;
                 font-family:$title_font;
                 font-weight: 300;
+                @media ($sm-1679)
+                {
+                    font-size: 42px;
+                }
             }
             .content-sec
             {
@@ -274,6 +360,10 @@
                 font-family:$primary_font;
                 font-weight:400;
                 margin-top: 15px;
+                @media ($sm-1679)
+                {
+                    font-size:15px;
+                }
                 .sub-calls
                 {
                     margin-top:25px;
@@ -285,7 +375,7 @@
                     {
                         color: #06518E;
                         font-weight: 700;
-                        min-width: 120px;
+                        min-width: 80px;
                         display: inline-block;
                         font-weight:700;
                         font-family:$primary_font;
@@ -322,6 +412,7 @@
         .session-title{
             // max-width: 340px;
             margin: 0 auto 10px;
+            margin-bottom: 20px;
             span{
                 display: block;
                 font-family: $primary_font;
@@ -331,6 +422,7 @@
                 margin-bottom: 0px;
                 font-weight: 700;
                 letter-spacing: 0.42px;
+                text-transform: uppercase;
             }
         }
     }
