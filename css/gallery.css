@@ -304,7 +304,7 @@
 }
 @media (max-width: 1679px) {
   .transformation-sliders {
-    padding: 40px 0;
+    padding: 120px 0 60px;
   }
 }
 .transformation-sliders .slide-img-wrp {
@@ -532,7 +532,8 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   margin-bottom: 60px;
 }
 .providers-info-wrp .provider-deatil-wrp .affiliation-blk .blks {
@@ -616,5 +617,3 @@
   font-weight: 400;
   line-height: 30px;
 }
-
-/*# sourceMappingURL=gallery.css.map */
