@@ -3,11 +3,10 @@
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
+  --light-secondary: #E5F5FA;
   --text: #000000;
-  --textD: #000000;
   --border: #C4C4C4;
   --white: #ffffff;
-  --whiteD: #ffffff;
   --light_blue: #CCEBF6;
   --divider-line:#C4C4C4;
 }
@@ -177,17 +176,11 @@ body small text:    14px = 0.875rem
 }
 
 .session-content {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 24px;
 }
 @media (max-width: 1679px) {
-  .session-content {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
-@media (max-width: 1481px) {
   .session-content {
     font-size: 16px;
     line-height: 24px;
@@ -266,12 +259,6 @@ body small text:    14px = 0.875rem
   flex-direction: column;
 }
 @media (max-width: 1679px) {
-  .inner-arrow-list li {
-    font-size: 18px;
-    line-height: 22px;
-  }
-}
-@media (max-width: 1481px) {
   .inner-arrow-list li {
     font-size: 16px;
     line-height: 22px;
@@ -414,3 +401,5 @@ body small text:    14px = 0.875rem
   border: 1px solid var(--secondary);
   color: var(--primary);
 }
+
+/*# sourceMappingURL=common.css.map */

@@ -4,7 +4,12 @@ $(document).ready(function(){
     });
     $('#home-tt-slider').slick({
         dots: true,
+        prevArrow: "#prev",
+        nextArrow: "#next"
     });
+    $('.tranform-slide').slick({
+        arrows: true
+    })
 });
 
 

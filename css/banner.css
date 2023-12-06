@@ -3,11 +3,10 @@
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
+  --light-secondary: #E5F5FA;
   --text: #000000;
-  --textD: #000000;
   --border: #C4C4C4;
   --white: #ffffff;
-  --whiteD: #ffffff;
   --light_blue: #CCEBF6;
   --divider-line:#C4C4C4;
 }
@@ -105,11 +104,9 @@
 }
 .home-banner .banner-slider .banner-img img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   height: 100%;
-  -o-object-position: right;
-     object-position: right;
+  object-position: right;
 }
 @media (max-width: 767px) {
   .home-banner .banner-slider .banner-img {
@@ -132,8 +129,7 @@
 }
 .home-banner .banner-slider .banner-img.mobile img {
   height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .home-banner .banner-slider .banner-desc {
   position: absolute;
@@ -155,11 +151,13 @@
   font-size: 74px;
   margin-bottom: 22px;
   line-height: 72px;
+  max-width: 750px;
 }
 @media (max-width: 1679px) {
   .home-banner .banner-slider .banner-desc .heading {
     font-size: 60px;
     line-height: 58px;
+    max-width: 600px;
   }
 }
 @media (max-width: 1481px) {
@@ -201,9 +199,15 @@
 .home-banner .banner-slider .banner-desc .heading span {
   display: block;
 }
+.home-banner .banner-slider .banner-desc .bnr-desc {
+  max-width: 580px;
+  font-size: 23px;
+  color: var(--text);
+}
 @media (max-width: 1679px) {
   .home-banner .banner-slider .banner-desc .bnr-desc {
     font-size: 18px;
+    max-width: 477px;
   }
 }
 @media (max-width: 991px) {
@@ -265,3 +269,5 @@
     display: block;
   }
 }
+
+/*# sourceMappingURL=banner.css.map */
