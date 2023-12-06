@@ -90,6 +90,7 @@
   justify-content: flex-end;
   flex: 1;
   padding-bottom: 59px;
+  max-width: 400px;
 }
 .banner.gallery .bnr-cont .heading {
   font-size: 74px;
@@ -101,4 +102,25 @@
 }
 .banner.gallery .pull-dwn-wrp img {
   max-width: 100%;
+}
+
+.transformation-sliders {
+  width: 100%;
+  padding: 60px 0;
+}
+.transformation-sliders .slide-img-wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transformation-sliders .slide-img-wrp img {
+  max-width: 100%;
+}
+.transformation-sliders .slide-cont-wrp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.transformation-sliders .slick-next::before {
+  content: "";
 }

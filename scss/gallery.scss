@@ -12,6 +12,7 @@
             justify-content: flex-end;
             flex: 1;
             padding-bottom: 59px;
+            max-width: 400px;
             .heading{
                 font-size: 74px;
                 line-height: 72px;
@@ -23,6 +24,28 @@
             img{
                 max-width: 100%;
             }
+        }
+    }
+}
+.transformation-sliders{
+    width: 100%;
+    padding: 60px 0;
+    .slide-img-wrp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 100%;
+        }
+    }
+    .slide-cont-wrp{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .slick-next{
+        &::before{
+            content:""
         }
     }
 }

@@ -5,6 +5,9 @@ $(document).ready(function(){
     $('#home-tt-slider').slick({
         dots: true,
     });
+    $('.tranform-slide').slick({
+        arrows: true
+    })
 });
 
 

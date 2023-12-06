@@ -178,9 +178,9 @@ body small text:    14px = 0.875rem
 }
 
 .session-content {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 24px;
 }
 @media (max-width: 1679px) {
   .session-content {
