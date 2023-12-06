@@ -26,6 +26,15 @@
             padding-left: 18px;
             padding-right: 18px;
             font-weight: 400;
+            @media ($sm-1281){
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            @media ($sm-1199){
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 15px;
+            }
             @media screen and ($sm-991){
                 color: var(--white);
                 font-weight: 700;
