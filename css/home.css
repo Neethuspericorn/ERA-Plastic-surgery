@@ -224,6 +224,7 @@
 @media (max-width: 767px) {
   .full-width-wrap .content-area-lft {
     background-color: var(--white);
+    order: 2;
   }
 }
 .full-width-wrap .practice-wrp {
@@ -252,6 +253,13 @@
     height: 300px;
     max-width: 436px;
     margin: 0 auto;
+    order: 1;
+  }
+}
+@media (max-width: 579px) {
+  .full-width-wrap .img-hldr {
+    height: 220px;
+    max-width: 310px;
   }
 }
 

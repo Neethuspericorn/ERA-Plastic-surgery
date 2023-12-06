@@ -131,6 +131,7 @@
         }
         @media ($sm-767){
             background-color: var(--white);
+            order: 2;
         }
     }
     .practice-wrp{
@@ -154,6 +155,11 @@
             height: 300px;
             max-width: 436px;
             margin: 0 auto;
+            order: 1;
+        }
+        @media ($sm-579){
+            height: 220px;
+            max-width: 310px;
         }
     }
 
