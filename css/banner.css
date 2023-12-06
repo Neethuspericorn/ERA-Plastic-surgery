@@ -125,8 +125,12 @@
 @media (max-width: 579px) {
   .home-banner .banner-slider .banner-img.mobile {
     display: flex;
-    height: 420px;
+    height: 302px;
   }
+}
+.home-banner .banner-slider .banner-img.mobile img {
+  height: inherit;
+  object-fit: cover;
 }
 .home-banner .banner-slider .banner-desc {
   position: absolute;
@@ -147,6 +151,7 @@
 .home-banner .banner-slider .banner-desc .heading {
   font-size: 74px;
   margin-bottom: 22px;
+  line-height: 72px;
 }
 @media (max-width: 1679px) {
   .home-banner .banner-slider .banner-desc .heading {

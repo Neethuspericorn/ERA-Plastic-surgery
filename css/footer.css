@@ -91,10 +91,43 @@
 }
 .footer .have-questions .heading {
   color: var(--white);
+  font-size: 60px;
+  line-height: 62px;
 }
-@media screen and (max-width: 1199px) {
+@media (max-width: 1679px) {
   .footer .have-questions .heading {
-    font-size: 3.1rem;
+    font-size: 54px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 1481px) {
+  .footer .have-questions .heading {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+@media (max-width: 1281px) {
+  .footer .have-questions .heading {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 1199px) {
+  .footer .have-questions .heading {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 991px) {
+  .footer .have-questions .heading {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .footer .have-questions .heading {
+    font-size: 25px;
+    line-height: 33px;
   }
 }
 .footer .footer-info {

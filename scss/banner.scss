@@ -41,7 +41,11 @@
                 display: none;
                 @media ($sm-579){
                     display: flex;
-                    height: 420px;
+                    height:302px;
+                }
+                img{
+                    height: inherit;
+                    object-fit: cover;
                 }
             }
         }
@@ -62,6 +66,7 @@
             .heading{
                 font-size: 74px;
                 margin-bottom: 22px;
+                line-height: 72px;
                 @media ($sm-1679){
                     font-size: 60px;
                     line-height: 58px;
