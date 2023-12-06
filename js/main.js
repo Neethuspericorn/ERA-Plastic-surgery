@@ -7,6 +7,9 @@ $(document).ready(function(){
         prevArrow: "#prev",
         nextArrow: "#next"
     });
+    $('.tranform-slide').slick({
+        arrows: true
+    })
 });
 
 
