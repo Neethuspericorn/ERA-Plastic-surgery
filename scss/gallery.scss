@@ -538,6 +538,13 @@ max-width: 312px;
             border-radius: 5px;
             color: var(--primary);
             margin-bottom: 24px;
+            font-family: $primary_font;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            &::placeholder{
+                color: var(--primary);
+            }
         }
         .option-wrp{
             margin-bottom: 40px;

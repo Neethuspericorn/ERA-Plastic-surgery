@@ -686,6 +686,16 @@
   border-radius: 5px;
   color: var(--primary);
   margin-bottom: 24px;
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.schedule-consult-wrp .consultation-form .form-control::-moz-placeholder, .schedule-consult-wrp .consultation-form .form-select::-moz-placeholder {
+  color: var(--primary);
+}
+.schedule-consult-wrp .consultation-form .form-control::placeholder, .schedule-consult-wrp .consultation-form .form-select::placeholder {
+  color: var(--primary);
 }
 .schedule-consult-wrp .consultation-form .option-wrp {
   margin-bottom: 40px;
