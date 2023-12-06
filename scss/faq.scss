@@ -1,0 +1,49 @@
+
+
+@import 'partials';
+
+// faq 
+.faq-area{
+    margin: 70px 0;
+    .title-lg{
+        margin-bottom: 60px;
+    }
+    .inner-arrow-list{
+       max-width: 590px;
+       margin: 0 auto 70px;
+       li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .link{
+            font-weight: 700;
+            font-size: 16px;
+            &::after{
+                content: "\2b";
+               
+            }
+            &:not(.collapsed){
+                &::after{
+                    content: "\f068";
+                    transform: none;
+                }
+            }
+         }
+       }
+        .session-content{
+         font-weight: 400;
+         font-size: 16px;
+        }
+    }
+
+    .box-title{
+       background-color: var(--light-secondary);
+       color: var( --primary);
+       font-weight: 700;
+       font-size: 20px;
+       line-height: 23px;
+       border-radius: 5px;
+       display: grid;
+       place-items: center;  
+       min-height: 57px;
+  }
+}

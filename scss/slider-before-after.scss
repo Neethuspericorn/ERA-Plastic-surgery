@@ -1,0 +1,161 @@
+@import 'partials';
+
+
+
+//    Slider with content 
+
+.slider-with-content{
+    .title-lg{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .content-wrap{
+        .label-info{
+            background-color: var(--white);
+            min-width: 300px;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            column-gap: 13px;
+            align-items: center;
+           
+            .icon{
+                width: 35px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span{
+                    font-size: 20px;
+                }
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: var(--primary);
+                column-gap: 13px;
+                min-height: 60px;
+            font-family: $primary_font;
+
+                strong{
+                     font-size: 14px;
+                     font-weight: 700;
+                }
+                small{
+                    font-weight: 400;
+                    font-size: 14px;
+
+                }
+            }
+        }
+        small{
+            font-size: 20px;
+            font-family: $primary_font;
+            font-weight: 700;
+            color: var(--primary);
+        }
+    }
+}
+
+.before-after-slide{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .box-full{
+        margin: 0 25px;
+        position: relative;
+        border-radius: 10px;
+        .overlay-fill{
+            position: absolute;
+            top: 0;
+            left: 0;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          height: 100%;
+          width: 100%;
+          z-index: 9;
+          background: rgba(6, 81, 142, 0.5411764706);
+         
+          
+          span{
+            font-family: $title_font;
+            opacity: 1;
+            color: var(--white);
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 275;
+            position: relative;
+            z-index: 99;
+            
+          }
+        }
+
+        .overlay{
+            background: rgba(6, 81, 142, 0.80);
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius:10px 0 0px 10px;
+            display: flex;
+            overflow: hidden;
+            width: 125px;
+            height: 100%;
+            z-index: 9;
+            padding: 12px 15px;
+            flex-direction: column;
+            .content-top{
+                font-family: $primary_font;
+                strong{
+                    color:var(--white);
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                small{
+                    color:var(--white);
+                    font-size: 16px;
+                    font-weight: 400;
+
+                }
+            }
+
+            .content-bottom{
+                margin-top: auto;
+                .lg-text{
+                font-family: $title_font;
+                color:var(--white);
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 275;
+                }
+            }
+        }
+    }
+    .slick-arrow{
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-size: 20px !important;
+    }
+    .slick-next {
+        right: -40px;
+        background: url(../img/right_arrow.svg) no-repeat center center;
+    }
+    .slick-prev {
+        left: -40px;
+        background: url(../img/left_arrow.svg) no-repeat center center;
+      
+    }
+    .slick-prev:before, .slick-next:before{
+        color: var(--primary);
+        font-size:25px;
+        display: none;
+    }
+}
+
+.bg-fill-light{
+    background-color: var( --light);
+}
