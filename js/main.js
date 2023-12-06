@@ -7,6 +7,11 @@ $(document).ready(function(){
         prevArrow: "#prev",
         nextArrow: "#next"
     });
+    $('.testimonial-slider').slick({
+        dots: true,
+        prevArrow: "#prevArrow",
+        nextArrow: "#nextArrow"
+    });
     $('.tranform-slide').slick({
         arrows: true
     })

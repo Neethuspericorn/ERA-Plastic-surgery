@@ -1,0 +1,76 @@
+@import 'partials';
+.banner.case-study {
+    background: #06518E;
+    height: 515px;
+    .outer-div.d-flex {
+        padding: 80px 0px 50px;
+        justify-content: center;
+        .bnr-cont
+        {
+            text-align: center;
+            h5 {
+                color: #5FCBEC;
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            h2
+            {
+                color: #FFF;
+                font-size: 52px;
+            }
+            .session-content
+            {
+                color: #FFF;
+                font-size: 20px;
+            }
+        }
+        .img-case-study {
+            margin-top: 50px;
+            img
+            {
+                height: 425px;
+            }
+        }
+    }
+}
+.transformation-sliders
+{
+    margin-top: 205px;
+    padding-bottom: 110px;
+    .content-section {
+        margin-bottom: 125px;
+        max-width: 55%;
+        margin: 0 auto;
+        .paragraph-content
+        {
+            color: #000;
+            font-size: 16px;
+            margin-bottom: 27px;
+            h3
+            {
+                color: #06518E;
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            .par-txt {
+                margin-bottom: 22px;
+            }
+        }
+        .blue-para-text {
+            background: #E5F5FA;
+            padding: 18px 18px;
+            margin-bottom: 25px;
+            color: #000;
+            font-size: 16px;
+        }
+    }
+}
+.note-bottom.content-section {
+    margin-bottom: 33px;
+    border-top: 1px solid #C4C4C4;
+    padding-top: 21px;
+    color: #C4C4C4;
+    margin-top: 90px;
+}

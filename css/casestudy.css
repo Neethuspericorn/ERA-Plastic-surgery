@@ -1,0 +1,149 @@
+:root {
+  --primary: #06518E;
+  --secondary: #2F96D0;
+  --ternary: #5FCBEC;
+  --light: #CCEBF6;
+  --light-secondary: #E5F5FA;
+  --text: #000000;
+  --border: #C4C4C4;
+  --white: #ffffff;
+  --light_blue: #CCEBF6;
+  --divider-line:#C4C4C4;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Light.eot");
+  src: url("../fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Light.woff2") format("woff2"), url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.ttf") format("truetype"), url("../fonts/Gotham-Light.svg#Gotham-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Bold.eot");
+  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Book.eot");
+  src: url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book.woff2") format("woff2"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  /* heavy  */
+  font-family: "ChampionGothic";
+  src: url("../fonts/ChampionGothic-Heavyweight.eot");
+  src: local("../fonts/Champion Gothic Heavyweight"), local("ChampionGothic-Heavyweight"), url("../fonts/ChampionGothic-Heavyweight.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampionGothic-Heavyweight.woff2") format("woff2"), url("../fonts/ChampionGothic-Heavyweight.woff") format("woff"), url("../fonts/ChampionGothic-Heavyweight.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  /* normal - 400  */
+  font-family: "ChampionGothic";
+  src: url("../fonts/ChampionGothic-Middleweight.eot");
+  src: local("../fonts/Champion Gothic Middleweight"), local("ChampionGothic-Middleweight"), url("../fonts/ChampionGothic-Middleweight.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampionGothic-Middleweight.woff2") format("woff2"), url("../fonts/ChampionGothic-Middleweight.woff") format("woff"), url("../fonts/ChampionGothic-Middleweight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  /* titles  */
+  font-family: "ChampionGothic";
+  src: url("../fonts/ChampionGothic-Lightweight.eot");
+  src: local("../fonts/Champion Gothic Lightweight"), local("ChampionGothic-Lightweight"), url("../fonts/ChampionGothic-Lightweight.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampionGothic-Lightweight.woff2") format("woff2"), url("../fonts/ChampionGothic-Lightweight.woff") format("woff"), url("../fonts/ChampionGothic-Lightweight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.banner.case-study {
+  background: #06518E;
+  height: 515px;
+}
+.banner.case-study .outer-div.d-flex {
+  padding: 80px 0px 50px;
+  justify-content: center;
+}
+.banner.case-study .outer-div.d-flex .bnr-cont {
+  text-align: center;
+}
+.banner.case-study .outer-div.d-flex .bnr-cont h5 {
+  color: #5FCBEC;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.banner.case-study .outer-div.d-flex .bnr-cont h2 {
+  color: #FFF;
+  font-size: 52px;
+}
+.banner.case-study .outer-div.d-flex .bnr-cont .session-content {
+  color: #FFF;
+  font-size: 20px;
+}
+.banner.case-study .outer-div.d-flex .img-case-study {
+  margin-top: 50px;
+}
+.banner.case-study .outer-div.d-flex .img-case-study img {
+  height: 425px;
+}
+
+.transformation-sliders {
+  margin-top: 205px;
+  padding-bottom: 110px;
+}
+.transformation-sliders .content-section {
+  margin-bottom: 125px;
+  max-width: 55%;
+  margin: 0 auto;
+}
+.transformation-sliders .content-section .paragraph-content {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 27px;
+}
+.transformation-sliders .content-section .paragraph-content h3 {
+  color: #06518E;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.transformation-sliders .content-section .paragraph-content .par-txt {
+  margin-bottom: 22px;
+}
+.transformation-sliders .content-section .blue-para-text {
+  background: #E5F5FA;
+  padding: 18px 18px;
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 16px;
+}
+
+.note-bottom.content-section {
+  margin-bottom: 33px;
+  border-top: 1px solid #C4C4C4;
+  padding-top: 21px;
+  color: #C4C4C4;
+  margin-top: 90px;
+}
+
+/*# sourceMappingURL=casestudy.css.map */
