@@ -1,0 +1,47 @@
+@import 'partials';
+
+
+.video-modal,.vertical-modal{
+
+    .modal-dialog{
+        @media (min-width: 1199px){
+            max-width: 1000px;
+
+        }
+    }
+    .modal-header{
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        .btn-close{
+            position: absolute;
+            right: -5px;
+            top: -8px;
+            background-color: var(--white);
+            opacity: 1;
+            z-index: 9;
+            border-radius: 50%;
+            background-size: 10px;
+        }
+    }
+    .modal-content{
+        background-color: transparent;
+        border: 0;
+        border-radius: 5px;
+    }
+    video {
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 5px;
+    }
+}
+
+.vertical-modal{
+    .modal-dialog{
+        @media (min-width: 1199px){
+            max-width:25vw;
+
+        }
+    }
+}
