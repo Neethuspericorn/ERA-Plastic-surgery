@@ -143,6 +143,7 @@
   line-height: 72px;
   max-width: 300px;
   font-family: "ChampionGothic", sans-serif;
+  margin-bottom: 25px;
 }
 @media (max-width: 1679px) {
   .banner.gallery-bnr .bnr-cont .heading {
@@ -183,8 +184,55 @@
     max-width: 55%;
   }
 }
+.banner.gallery-bnr .bnr-cont .heading.providers {
+  max-width: 100%;
+}
+@media (max-width: 1679px) {
+  .banner.gallery-bnr .bnr-cont .heading.providers {
+    font-size: 60px;
+    line-height: 58px;
+    max-width: 520px;
+  }
+}
+@media (max-width: 1481px) {
+  .banner.gallery-bnr .bnr-cont .heading.providers {
+    font-size: 54px;
+    line-height: 62px;
+  }
+}
+@media (max-width: 1281px) {
+  .banner.gallery-bnr .bnr-cont .heading.providers {
+    font-size: 44px;
+    line-height: 52px;
+    max-width: 390px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner.gallery-bnr .bnr-cont .heading.providers {
+    font-size: 38px;
+    line-height: 44px;
+    max-width: 330px;
+  }
+}
+@media (max-width: 767px) {
+  .banner.gallery-bnr .bnr-cont .heading.providers {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    max-width: 200px;
+  }
+}
+@media (max-width: 579px) {
+  .banner.gallery-bnr .bnr-cont .heading.providers {
+    max-width: 55%;
+  }
+}
 .banner.gallery-bnr .bnr-cont .session-content {
   color: var(--text);
+  max-width: 461px;
+}
+.banner.gallery-bnr .bnr-cont .session-content.providers {
+  max-width: 461px;
 }
 .banner.gallery-bnr .pull-dwn-wrp {
   position: relative;
@@ -358,4 +406,124 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.42px;
+}
+
+.play-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--secondary);
+  border-radius: 50%;
+  margin-right: 7px;
+  color: var(--secondary);
+  font-size: 17px;
+}
+
+.providers-info-wrp {
+  display: flex;
+  gap: 62px;
+  border-bottom: 1px solid #C4C4C4;
+  padding-bottom: 77px;
+  margin-bottom: 77px;
+}
+.providers-info-wrp .provider-pic {
+  max-width: 243px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.providers-info-wrp .provider-pic img {
+  max-width: 100%;
+  max-height: 243px;
+}
+.providers-info-wrp .provider-deatil-wrp {
+  max-width: 590px;
+  flex: 1;
+}
+.providers-info-wrp .provider-deatil-wrp .provider-highlight {
+  margin-bottom: 20px;
+}
+.providers-info-wrp .provider-deatil-wrp .provider-highlight .inner-title {
+  margin-bottom: 5px;
+}
+.providers-info-wrp .provider-deatil-wrp .provider-highlight .provider-title {
+  font-family: "Gotham", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+.providers-info-wrp .provider-deatil-wrp .provider-highlight .watch-video-link {
+  display: flex;
+  align-items: center;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-family: "Gotham", sans-serif;
+  cursor: pointer;
+}
+.providers-info-wrp .provider-deatil-wrp .provider-bio {
+  font-family: "Gotham", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text);
+  margin-bottom: 40px;
+}
+.providers-info-wrp .provider-deatil-wrp .certification-title {
+  font-family: "Gotham", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--primary);
+  margin-bottom: 40px;
+  text-align: center;
+}
+.providers-info-wrp .provider-deatil-wrp .affiliation-blk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-bottom: 60px;
+}
+.providers-info-wrp .provider-deatil-wrp .affiliation-blk .blks {
+  flex: 0 0 auto;
+}
+
+.review-slide-wrp {
+  margin-top: 30px;
+}
+.review-slide-wrp .page-tt-slider .tt-slider {
+  background-color: var(--light-secondary);
+}
+.review-slide-wrp .page-tt-slider .tt-slider .text-desc {
+  font-family: "Gotham", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.review-slide-wrp .page-tt-slider .tt-slider .slide .user {
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.review-slide-wrp .page-tt-slider .slick-dots li.slick-active button::before {
+  opacity: 1;
+}
+.review-slide-wrp .page-tt-slider .slick-dots li button::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #A2A2A2;
+  position: relative;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+.review-slide-wrp .btn-arrows {
+  color: #A1A1A1;
 }
