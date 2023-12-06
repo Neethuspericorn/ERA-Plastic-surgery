@@ -81,8 +81,7 @@
 }
 .navbar .navbar-brand img {
   max-height: 50px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 @media screen and (max-width: 991px) {
   .navbar .navbar-collapse {
@@ -140,3 +139,5 @@
     background-color: var(--light);
   }
 }
+
+/*# sourceMappingURL=navbar.css.map */

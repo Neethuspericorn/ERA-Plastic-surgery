@@ -143,3 +143,110 @@
         }
     }
 }
+.section-transformation-wrappper
+{
+    margin-top: 90px;
+    .section-heading
+    {
+        h3
+        {
+            color: #06518E;
+            font-size: 55px;
+            font-family:$title_font;
+            font-weight:300;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        h4
+        {
+            color: #000;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            max-width: 720px;
+            margin: 0 auto;
+            font-family:$primary_font;
+        }
+    }
+    .transform-wrapper {
+        display: flex;
+        margin-top: 48px;
+        .transformation-division {
+            display: flex;
+            flex-wrap: wrap;
+            .trans-outer {
+                width: 50%;
+                padding-right: 40px;
+                padding-bottom: 40px;
+                .heading-txt
+                {
+                    display: flex;
+                    margin-bottom: 9px;
+                    .txt-trans
+                    {
+                        color: #06518E;
+                        font-family:$primary_font;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 22px;
+                        margin-left: 10px;
+                    }
+                    .trans-content {
+                        font-family:$primary_font;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }  
+}
+.consultation-outer-wrapper
+{
+    .consult-inner-wrapper {
+        display: flex;
+        background: #E5F5FA;
+        margin-top: 55px;
+        margin-bottom: 65px;
+        border-radius: 15px;
+        .consult-content-wrapper {
+            padding: 30px 35px;
+            h3
+            {
+                color: #06518E;
+                font-size: 47px;
+                font-family:$title_font;
+                font-weight: 300;
+            }
+            .content-sec
+            {
+                font-size: 17px;
+                font-family:$primary_font;
+                font-weight:400;
+                margin-top: 15px;
+                .sub-calls
+                {
+                    margin-top:25px;
+                    .outr-sub
+                    {
+                        margin-bottom: 15px;
+                    }
+                    span
+                    {
+                        color: #06518E;
+                        font-weight: 700;
+                        min-width: 120px;
+                        display: inline-block;
+                        font-weight:700;
+                        font-family:$primary_font;
+                    }
+                    .num-call
+                    {
+                        color: #000000;
+                        font-weight:400;
+                        font-family:$primary_font;
+                    }
+                }
+            }
+        }
+    }
+}

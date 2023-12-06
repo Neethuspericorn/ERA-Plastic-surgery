@@ -105,11 +105,9 @@
 }
 .home-banner .banner-slider .banner-img img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   height: 100%;
-  -o-object-position: right;
-     object-position: right;
+  object-position: right;
 }
 @media (max-width: 767px) {
   .home-banner .banner-slider .banner-img {
@@ -259,3 +257,5 @@
     display: block;
   }
 }
+
+/*# sourceMappingURL=banner.css.map */
