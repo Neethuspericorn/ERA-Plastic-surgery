@@ -119,6 +119,7 @@ span{
             .article-img{
                 max-width: 480px;
                 width: 100%;
+                min-height: 377px;
                 background: url(../img/image-01.jpg) no-repeat center center;
                 background-size: cover;
                 flex-shrink: 0;
@@ -129,6 +130,9 @@ span{
             .article-content{
                 padding-bottom: 50px;
                 padding-top: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 .lg-title{
                     font-size: 55px;
                     line-height: 60px;

@@ -1,7 +1,7 @@
 @import 'partials';
 
 .banner {
-    &.gallery {
+    &.gallery-bnr {
         background-color: var(--light-secondary);
         flex: 1;
         position: relative;
@@ -33,7 +33,6 @@
             justify-content: flex-end;
             flex: 1;
             padding-bottom: 59px;
-            max-width: 400px;
             @media ($sm-1481){
                 padding-bottom:40px;
             }
@@ -46,12 +45,12 @@
             @media ($sm-579){
                 padding-bottom: 10px;
             }
-
             .heading {
                 font-size: 74px;
                 line-height: 72px;
-                max-width: 400px;
+                max-width: 300px;
                 font-family: $title_font;
+                margin-bottom: 25px;
                 @media ($sm-1679){
                     font-size: 60px;
                     line-height: 58px;
@@ -79,9 +78,45 @@
                 @media ($sm-579){
                     max-width: 55%;
                 }
+                &.providers{
+                    max-width: 100%;
+                    
+                    @media ($sm-1679){
+                        font-size: 60px;
+                        line-height: 58px;
+                        max-width: 520px;
+                    }
+                    @media ($sm-1481){
+                        font-size: 54px;
+                        line-height: 62px;
+                    }
+                    @media ($sm-1281){
+                        font-size: 44px;
+                        line-height: 52px;
+                        max-width: 390px;
+                    }
+                    @media ($sm-1199){
+                        font-size: 38px;
+                        line-height: 44px;
+                        max-width: 330px;
+                    }
+                    @media ($sm-767){
+                        font-size: 26px;
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                        max-width: 200px;
+                    }
+                    @media ($sm-579){
+                        max-width: 55%;
+                    }
+                }
             }
             .session-content{
                 color: var(--text);
+                max-width: 461px;
+                &.providers{
+                    max-width: 461px;
+                }
             }
         }
 
@@ -193,5 +228,177 @@
             color: var(--primary);
             font-family: "Fontawesome";
         }
+    }
+    .gallery-margin{
+        margin-bottom: 66px;
+    }
+}
+.warning-blk{
+background-color: var(--light-secondary);
+border-radius: 5px;
+padding: 13px 20px;
+display: flex;
+align-items: center;
+margin-top:10px;
+max-width: 312px;
+.warn-icon{
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    margin-right: 13px;
+}
+.warn-content{
+    .title{
+        font-family: $primary_font;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        color: var(--primary);
+    }
+    .desc{
+        color: var(--primary);
+        font-family: $primary_font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.42px;
+    }
+}
+}
+.play-icon{
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    margin-right: 7px;
+    color: var(--secondary);
+    font-size: 17px;
+}
+.providers-info-wrp{
+    display: flex;
+    gap: 62px;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 77px;
+    margin-bottom: 77px;
+    .provider-pic{
+        max-width: 243px;
+        border-radius: 10px;
+        flex-shrink: 0;
+        img{
+            max-width: 100%;
+            max-height: 243px;
+        }
+    }
+    .provider-deatil-wrp{
+        max-width: 590px;
+        flex: 1;
+        .provider-highlight{
+            margin-bottom: 20px;
+            .inner-title{
+                margin-bottom: 5px;
+            }
+            .provider-title{
+                font-family: $primary_font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                margin-bottom: 20px;
+                color: var(--text);
+            }
+            .watch-video-link{
+                display: flex;
+                align-items: center;
+                color: var(--secondary);
+                text-transform: uppercase;
+                font-family: $primary_font;
+                cursor: pointer;
+            }
+        }
+        .provider-bio{
+            font-family: $primary_font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--text);
+            margin-bottom: 40px;
+        }
+        .certification-title{
+            font-family: $primary_font;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            color: var(--primary);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .affiliation-blk{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            column-gap: 30px;
+            margin-bottom: 60px;
+            .blks{
+                flex: 0 0 auto;
+            }
+        }
+    }
+}
+
+.review-slide-wrp{
+    margin-top: 30px;
+    .page-tt-slider{
+        .tt-slider{
+            background-color: var(--light-secondary);
+            .text-desc{
+                font-family: $primary_font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+            .slide {
+                .user{
+                    font-family: $primary_font;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .slick-dots{
+            li{
+                &.slick-active{
+                    button{
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+                button{
+                    &::before {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        background-color: #A2A2A2;
+                        position: relative;
+                        border-radius: 10px;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+    .btn-arrows{
+        color: #A1A1A1;
     }
 }
