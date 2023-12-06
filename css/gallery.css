@@ -532,8 +532,7 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   margin-bottom: 60px;
 }
 .providers-info-wrp .provider-deatil-wrp .affiliation-blk .blks {
@@ -617,3 +616,5 @@
   font-weight: 400;
   line-height: 30px;
 }
+
+/*# sourceMappingURL=gallery.css.map */
