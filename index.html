@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/banner.css" />
   <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/video-element.css" />
+  <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="css/slider-testimonial.css" />
 </head>
 
@@ -108,10 +110,9 @@
           <div class="banner-desc">
             <div class="container container-custom container-padding position-relative">
               <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="bnr-cnt-wrp">
+                  <div class="bnr-cnt-wrp col-7">
                     <h1 class="heading page-title">
-                      Your transformation can feel radical. <span>Yet look so natural,</span>
+                      Your transformation <br/> can feel radical. <span>Yet look so natural,</span>
                       <span class="sub">others won't even notice.</span>
                     </h1>
                     <p class="bnr-desc">
@@ -121,7 +122,6 @@
                     </p>
                     <button class="btn btn-secondary cta">Get in touch</button>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -391,7 +391,7 @@
                         <span class="count">2</span>
                         <div class="step-contents">
                           <h5 class="title">
-                            Get in touch
+                            Chat with us
                           </h5>
                           <p class="content-txt">
                             Reach out to us via phone, email, or our online contact form for an initial phone consultation.
@@ -402,7 +402,7 @@
                         <span class="count">3</span>
                         <div class="step-contents">
                           <h5 class="title">
-                            Get in touch
+                            Get your plan
                           </h5>
                           <p class="content-txt">
                             Reach out to us via phone, email, or our online contact form for an initial phone consultation.
@@ -415,7 +415,7 @@
                         <span class="count">4</span>
                         <div class="step-contents">
                           <h5 class="title">
-                            Get in touch
+                            Come on in
                           </h5>
                           <p class="content-txt">
                             Reach out to us via phone, email, or our online contact form for an initial phone consultation.
@@ -426,7 +426,7 @@
                         <span class="count">5</span>
                         <div class="step-contents">
                           <h5 class="title">
-                            Get in touch
+                            Aftercare
                           </h5>
                           <p class="content-txt">
                             Reach out to us via phone, email, or our online contact form for an initial phone consultation.
@@ -437,7 +437,7 @@
                         <span class="count">6</span>
                         <div class="step-contents">
                           <h5 class="title">
-                            Get in touch
+                            Enjoy your transformation
                           </h5>
                           <p class="content-txt">
                             Reach out to us via phone, email, or our online contact form for an initial phone consultation.
@@ -454,51 +454,168 @@
         <!-- our process end here-->
 
     <!-- how it would feel start-->
-    <section class="section-page-tt-slider">
+    <section class="section-page-tt-slider home-tt-slider">
       <div class="container container-custom">
-        <div class="row">
-          <div class="col title-col">
-            <h2 class="title heading text-center">
-              Imagine how it would feel to say this…
-            </h2>
-            <p class="subtitle text-center">
-              ERA doesn't aim to make clients satisfied – but rather,
-              over-the-top thrilled.This could be your story too.
-            </p>
+          <div class="row">
+              <div class="col title-col">
+                  <h2 class="title heading text-center">Imagine how it would feel to say this…</h2>
+                  <p class="subtitle text-center">ERA doesn't aim to make clients satisfied – but rather, over-the-top thrilled. This could be your story too.
+                  </p>
+              </div>
           </div>
+
+          <div class="row">
+              <div class="col tt-slider-col">
+                  <div class="page-tt-slider text-center">
+                      <button class="btn-arrows btn-prev" id="prev"> 
+                          <img src="img/chevron-left.svg" alt="prev"> 
+                      </button>
+                      <div class="tt-slider"  id="home-tt-slider">
+                          <div class="slide">
+                              <p class="text-desc">“My experience with Ester Raizy exceeded my expectations. I was amazed by how easy the mole removal procedure was. I received exceptional care and there’s absolutely no scar. It was so easy, I’d do it again!”</p>
+
+                              <p class="user">Berish Zeitman</p>
+                          </div>
+
+
+                          <div class="slide">
+                              <p class="text-desc">“My experience with Ester Raizy exceeded my expectations. I was amazed by how easy the mole removal procedure was. I received exceptional care and there’s absolutely no scar. It was so easy, I’d do it again!”</p>
+
+                              <p class="user">Berish Zeitman</p>
+                          </div>
+                      </div>
+                      <button class="btn-arrows btn-next" id="next"> 
+                          <img src="img/chevron-right.svg" alt="next">   
+                      </button>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- how it would feel end-->
+    <section>
+      <div class="section-transformation-wrappper">
+        <div class="container container-custom container-padding">
+          <div class="section-heading">
+            <h3>
+              Your transformation, your way
+            </h3>
+            <h4>
+              At ERA Plastic Surgery, we're changing the face of plastic surgery. Here is what will 
+              make your experience with us unique.
+            </h4>
+          </div>
+          <div class="transform-wrapper col-12">
+              <div class="transformation-division col-7">
+                <div class="trans-outer">
+                  <div class="heading-txt">
+                    <img src="img/circle-check.svg">
+                    <div class="txt-trans">Transparent Pricing</div>
+                  </div>
+                  <div class="trans-content">
+                    Our transparent and fair pricing helps you make an informed decision. We recognize emergencies aren’t planned for, which is why we offer flexible payment plans for emergency procedures.
+                  </div>
+                </div>
+                <div class="trans-outer">
+                  <div class="heading-txt">
+                    <img src="img/circle-check.svg">
+                    <div class="txt-trans">
+                      A Judgment-Free Zone
+                    </div>
+                  </div>
+                  <div class="trans-content">
+                    Skip the stigma. We offer confidential, natural results—so subtle, even your neighbor won't know. Discretion, 
+                    confidentiality, and respect are non-negotiables at ERA Plastic Surgery.
+                  </div>
+                </div>
+                <div class="trans-outer">
+                  <div class="heading-txt">
+                    <img src="img/circle-check.svg">
+                    <div class="txt-trans">Personal Choices, Kept Personal</div>
+                  </div>
+                  <div class="trans-content">
+                    Questioning a procedure? You're not alone. We're here for an honest chat about your options, whether it's a procedure or a different path.
+                     Because you should do what feels right for you.
+                  </div>
+                </div>
+                <div class="trans-outer">
+                  <div class="heading-txt">
+                    <img src="img/circle-check.svg">
+                    <div class="txt-trans">Expert guidance</div>
+                  </div>
+                  <div class="trans-content">
+                    Our lead provider, Ester Raizy Akerman, is highly respected in the field. With 17 years of experience and a genuine care for your well-being, your transformation is in the best hands.
+                  </div>
+                </div>
+              </div>
+              <div class="trans-img col-5">
+                <img src="img/bg-trans.png">
+              </div>
+          </div>
+           
         </div>
-
-        <div class="row">
-          <div class="col">
-            <div class="page-tt-slider text-center" id="home-tt-slider">
-              <div class="slide">
-                <p>
-                  “My experience with Ester Raizy exceeded my expectations. I
-                  was amazed by how easy the mole removal procedure was. I
-                  received exceptional care and there’s absolutely no scar. It
-                  was so easy, I’d do it again!”
-                </p>
-
-                <p class="user">Berish Zeitman</p>
+      </div>
+    </section>
+    <section class="consultation-outer-wrapper">
+      <div class="container container-custom container-padding">
+        <div class="consult-inner-wrapper col-12">
+          <div class="consult-image-wrapper col-4">
+            <img src="img/consult.png">
+          </div>
+          <div class="consult-content-wrapper col-8">
+              <h3>Want a no-obligation consultation?</h3>
+              <div class="content-sec">
+                Are you unsure about what services you need and their potential costs? We’ve made it simple.
+                <br/>
+                <br/>
+                Simply call us at (732) 730-7333 or send in a photo of the area you’d like to address, and we will tell you if
+                 and how we can help — no obligation whatsoever.
+                 <div class="sub-calls">
+                    <div class="outr-sub">
+                      <span class="calls-1">Call / text / Whatsapp :</span>
+                      <span class="num-call">(732) 730-7333</span>
+                    </div>
+                    <div class="outr-sub">
+                      <span class="calls-1">Email : </span>
+                      <span class="num-call">pic@eraplasticsurgery.com</span>
+                    </div>
+                 </div>
               </div>
-
-              <div class="slide">
-                <p>
-                  “My experience with Ester Raizy exceeded my expectations. I
-                  was amazed by how easy the mole removal procedure was. I
-                  received exceptional care and there’s absolutely no scar. It
-                  was so easy, I’d do it again!”
-                </p>
-
-                <p class="user">Berish Zeitman</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- how it would feel end-->
-
+    <section class="video-section">
+      <div class="container container-custom container-padding">
+        <div class="video-tumb-content">
+          <div class="video-thumbs">
+            <div class="thumb video-wrap" data-bs-toggle="modal" data-bs-target="#children-1">
+              <img src="img/video-thumb-01.jpg" alt="">
+              <button class="play-button">
+                <img src="img/play-sm.svg" alt="">
+              </button>
+            </div>
+             <div class="thumb video-wrap" data-bs-toggle="modal" data-bs-target="#children-2">
+              <img src="img/video-thumb-02.jpg" alt="">
+              <button class="play-button">
+                <img src="img/play-sm.svg" alt="">
+              </button>
+            </div>
+             <div class="thumb video-wrap" data-bs-toggle="modal" data-bs-target="#children-3">
+              <img src="img/video-thumb-03.jpg" alt="">
+              <button class="play-button">
+                <img src="img/play-sm.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="content-sm">
+            <div class="title-lg">If you can’t see it, was it ever there?</div>
+            <p>See examples of real injury patients—with minimal scarring thanks to ERA—in these videos from our #WhereWasIt campaign.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <section class="have-questions">
@@ -506,7 +623,7 @@
         <div class="row">
           <div class="col">
             <h2 class="heading title">Have questions? We have answers.</h2>
-            <p>
+            <p class="schedule-txt">
               Schedule your free consultation today and make your decision
               with complete confidence.
             </p>
@@ -573,6 +690,62 @@
     </section>
   </footer>
 </body>
+
+<!-- Modal children 1 -->
+<div class="modal fade vertical-modal" id="children-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <video controls="" loop="" autoplay="" muted="" playsinline="" width="100%">
+          <source src="videos/children-1.mp4" type="video/mp4">
+        </video>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal children 2 -->
+<div class="modal fade vertical-modal" id="children-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+   
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <video controls="" loop="" autoplay="" muted="" playsinline="" width="100%">
+          <source src="videos/children-2.mp4" type="video/mp4">
+        </video>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal children 3 -->
+<div class="modal fade vertical-modal" id="children-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+  
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <video controls="" loop="" autoplay="" muted="" playsinline="" width="100%">
+          <source src="videos/children-3.mp4" type="video/mp4">
+        </video>
+      </div>
+     
+    </div>
+  </div>
+</div>
 <!-- js -->
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

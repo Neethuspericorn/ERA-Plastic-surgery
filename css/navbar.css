@@ -5,10 +5,8 @@
   --light: #CCEBF6;
   --light-secondary: #E5F5FA;
   --text: #000000;
-  --textD: #000000;
   --border: #C4C4C4;
   --white: #ffffff;
-  --whiteD: #ffffff;
   --light_blue: #CCEBF6;
   --divider-line:#C4C4C4;
 }
@@ -83,8 +81,7 @@
 }
 .navbar .navbar-brand img {
   max-height: 50px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 @media screen and (max-width: 991px) {
   .navbar .navbar-collapse {
@@ -155,3 +152,5 @@
     background-color: var(--light);
   }
 }
+
+/*# sourceMappingURL=navbar.css.map */

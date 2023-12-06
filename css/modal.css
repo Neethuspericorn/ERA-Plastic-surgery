@@ -5,6 +5,123 @@
   --light: #CCEBF6;
   --light-secondary: #E5F5FA;
   --text: #000000;
+  --border: #C4C4C4;
+  --white: #ffffff;
+  --light_blue: #CCEBF6;
+  --divider-line:#C4C4C4;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Light.eot");
+  src: url("../fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Light.woff2") format("woff2"), url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.ttf") format("truetype"), url("../fonts/Gotham-Light.svg#Gotham-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Bold.eot");
+  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Book.eot");
+  src: url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book.woff2") format("woff2"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  /* heavy  */
+  font-family: "ChampionGothic";
+  src: url("../fonts/ChampionGothic-Heavyweight.eot");
+  src: local("../fonts/Champion Gothic Heavyweight"), local("ChampionGothic-Heavyweight"), url("../fonts/ChampionGothic-Heavyweight.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampionGothic-Heavyweight.woff2") format("woff2"), url("../fonts/ChampionGothic-Heavyweight.woff") format("woff"), url("../fonts/ChampionGothic-Heavyweight.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  /* normal - 400  */
+  font-family: "ChampionGothic";
+  src: url("../fonts/ChampionGothic-Middleweight.eot");
+  src: local("../fonts/Champion Gothic Middleweight"), local("ChampionGothic-Middleweight"), url("../fonts/ChampionGothic-Middleweight.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampionGothic-Middleweight.woff2") format("woff2"), url("../fonts/ChampionGothic-Middleweight.woff") format("woff"), url("../fonts/ChampionGothic-Middleweight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  /* titles  */
+  font-family: "ChampionGothic";
+  src: url("../fonts/ChampionGothic-Lightweight.eot");
+  src: local("../fonts/Champion Gothic Lightweight"), local("ChampionGothic-Lightweight"), url("../fonts/ChampionGothic-Lightweight.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampionGothic-Lightweight.woff2") format("woff2"), url("../fonts/ChampionGothic-Lightweight.woff") format("woff"), url("../fonts/ChampionGothic-Lightweight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+@media (min-width: 1199px) {
+  .video-modal .modal-dialog, .vertical-modal .modal-dialog {
+    max-width: 1000px;
+  }
+}
+.video-modal .modal-header, .vertical-modal .modal-header {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+.video-modal .modal-header .btn-close, .vertical-modal .modal-header .btn-close {
+  position: absolute;
+  right: -5px;
+  top: -8px;
+  background-color: var(--white);
+  opacity: 1;
+  z-index: 9;
+  border-radius: 50%;
+  background-size: 10px;
+}
+.video-modal .modal-content, .vertical-modal .modal-content {
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+}
+.video-modal video, .vertical-modal video {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 5px;
+}
+
+@media (min-width: 1199px) {
+  .vertical-modal .modal-dialog {
+    max-width: 25vw;
+  }
+}
+
+/*# sourceMappingURL=modal.css.map */
+
+:root {
+  --primary: #06518E;
+  --secondary: #2F96D0;
+  --ternary: #5FCBEC;
+  --light: #CCEBF6;
+  --light-secondary: #E5F5FA;
+  --text: #000000;
   --textD: #000000;
   --border: #C4C4C4;
   --white: #ffffff;
