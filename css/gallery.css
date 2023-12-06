@@ -117,7 +117,6 @@
   justify-content: flex-end;
   flex: 1;
   padding-bottom: 59px;
-  max-width: 400px;
 }
 @media (max-width: 1481px) {
   .banner.gallery-bnr .bnr-cont {
@@ -142,7 +141,7 @@
 .banner.gallery-bnr .bnr-cont .heading {
   font-size: 74px;
   line-height: 72px;
-  max-width: 400px;
+  max-width: 300px;
   font-family: "ChampionGothic", sans-serif;
 }
 @media (max-width: 1679px) {

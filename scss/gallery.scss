@@ -33,7 +33,6 @@
             justify-content: flex-end;
             flex: 1;
             padding-bottom: 59px;
-            max-width: 400px;
             @media ($sm-1481){
                 padding-bottom:40px;
             }
@@ -49,7 +48,7 @@
             .heading {
                 font-size: 74px;
                 line-height: 72px;
-                max-width: 400px;
+                max-width: 300px;
                 font-family: $title_font;
                 @media ($sm-1679){
                     font-size: 60px;
@@ -77,6 +76,9 @@
                 }
                 @media ($sm-579){
                     max-width: 55%;
+                }
+                &.providers{
+                    
                 }
             }
             .session-content{
