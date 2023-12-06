@@ -193,7 +193,7 @@ body small text:    14px = 0.875rem
     line-height: 24px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .session-content {
     font-size: 14px;
     line-height: 22px;
