@@ -112,6 +112,9 @@
         }
         &.padding-y{
             padding: 81px 0;
+            @media ($sm-1281){
+                padding: 45px 0;
+            }
             @media ($sm-767){
                 padding: 40px 30px;
             }
@@ -143,6 +146,10 @@
         background-size: cover;
         -ms-flex-negative: 0;
         flex-shrink: 0;
+        @media ($sm-1281){
+            max-width: 470px;
+            margin: 0 auto;
+        }
         @media ($sm-767){
             height: 300px;
             max-width: 436px;

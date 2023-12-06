@@ -199,6 +199,11 @@
 .full-width-wrap .content-area-lft.padding-y {
   padding: 81px 0;
 }
+@media (max-width: 1281px) {
+  .full-width-wrap .content-area-lft.padding-y {
+    padding: 45px 0;
+  }
+}
 @media (max-width: 767px) {
   .full-width-wrap .content-area-lft.padding-y {
     padding: 40px 30px;
@@ -235,6 +240,12 @@
   background: url(../img/EsterHeadshot.png) no-repeat center center;
   background-size: cover;
   flex-shrink: 0;
+}
+@media (max-width: 1281px) {
+  .full-width-wrap .img-hldr {
+    max-width: 470px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 767px) {
   .full-width-wrap .img-hldr {
