@@ -3,6 +3,12 @@
     background: linear-gradient(90deg, var(--light) 0%, var(--light_trans) 100%);
     padding-top: 80px;
     padding-bottom: 80px;
+    &.no-bg-slider{
+        background: #E5F5FA !important;
+        &::after{
+            display: none;
+        }
+    }
     .title-col{
         margin-bottom: 30px;
         .heading

@@ -115,8 +115,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  flex: 1;
   padding-bottom: 59px;
+  margin-right: 100px;
 }
 @media (max-width: 1481px) {
   .banner.gallery-bnr .bnr-cont {
@@ -139,11 +139,12 @@
   }
 }
 .banner.gallery-bnr .bnr-cont .heading {
-  font-size: 74px;
-  line-height: 72px;
-  max-width: 300px;
+  font-size: 60px;
+  line-height: 62px;
+  max-width: 690px;
   font-family: "ChampionGothic", sans-serif;
   margin-bottom: 25px;
+  flex-shrink: 0;
 }
 @media (max-width: 1679px) {
   .banner.gallery-bnr .bnr-cont .heading {
@@ -185,7 +186,7 @@
   }
 }
 .banner.gallery-bnr .bnr-cont .heading.providers {
-  max-width: 100%;
+  max-width: 690px;
 }
 @media (max-width: 1679px) {
   .banner.gallery-bnr .bnr-cont .heading.providers {
@@ -227,12 +228,58 @@
     max-width: 55%;
   }
 }
+.banner.gallery-bnr .bnr-cont .heading.contact {
+  max-width: 490px;
+}
+@media (max-width: 1679px) {
+  .banner.gallery-bnr .bnr-cont .heading.contact {
+    font-size: 60px;
+    line-height: 58px;
+    max-width: 520px;
+  }
+}
+@media (max-width: 1481px) {
+  .banner.gallery-bnr .bnr-cont .heading.contact {
+    font-size: 54px;
+    line-height: 62px;
+  }
+}
+@media (max-width: 1281px) {
+  .banner.gallery-bnr .bnr-cont .heading.contact {
+    font-size: 44px;
+    line-height: 52px;
+    max-width: 390px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner.gallery-bnr .bnr-cont .heading.contact {
+    font-size: 38px;
+    line-height: 44px;
+    max-width: 330px;
+  }
+}
+@media (max-width: 767px) {
+  .banner.gallery-bnr .bnr-cont .heading.contact {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    max-width: 200px;
+  }
+}
+@media (max-width: 579px) {
+  .banner.gallery-bnr .bnr-cont .heading.contact {
+    max-width: 55%;
+  }
+}
 .banner.gallery-bnr .bnr-cont .session-content {
   color: var(--text);
   max-width: 461px;
 }
 .banner.gallery-bnr .bnr-cont .session-content.providers {
   max-width: 461px;
+}
+.banner.gallery-bnr .bnr-cont .session-content.contact {
+  max-width: 395px;
 }
 .banner.gallery-bnr .pull-dwn-wrp {
   position: relative;
@@ -251,6 +298,9 @@
 .banner.gallery-bnr .pull-dwn-wrp img {
   max-width: 100%;
   max-height: 420px;
+}
+.banner .banner-wrp-sub {
+  display: flex;
 }
 
 .transformation-sliders {
@@ -525,6 +575,51 @@
 }
 .review-slide-wrp .btn-arrows {
   color: #A1A1A1;
+}
+
+.contact-wrapper {
+  display: flex;
+}
+.contact-wrapper .map-holder {
+  margin-right: 60px;
+}
+.contact-wrapper .address-holder {
+  padding: 45px 60px;
+}
+.contact-wrapper .address-holder .address-title {
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.contact-wrapper .address-holder .location-info {
+  color: #000;
+  font-family: "Gotham", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 316px;
+  margin-bottom: 30px;
+}
+.contact-wrapper .address-holder .location-info .direction-link {
+  color: var(--secondary);
+  display: block;
+  text-decoration: none;
+  font-family: "Gotham", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.contact-wrapper .address-holder .location-info .mail-link {
+  color: var(--text);
+  text-decoration: none;
+  font-family: "Gotham", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=gallery.css.map */

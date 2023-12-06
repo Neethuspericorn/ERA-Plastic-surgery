@@ -80,6 +80,12 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.section-page-tt-slider.no-bg-slider {
+  background: #E5F5FA !important;
+}
+.section-page-tt-slider.no-bg-slider::after {
+  display: none;
+}
 .section-page-tt-slider .title-col {
   margin-bottom: 30px;
 }
