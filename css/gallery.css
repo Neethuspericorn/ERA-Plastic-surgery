@@ -487,8 +487,7 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   margin-bottom: 60px;
 }
 .providers-info-wrp .provider-deatil-wrp .affiliation-blk .blks {
@@ -527,3 +526,5 @@
 .review-slide-wrp .btn-arrows {
   color: #A1A1A1;
 }
+
+/*# sourceMappingURL=gallery.css.map */
