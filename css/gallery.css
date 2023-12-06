@@ -84,6 +84,29 @@
   margin-bottom: 130px;
   padding-top: 94px;
 }
+@media (max-width: 1481px) {
+  .banner.gallery {
+    margin-bottom: 90px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 1281px) {
+  .banner.gallery {
+    margin-bottom: 90px;
+    padding-top: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .banner.gallery {
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 579px) {
+  .banner.gallery {
+    padding-top: 30px;
+  }
+}
 .banner.gallery .bnr-cont {
   display: flex;
   flex-direction: column;
@@ -92,13 +115,76 @@
   padding-bottom: 59px;
   max-width: 400px;
 }
+@media (max-width: 767px) {
+  .banner.gallery .bnr-cont {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 579px) {
+  .banner.gallery .bnr-cont {
+    padding-bottom: 10px;
+  }
+}
 .banner.gallery .bnr-cont .heading {
   font-size: 74px;
   line-height: 72px;
+  max-width: 400px;
+  font-family: "ChampionGothic", sans-serif;
+}
+@media (max-width: 1679px) {
+  .banner.gallery .bnr-cont .heading {
+    font-size: 60px;
+    line-height: 58px;
+  }
+}
+@media (max-width: 1481px) {
+  .banner.gallery .bnr-cont .heading {
+    font-size: 54px;
+    line-height: 62px;
+  }
+}
+@media (max-width: 1281px) {
+  .banner.gallery .bnr-cont .heading {
+    font-size: 44px;
+    line-height: 52px;
+    max-width: 370px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner.gallery .bnr-cont .heading {
+    font-size: 38px;
+    line-height: 44px;
+    max-width: 260px;
+  }
+}
+@media (max-width: 767px) {
+  .banner.gallery .bnr-cont .heading {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 579px) {
+  .banner.gallery .bnr-cont .heading {
+    max-width: 55%;
+  }
+}
+.banner.gallery .bnr-cont .session-content {
+  color: var(--text);
 }
 .banner.gallery .pull-dwn-wrp {
   position: relative;
   margin-bottom: -59px;
+}
+@media (max-width: 991px) {
+  .banner.gallery .pull-dwn-wrp {
+    margin-bottom: -40px;
+  }
+}
+@media (max-width: 579px) {
+  .banner.gallery .pull-dwn-wrp {
+    max-width: 200px;
+  }
 }
 .banner.gallery .pull-dwn-wrp img {
   max-width: 100%;
@@ -108,19 +194,113 @@
   width: 100%;
   padding: 60px 0;
 }
+@media (max-width: 1679px) {
+  .transformation-sliders {
+    padding: 40px 0;
+  }
+}
 .transformation-sliders .slide-img-wrp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 79px;
+}
+@media (max-width: 1679px) {
+  .transformation-sliders .slide-img-wrp {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1481px) {
+  .transformation-sliders .slide-img-wrp {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1281px) {
+  .transformation-sliders .slide-img-wrp {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .transformation-sliders .slide-img-wrp {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .transformation-sliders .slide-img-wrp {
+    padding: 0 22px;
+  }
+}
+@media (max-width: 579px) {
+  .transformation-sliders .slide-img-wrp {
+    padding: 0 30px;
+  }
 }
 .transformation-sliders .slide-img-wrp img {
   max-width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .transformation-sliders .slide-img-wrp img {
+    margin: 0;
+    width: 100%;
+  }
 }
 .transformation-sliders .slide-cont-wrp {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 0 67px;
+  flex: 1;
+}
+@media (max-width: 1679px) {
+  .transformation-sliders .slide-cont-wrp {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1481px) {
+  .transformation-sliders .slide-cont-wrp {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1281px) {
+  .transformation-sliders .slide-cont-wrp {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .transformation-sliders .slide-cont-wrp {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .transformation-sliders .slide-cont-wrp {
+    margin-top: 20px;
+    padding: 0 22px;
+  }
+}
+@media (max-width: 579px) {
+  .transformation-sliders .slide-cont-wrp {
+    padding: 0 30px;
+    margin-top: 20px;
+  }
+}
+.transformation-sliders .slide-cont-wrp .session-content {
+  max-width: 359px;
+  color: var(--text);
+}
+.transformation-sliders .slide-cont-wrp .inner-title {
+  margin-bottom: 16px;
+}
+.transformation-sliders .slick-next {
+  right: 0px;
 }
 .transformation-sliders .slick-next::before {
-  content: "";
+  content: "\f138";
+  color: var(--primary);
+  font-family: "Fontawesome";
+}
+.transformation-sliders .slick-prev {
+  left: 0px;
+}
+.transformation-sliders .slick-prev::before {
+  content: "\f137";
+  color: var(--primary);
+  font-family: "Fontawesome";
 }
