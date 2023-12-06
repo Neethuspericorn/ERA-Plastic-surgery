@@ -1,0 +1,71 @@
+@import 'partials';
+.video-section{
+    margin: 81px 0;
+    .title-lg{
+        font-family: $title_font;
+        margin-bottom: 81px;
+        text-align: center;
+        color: var(--primary);
+        font-size: 55px;
+        line-height: 62px;
+        font-weight: 275;
+    }
+    p{
+        color: var(--text);
+        font-size: 16px;
+       }
+}
+   .video-tumb-content{
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+    .content-sm{
+        .title-lg{
+            margin-bottom: 17px;
+            text-align: left;
+            font-size: 48px;
+            line-height: 53px;
+        }
+    }
+    .video-thumbs{
+        display: flex;
+        column-gap: 17px;
+        .thumb{
+          width: 253px;
+          height: 253px;
+          border-radius: 10px;
+          position: relative;
+          .play-button{
+        //   margin-top: 15px;
+        img{
+            width: 33px;
+        }
+
+          }
+          img{
+            width: 100%;
+          }
+
+        }
+    }
+   }
+
+   .video-wrap{
+    position: relative;
+    display: grid;
+    place-items: center;
+    cursor: pointer; 
+    .play-button{
+        position: absolute;
+        background-color: transparent;
+        border: 0;
+        padding:0 ;
+        img{
+            width: 69px;
+        }
+     }
+   }
+
+
+
+
