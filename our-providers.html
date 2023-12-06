@@ -1,285 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERA Template - Homepage</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/d596103ec1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap 5.2.3 css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- slider style -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/slider-testimonial.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ERA Template - Homepage</title>
-  <!-- fontawesome -->
-  <script src="https://kit.fontawesome.com/d596103ec1.js" crossorigin="anonymous"></script>
-  <!-- bootstrap 5.2.3 css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css"
-    integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- slider style -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href="css/common.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/banner.css" />
-  <link rel="stylesheet" href="css/home.css" />
-  <link rel="stylesheet" href="css/slider-testimonial.css" />
-  <link rel="stylesheet" href="css/gallery.css">
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container container-custom container-padding">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.svg" alt="era" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our Providers</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Services
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Anti-aging Treatments</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Laser Hair Removal</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Advanced Laser Therapies</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Scar & Blemish Treatments</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Ear Reshaping & Repair</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Infant and Newborn Care</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Wound Care & Stitches</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Client Stories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link nav-link-btn btn btn-secondary" aria-current="page" href="#">Get in touch</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="page-wrap">
-    <section class="banner gallery-bnr">
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
         <div class="container container-custom container-padding">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 d-flex">
-                    <div class="bnr-cont gallery">
-                        <h2 class="heading">Meet the experts behind your transformation</h2>
-                        <p class="session-content">Discover the dedicated experts behind ERA's standout care. Passionate about your well-being, we’re committed to answering your questions and easing your concerns, empowering you to make decisions with confidence.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="pull-dwn-wrp">
-                        <img src="img/provider-bnr-img.png" alt="banner image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="transformation-sliders">
-        <div class="container container-custom container-padding">
-            <div class="row g-0 gallery-margin">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="tranform-slide">
-                        <div>
-                            <div class="slide-img-wrp">
-                                <img src="img/anti-aging.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide-img-wrp">
-                                <img src="img/anti-aging.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide-img-wrp">
-                                <img src="img/anti-aging.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 d-flex">
-                    <div class="slide-cont-wrp">
-                        <h5 class="inner-title">Anti-Aging Treatments</h5>
-                        <p class="session-content">
-                            Explore the subtle art of anti-aging in our curated gallery featuring Botox, injectables, and fillers.
-                        </p>
-                        <div class="warning-blk">
-                            <div class="warn-icon">
-                                <i class="fa-solid fa-exclamation"></i>
-                            </div>
-                            <div class="warn-content">
-                                <div class="title">Content Warning:</div>
-                                <div class="desc">
-                                    Graphic Injuries Depicted
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-0 gallery-margin">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="tranform-slide">
-                        <div>
-                            <div class="slide-img-wrp">
-                                <img src="img/anti-aging.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide-img-wrp">
-                                <img src="img/anti-aging.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide-img-wrp">
-                                <img src="img/anti-aging.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 d-flex">
-                    <div class="slide-cont-wrp">
-                        <h5 class="inner-title">Anti-Aging Treatments</h5>
-                        <p class="session-content">
-                            Explore the subtle art of anti-aging in our curated gallery featuring Botox, injectables, and fillers.
-                        </p>
-                        <div class="warning-blk">
-                            <div class="warn-icon">
-                                <i class="fa-solid fa-exclamation"></i>
-                            </div>
-                            <div class="warn-content">
-                                <div class="title">Content Warning:</div>
-                                <div class="desc">
-                                    Graphic Injuries Depicted
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <section class="have-questions">
-      <div class="container container-custom container-padding">
-        <div class="row">
-          <div class="col">
-            <h2 class="heading title">Have questions? We have answers.</h2>
-            <p class="schedule-txt">
-              Schedule your free consultation today and make your decision
-              with complete confidence.
-            </p>
-            <a href="#" class="btn btn-white">Get in touch</a>
-          </div>
-        </div>
-      </div>
-    </section>
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.svg" alt="era" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Providers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Anti-aging Treatments</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Laser Hair Removal</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Advanced Laser Therapies</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Scar & Blemish Treatments</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ear Reshaping & Repair</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Infant and Newborn Care</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Wound Care & Stitches</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Client Stories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
 
-    <section class="footer-info">
-      <div class="container container-custom container-padding">
-        <div class="row">
-          <div class="col col-footer-logo">
-            <a href="#" class="footer-logo">
-              <img src="img/era-logo-names.svg" alt="logo" />
-            </a>
-          </div>
-          <div class="col col-footer-menu">
-            <ul class="footer-menu">
-              <li>
-                <a href="#" class="footer-link">Home</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">About</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Our Providers</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Client Stories</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Contact Us</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-btn btn btn-secondary"
+                  aria-current="page"
+                  href="#"
+                  >Get in touch</a
+                >
               </li>
             </ul>
           </div>
-          <div class="col col-footer-info">
-            <div class="contact-info">
-              <p>(732) 730-7333</p>
-              <p>email@email.com</p>
-              <p>
-                1999 Cedar Bridge AveSuite 1B <br />
-                Lakewood, NJ 08701
-              </p>
-
-              <ul class="social-links">
-                <li>
-                  <a href="#"><img src="img/icon-insta.svg" alt="insta" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/icon-whastapp.svg" alt="wa" /></a>
-                </li>
-              </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-wrap">
+      <section class="banner gallery-bnr">
+        <div class="container container-custom container-padding">
+          <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-6 d-flex">
+              <div class="bnr-cont">
+                <h2 class="heading providers">
+                  Meet the experts behind your transformation
+                </h2>
+                <p class="session-content providers">
+                  Discover the dedicated experts behind ERA's standout care.
+                  Passionate about your well-being, we’re committed to answering
+                  your questions and easing your concerns, empowering you to
+                  make decisions with confidence.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col col-footer-cta">
-            <div class="footer-cta">
-              <h4 class="title">Ready to take the next step?</h4>
-              <a href="#" class="btn btn-secondary">Get in touch</a>
+            <div class="col-lg-5 col-md-5 col-sm-6">
+              <div class="pull-dwn-wrp">
+                <img src="img/provider-bnr-img.png" alt="banner image" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </footer>
-</body>
-<!-- js -->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<!-- bootstrap js  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.bundle.min.js"
-  integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      </section>
+      <section class="transformation-sliders">
+        <div class="container container-custom container-padding">
+          <div class="providers-info-wrp">
+            <div class="provider-pic">
+              <img src="img/provider-ester.png" alt="provider img" />
+            </div>
+            <div class="provider-deatil-wrp">
+              <div class="provider-highlight">
+                <h5 class="inner-title">Ester Raizy Akerman, PA-C</h5>
+                <div class="provider-title">Lead practitioner</div>
+                <div class="watch-video-link">
+                  <span class="play-icon"
+                    ><i class="fa-solid fa-play"></i
+                  ></span>
+                  WATCH Video: MEET ESTER RAIZY
+                </div>
+              </div>
+              <div class="provider-bio">
+                <p>For over 35 years, Dr. Rodney Green has been at the forefront of plastic surgery in the Cleveland area. Renowned for his in-depth expertise, he has proficiently executed a wide array of cosmetic and reconstructive procedures, becoming especially known for pioneering interventions like calf augmentation in the Cleveland area..
+                </p>
+                <p>
+                    At the core of Dr. Green's medical philosophy is an unwavering commitment to his clients. He believes in the ethos of attentive listening, ensuring each patient receives tailored care aligned with the most advanced surgical techniques available. This dedication isn't confined to the surgical suite; in exceptional circumstances, Dr. Green has been known to make post-operative house calls, showcasing his above-and-beyond approach to patient care
+                </p>
+                <p>Dr. Green was an early advocate of liposuction and fat grafting techniques. Over the years, he has adeptly applied these procedures to various parts of the body, from the face and breasts to legs. His expertise in the Brazilian Buttock Lift (BBL) has seen a surge in patients, many of whom approach him through word-of-mouth recommendations. Additionally, he holds a distinct reputation for revising breast implant surgeries, addressing both aesthetic and medical concerns with precision.
+                </p>
+                <p>In addition to his vast cosmetic surgery expertise, Dr. Green is distinguished in the domain of hand surgery, possessing a Certificate of Additional Qualification (CAQ) in this area. His proficiency in procedures like endoscopic carpal tunnel surgery is a testament to his diverse skill set.</p>
+                <p>Certified by the American Board of Plastic Surgery, Dr. Green's memberships with prestigious institutions like the American Society of Plastic Surgeons (ASPS), the American Society for Aesthetic Plastic Surgery (ASAPS), and his fellowship with the American College of Surgeons (FACS), stand testament to his unparalleled competence in the field.</p>
+              </div>
+              <div class="certification-title">
+                Her expertise is backed by:
+              </div>
+              <div class="affiliation-blk">
+                <div class="blks">
+                  <img src="img/affil-4.png" alt="" />
+                </div>
+                <div class="blks">
+                  <img src="img/affil-5.png" alt="" />
+                </div>
+              </div>
+              <div class="certification-title mb-0">
+                What clients say about Ester Raizy Ackerman
+              </div>
+              <div class="review-slide-wrp">
+                <div class="page-tt-slider text-center">
+                    <button class="btn-arrows btn-prev" id="prev"> 
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="tt-slider"  id="home-tt-slider">
+                        <div class="slide">
+                            <p class="text-desc">“Ester Raizy is above and beyond other providers — her repairs are exceptional. Our office has multiple providers, and we seem to refer to her more than anyone else”</p>
 
-<!-- custom js  -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/main.js"></script>
+                            <p class="user">Dr. Zyskind</p>
+                        </div>
 
+
+                        <div class="slide">
+                            <p class="text-desc">“Ester Raizy is above and beyond other providers — her repairs are exceptional. Our office has multiple providers, and we seem to refer to her more than anyone else”</p>
+
+                            <p class="user">Dr. Zyskind</p>
+                        </div>
+
+                        <div class="slide">
+                            <p class="text-desc">“Ester Raizy is above and beyond other providers — her repairs are exceptional. Our office has multiple providers, and we seem to refer to her more than anyone else”</p>
+
+                            <p class="user">Dr. Zyskind</p>
+                        </div>
+                    </div>
+                    <button class="btn-arrows btn-next" id="next"> 
+                        <i class="fa-solid fa-chevron-right"></i> 
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="providers-info-wrp">
+            <div class="provider-pic">
+              <img src="img/rodner-green.png" alt="provider img" />
+            </div>
+            <div class="provider-deatil-wrp">
+              <div class="provider-highlight">
+                <h5 class="inner-title">Dr. Rodney Green</h5>
+                <div class="provider-title">Owner and practitioner</div>
+              </div>
+              <div class="provider-bio">
+                <p>
+                  Ester Raizy is a dedicated and skilled medical professional
+                  specializing in plastic surgery, with over 13 years of
+                  experience in the field. She began her educational journey at
+                  Touro College as an undergrad (2002-2004) and later attended
+                  Long Island University, where she graduated from their PA
+                  program in 2006.
+                </p>
+                <p>
+                  Ester Raizy's diverse background in healthcare started with
+                  practicing pediatrics and dermatology before immersing herself
+                  into the world of plastic surgery. She honed her craft under
+                  the mentorship of renowned plastic surgeon Ari Fleisher (of
+                  blessed memory) in Brooklyn. She now collaborates with Dr.
+                  Green, a pillar of excellence in the plastic surgery community
+                  with over 35 years of distinguished experience in Cleveland.
+                </p>
+                <p>
+                  Having a naturally creative spirit and an adeptness with her
+                  hands, Ester was inspired to venture into plastic surgery
+                  during her surgery and ER rotations in PA school. Observers
+                  would often commend her stitching skills, suggesting she
+                  explore the field of plastics — and that's precisely what she
+                  did.
+                </p>
+                <p>
+                  For Ester, patient care is paramount. She places a strong
+                  emphasis on ensuring both the patient and their guardians are
+                  well-informed, comfortable, and, above all, cared for.
+                  Integrity is the bedrock of her practice; she believes in
+                  always being truthful to her patients, valuing their trust
+                  above all.
+                </p>
+                <p>
+                  Professionally, Ester finds immense satisfaction in her work,
+                  particularly in the happiness of her patients. She counts
+                  every satisfied patient as a major accomplishment, taking
+                  pride in having saved countless fingers throughout her career.
+                  Patient feedback and commendations from her peers keep her
+                  motivated. The fact that patients travel specifically to Ester
+                  Raizy for treatment is a testament to her reputation in the
+                  medical community.
+                </p>
+                <p>
+                  Ester remains at the forefront of her field through continuous
+                  learning. She holds an NCCPA certification and frequently
+                  collaborates, observes, and learns from fellow surgeons to
+                  keep herself updated with the latest techniques and
+                  innovations.
+                </p>
+                <p>
+                  Away from the office, Ester channels her dexterity into her
+                  hobbies. She is passionate about activities involving her
+                  hands, such as cooking, baking, and painting. Additionally,
+                  she enjoys the great outdoors, often finding herself on hiking
+                  trails to rejuvenate and relax.
+                </p>
+              </div>
+              <div class="certification-title">
+                Dr. Green is a proud member of:
+              </div>
+              <div class="affiliation-blk mb-0">
+                <div class="blks">
+                  <img src="img/affil-1.png" alt="" />
+                </div>
+                <div class="blks">
+                  <img src="img/affil-2.png" alt="" />
+                </div>
+                <div class="blks">
+                    <img src="img/affil-3.png" alt="" />
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="have-questions">
+        <div class="container container-custom container-padding">
+          <div class="row">
+            <div class="col">
+              <h2 class="heading title">Have questions? We have answers.</h2>
+              <p class="schedule-txt">
+                Schedule your free consultation today and make your decision
+                with complete confidence.
+              </p>
+              <a href="#" class="btn btn-white">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-info">
+        <div class="container container-custom container-padding">
+          <div class="row">
+            <div class="col col-footer-logo">
+              <a href="#" class="footer-logo">
+                <img src="img/era-logo-names.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="col col-footer-menu">
+              <ul class="footer-menu">
+                <li>
+                  <a href="#" class="footer-link">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">About</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Our Providers</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Client Stories</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col col-footer-info">
+              <div class="contact-info">
+                <p>(732) 730-7333</p>
+                <p>email@email.com</p>
+                <p>
+                  1999 Cedar Bridge AveSuite 1B <br />
+                  Lakewood, NJ 08701
+                </p>
+
+                <ul class="social-links">
+                  <li>
+                    <a href="#"><img src="img/icon-insta.svg" alt="insta" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/icon-whastapp.svg" alt="wa" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col col-footer-cta">
+              <div class="footer-cta">
+                <h4 class="title">Ready to take the next step?</h4>
+                <a href="#" class="btn btn-secondary">Get in touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <!-- js -->
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <!-- bootstrap js  -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <!-- custom js  -->
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="js/main.js"></script>
 </html>
