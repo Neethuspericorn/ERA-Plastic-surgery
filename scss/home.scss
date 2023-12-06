@@ -248,6 +248,7 @@
             li{
                 display: flex;
                 position: relative;
+                margin-bottom: 7px;
                 .count{
                     font-size: 90px;
                     color: var(--ternary);
@@ -255,6 +256,7 @@
                     line-height: 58px;
                     font-family: $title_font;
                     margin-right: 16px;
+                    min-width: 30px;
                     @media ($sm-1679){
                         font-size: 70px;
                     }
