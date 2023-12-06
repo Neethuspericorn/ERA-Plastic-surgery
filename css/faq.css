@@ -77,35 +77,43 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
-.section-page-tt-slider {
-  background: linear-gradient(90deg, #5FCBEC 0%, rgba(229, 245, 250, 0.8) 100%);
-  padding-top: 80px;
-  padding-bottom: 80px;
+.faq-area {
+  margin: 70px 0;
 }
-.section-page-tt-slider .title-col {
-  margin-bottom: 30px;
+.faq-area .title-lg {
+  margin-bottom: 60px;
 }
-.section-page-tt-slider .title-col .subtitle {
-  max-width: 720px;
-  margin: auto;
-  font-size: 1.25rem;
-}
-
-.page-tt-slider {
-  background-color: var(--white);
+.faq-area .inner-arrow-list {
   max-width: 590px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
-  border-radius: 10px;
+  margin: 0 auto 70px;
 }
-.page-tt-slider .slide .user {
-  color: var(--secondary);
-  text-transform: uppercase;
+.faq-area .inner-arrow-list li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.faq-area .inner-arrow-list li .link {
   font-weight: 700;
-  margin-bottom: 0;
+  font-size: 16px;
+}
+.faq-area .inner-arrow-list li .link::after {
+  content: "+";
+}
+.faq-area .inner-arrow-list li .link:not(.collapsed)::after {
+  content: "\f068";
+  transform: none;
+}
+.faq-area .inner-arrow-list .session-content {
+  font-weight: 400;
+  font-size: 16px;
+}
+.faq-area .box-title {
+  background-color: var(--light-secondary);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  min-height: 57px;
 }

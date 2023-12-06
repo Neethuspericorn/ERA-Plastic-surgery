@@ -77,35 +77,65 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
-.section-page-tt-slider {
-  background: linear-gradient(90deg, #5FCBEC 0%, rgba(229, 245, 250, 0.8) 100%);
-  padding-top: 80px;
-  padding-bottom: 80px;
+.video-section {
+  margin: 81px 0;
 }
-.section-page-tt-slider .title-col {
-  margin-bottom: 30px;
+.video-section .title-lg {
+  font-family: "ChampionGothic", sans-serif;
+  margin-bottom: 81px;
+  text-align: center;
+  color: var(--primary);
+  font-size: 55px;
+  line-height: 62px;
+  font-weight: 275;
 }
-.section-page-tt-slider .title-col .subtitle {
-  max-width: 720px;
-  margin: auto;
-  font-size: 1.25rem;
+.video-section p {
+  color: var(--text);
+  font-size: 16px;
 }
 
-.page-tt-slider {
-  background-color: var(--white);
-  max-width: 590px;
+.video-tumb-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
-  border-radius: 10px;
+  -moz-column-gap: 44px;
+       column-gap: 44px;
 }
-.page-tt-slider .slide .user {
-  color: var(--secondary);
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 0;
+.video-tumb-content .content-sm .title-lg {
+  margin-bottom: 17px;
+  text-align: left;
+  font-size: 48px;
+  line-height: 53px;
+}
+.video-tumb-content .video-thumbs {
+  display: flex;
+  -moz-column-gap: 17px;
+       column-gap: 17px;
+}
+.video-tumb-content .video-thumbs .thumb {
+  width: 253px;
+  height: 253px;
+  border-radius: 10px;
+  position: relative;
+}
+.video-tumb-content .video-thumbs .thumb .play-button img {
+  width: 33px;
+}
+.video-tumb-content .video-thumbs .thumb img {
+  width: 100%;
+}
+
+.video-wrap {
+  position: relative;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.video-wrap .play-button {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+.video-wrap .play-button img {
+  width: 69px;
 }

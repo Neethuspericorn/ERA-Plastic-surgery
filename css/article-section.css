@@ -77,35 +77,128 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
-.section-page-tt-slider {
-  background: linear-gradient(90deg, #5FCBEC 0%, rgba(229, 245, 250, 0.8) 100%);
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.section-page-tt-slider .title-col {
-  margin-bottom: 30px;
-}
-.section-page-tt-slider .title-col .subtitle {
-  max-width: 720px;
-  margin: auto;
-  font-size: 1.25rem;
+.container-padding-lg {
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
-.page-tt-slider {
-  background-color: var(--white);
-  max-width: 590px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.article-section {
+  margin: 81px 0;
+}
+.article-section .title-lg {
+  font-family: "ChampionGothic", sans-serif;
+  margin-bottom: 81px;
+  text-align: center;
+  color: var(--primary);
+  font-size: 55px;
+  line-height: 62px;
+  font-weight: 275;
+}
+.article-section .image-content-otr .pdg-lft {
+  padding-left: 50px;
+}
+.article-section .image-content-otr .pdg-rgt {
+  padding-right: 50px;
+}
+.article-section .image-content-otr .img-wrap img {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
+}
+.article-section .image-content-otr .content-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-section .image-content-otr .content-wrap p {
+  font-size: 16px;
+}
+.article-section .image-content-otr .content-wrap .title-md {
+  color: var(--primary);
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: "Gotham", sans-serif;
+  margin-bottom: 13px;
+}
+.article-section .image-content-otr .content-wrap p {
+  color: var(--text);
+}
+.article-section .image-content-otr .content-wrap .more-btn {
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--secondary);
+}
+.article-section .image-content-otr .content-wrap .more-btn span img {
+  width: 40px;
+}
+.article-section .image-content-otr .content-wrap .more-btn .arrow {
+  border: solid var(--secondary);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.article-section.bg-fill {
+  background-color: #E5F5FA;
+  padding-top: 52px;
+  padding-bottom: 59px;
+}
+.article-section .content-sm {
+  width: 100%;
+}
+
+.image-split-area {
+  margin-top: 98px;
+  margin-bottom: 120px;
+}
+.image-split-area .content-wrap {
+  justify-content: flex-start !important;
+  padding-top: 60px;
+}
+.image-split-area .content-wrap .title-lg {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.image-split-area .image-content-otr .img-wrap img {
+  max-width: 495px;
+}
+
+.article-section .article-cvr {
+  display: flex;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  padding-right: 50px;
+  background-color: var(--light-secondary);
+  overflow: hidden;
   border-radius: 10px;
 }
-.page-tt-slider .slide .user {
-  color: var(--secondary);
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 0;
+.article-section .article-cvr .article-img {
+  max-width: 480px;
+  width: 100%;
+  background: url(../img/image-01.jpg) no-repeat center center;
+  background-size: cover;
+  flex-shrink: 0;
+}
+.article-section .article-cvr .article-img img {
+  width: 100%;
+}
+.article-section .article-cvr .article-content {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.article-section .article-cvr .article-content .lg-title {
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 275;
+  color: var(--primary);
+  font-family: "ChampionGothic", sans-serif;
+}
+.article-section .article-cvr .article-content .btn-otr {
+  margin-top: 30px;
+}
+
+.mt {
+  margin-top: 5px;
 }

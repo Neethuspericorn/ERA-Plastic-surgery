@@ -77,35 +77,28 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
-.section-page-tt-slider {
-  background: linear-gradient(90deg, #5FCBEC 0%, rgba(229, 245, 250, 0.8) 100%);
-  padding-top: 80px;
-  padding-bottom: 80px;
+.banner.gallery {
+  background-color: var(--light-secondary);
+  flex: 1;
+  position: relative;
+  margin-bottom: 130px;
+  padding-top: 94px;
 }
-.section-page-tt-slider .title-col {
-  margin-bottom: 30px;
-}
-.section-page-tt-slider .title-col .subtitle {
-  max-width: 720px;
-  margin: auto;
-  font-size: 1.25rem;
-}
-
-.page-tt-slider {
-  background-color: var(--white);
-  max-width: 590px;
+.banner.gallery .bnr-cont {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
-  border-radius: 10px;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  padding-bottom: 59px;
 }
-.page-tt-slider .slide .user {
-  color: var(--secondary);
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 0;
+.banner.gallery .bnr-cont .heading {
+  font-size: 74px;
+  line-height: 72px;
+}
+.banner.gallery .pull-dwn-wrp {
+  position: relative;
+  margin-bottom: -59px;
+}
+.banner.gallery .pull-dwn-wrp img {
+  max-width: 100%;
 }

@@ -1,0 +1,28 @@
+@import 'partials';
+.banner{
+    &.gallery{
+        background-color: var(--light-secondary);
+        flex: 1;
+        position: relative;
+        margin-bottom: 130px;
+        padding-top: 94px;
+        .bnr-cont{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            flex: 1;
+            padding-bottom: 59px;
+            .heading{
+                font-size: 74px;
+                line-height: 72px;
+            }
+        }
+        .pull-dwn-wrp{
+            position: relative;
+            margin-bottom: -59px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
