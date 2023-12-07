@@ -351,7 +351,6 @@
 @media (max-width: 767px) {
   .banner.gallery-bnr .pull-dwn-wrp {
     max-width: 100%;
-    max-height: -moz-fit-content;
     max-height: fit-content;
     margin-bottom: 20px;
   }
@@ -644,8 +643,7 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   margin-bottom: 60px;
 }
 .providers-info-wrp .provider-deatil-wrp .affiliation-blk .blks {
@@ -852,9 +850,6 @@
   line-height: 20px;
   height: 50px;
 }
-.schedule-consult-wrp .consultation-form .form-control::-moz-placeholder, .schedule-consult-wrp .consultation-form .form-select::-moz-placeholder {
-  color: var(--primary);
-}
 .schedule-consult-wrp .consultation-form .form-control::placeholder, .schedule-consult-wrp .consultation-form .form-select::placeholder {
   color: var(--primary);
 }
@@ -890,3 +885,5 @@
 .schedule-consult-wrp .consultation-form .btn-secondary {
   align-self: center;
 }
+
+/*# sourceMappingURL=gallery.css.map */

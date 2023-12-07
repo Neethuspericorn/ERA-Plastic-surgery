@@ -104,11 +104,9 @@
 }
 .home-banner .banner-slider .banner-img img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   height: 100%;
-  -o-object-position: right;
-     object-position: right;
+  object-position: right;
 }
 @media (max-width: 767px) {
   .home-banner .banner-slider .banner-img {
@@ -131,8 +129,7 @@
 }
 .home-banner .banner-slider .banner-img.mobile img {
   height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .home-banner .banner-slider .banner-desc {
   position: absolute;
@@ -282,3 +279,5 @@
     display: block;
   }
 }
+
+/*# sourceMappingURL=banner.css.map */

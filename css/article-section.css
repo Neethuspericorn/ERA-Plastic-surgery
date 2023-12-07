@@ -197,6 +197,7 @@
 
 .article-section .article-cvr {
   display: flex;
+  column-gap: 100px;
   -moz-column-gap: 100px;
        column-gap: 100px;
   padding-right: 50px;
@@ -341,6 +342,7 @@
     margin-top: 30px;
   }
   .article-section .article-cvr {
+    column-gap: 70px;
     -moz-column-gap: 70px;
          column-gap: 70px;
   }
@@ -355,6 +357,7 @@
     margin-bottom: 10px;
   }
   .article-section .article-cvr {
+    column-gap: 50px;
     -moz-column-gap: 50px;
          column-gap: 50px;
   }
@@ -368,3 +371,5 @@
     margin-top: 20px;
   }
 }
+
+/*# sourceMappingURL=article-section.css.map */

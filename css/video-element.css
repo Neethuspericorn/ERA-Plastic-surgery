@@ -95,6 +95,8 @@
 .video-tumb-content {
   display: flex;
   align-items: center;
+  column-gap: 44px;
+  align-items: center;
   -moz-column-gap: 44px;
        column-gap: 44px;
 }
@@ -106,6 +108,7 @@
 }
 .video-tumb-content .video-thumbs {
   display: flex;
+  column-gap: 17px;
   -moz-column-gap: 17px;
        column-gap: 17px;
 }
@@ -158,3 +161,5 @@
     font-size: 14px;
   }
 }
+
+/*# sourceMappingURL=video-element.css.map */

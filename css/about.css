@@ -83,6 +83,8 @@
 }
 .meet-faces-cover .box-flex {
   display: flex;
+  column-gap: 100px;
+  justify-content: center;
   -moz-column-gap: 100px;
        column-gap: 100px;
   justify-content: center;
