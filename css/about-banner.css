@@ -140,7 +140,8 @@
   position: relative;
   display: flex;
   margin-top: auto;
-  margin-left: 10px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .banner-area .services-bnr-img img {
   max-width: 100%;
@@ -167,6 +168,7 @@
 
 .banner-area .services-bnr-img {
   position: relative;
+  justify-content: flex-end;
   z-index: 99;
 }
 .banner-area .services-bnr-img .video-wrap {
@@ -176,19 +178,28 @@
 @media (max-width: 1679px) {
   .banner-area .bnr-content-cvr .page-title {
     margin-bottom: 20px;
-    font-size: 47px;
-    line-height: 57px;
+    font-size: 63px;
+    line-height: 65px;
   }
   .banner-area .bnr-content-cvr p {
     margin-bottom: 30px;
     font-size: 14px;
   }
   .banner-area .services-bnr-img img {
-    max-width: 800px;
-    width: 600px;
+    max-width: 600px;
+    width: 510px;
   }
   .banner-area {
     min-height: 470px;
+  }
+  .banner-area .video-wrap .play-button img {
+    width: 50px;
+  }
+}
+@media (max-width: 1442px) {
+  .banner-area .services-bnr-img img {
+    max-width: 600px;
+    width: 450px;
   }
 }
 @media (max-width: 1281px) {
@@ -199,10 +210,91 @@
   }
   .banner-area .services-bnr-img img {
     max-width: 800px;
-    width: 490px;
+    width: 440px;
   }
   .banner-area {
     min-height: 420px;
+  }
+  .banner-area .bnr-content-cvr .page-title br {
+    display: none;
+  }
+  .banner-area .services-bnr-img {
+    margin-top: 60px;
+  }
+  .banner-area .bnr-content-cvr .page-title {
+    font-size: 45px;
+    line-height: 46px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-area .bnr-content-cvr .page-title {
+    font-size: 39px;
+    line-height: 42px;
+  }
+  .banner-area {
+    min-height: 388px;
+  }
+  .banner-area .services-bnr-img img {
+    max-width: 100%;
+    width: 400px;
+  }
+}
+@media (max-width: 1023px) {
+  .banner-area {
+    min-height: 338px;
+  }
+  .banner-area .services-bnr-img img {
+    width: 350px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-area {
+    min-height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-area .banner-cvr {
+    flex-direction: column;
+  }
+  .banner-area .bnr-content-cvr {
+    width: 100%;
+  }
+  .banner-area {
+    overflow: visible !important;
+    display: block;
+  }
+  .banner-area .services-bnr-img {
+    justify-content: center;
+    margin-top: 0;
+  }
+  .banner-area .services-bnr-img img {
+    max-width: 100%;
+    width: 80%;
+  }
+  .banner-area .bnr-content-cvr .page-title {
+    margin: 35px 0;
+  }
+  .banner-area .bnr-content-cvr .page-title {
+    font-size: 35px;
+    line-height: 37px;
+  }
+  .content-main .title-lg {
+    margin-bottom: 15px !important;
+  }
+}
+@media (max-width: 579px) {
+  .banner-area .bnr-content-cvr .page-title br {
+    display: block;
+  }
+  .banner-area .services-bnr-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 579px) {
+  .banner-area .bnr-content-cvr .page-title {
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 35px;
   }
 }
 

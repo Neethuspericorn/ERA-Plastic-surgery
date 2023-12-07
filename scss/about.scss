@@ -17,6 +17,7 @@
             margin: 0 auto;
             border-radius: 10px;
             overflow: hidden;
+          display: flex;
           }
         }
         .name-rol{
@@ -102,10 +103,10 @@
               line-height: 27px;
               font-family: $primary_font;
               margin-bottom: 10px;
-                .para-li{
-                  font-size: 16px;
-                }
-             }
+            }
+            .para-li{
+              font-size: 16px;
+            }
           }
           .light-cont{
             background: var(--light-secondary);
@@ -121,4 +122,128 @@
           }
         }
       }
+}
+@media(max-width:1679px){
+  
+  .content-main {
+    margin-top: 50px !important;
+    .image-wrap{
+      max-width: 450px;
+      
+    }
+  }
+  .list-area-large .list-items-lg li .article-list-atrea {
+    padding-left: 45px;
+  }
+  .list-area-large .list-items-lg li .article-list-atrea .para-li {
+    font-size: 14px;
+  }
+  .list-area-large .list-items-lg li .article-list-atrea .title-li {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .list-area-large .list-items-lg li{
+    padding-bottom: 30px;
+    margin-top: 30px;
+  }
+  .list-area-large .list-items-lg li::before{
+    font-size: 70px;
+  }
+  .list-area-large .list-items-lg li .light-cont{
+    padding: 20px;
+  }
+  .meet-faces-cover .box-flex .name-rol{
+    margin-top: 15px;
+  }
+  .meet-faces-cover .box-flex .name-rol strong{
+    font-size: 15px;
+  }
+  .meet-faces-cover .box-flex .meet-faces .face-box {
+    width: 200px;
+    height: 200px;
+  }
+  .meet-faces-cover .btn-otr {
+    margin-top: 30px;
+  }
+}
+
+@media(max-width:1199px){
+
+.meet-faces-cover .box-flex .meet-faces .face-box {
+  width: 180px;
+  height: 180px;
+}
+.meet-faces-cover .box-flex{
+  column-gap: 50px;
+}
+.list-area-large .list-items-lg li::before {
+  font-size: 50px;
+  top: -15px;
+ 
+}
+.list-area-large .list-items-lg li .article-list-atrea {
+  padding-left: 30px;
+}
+
+}
+@media(max-width:1023px){
+
+.list-area-large .list-items-lg li .article-list-atrea{
+  width: 50%;
+
+}
+.meet-faces-cover .box-flex .name-rol strong{
+  line-height: 1;
+}
+}
+@media(max-width:991px){
+
+  .meet-faces-cover .box-flex .meet-faces .face-box {
+    width: 150px;
+    height: 150px;
+  }
+ 
+}
+@media(max-width:767px){
+ 
+  .meet-faces-cover{
+    .title-lg{
+      margin-bottom: 45px !important;
+    }
+  }
+  .meet-faces-cover .btn-otr {
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+.meet-faces{
+  margin-bottom: 50px;
+}
+.meet-faces-cover .box-flex{
+ flex-direction: column;
+}
+.meet-faces-cover .box-flex .meet-faces .face-box {
+  width: 240px;
+  height: 240px;
+}
+
+}
+@media(max-width:579px){
+
+  .list-area-large .list-items-lg li .article-list-atrea{
+    width: 100%;
+  }
+  .list-area-large .list-items-lg li .light-cont{
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+    .list-area-large .list-items-lg li{
+      flex-direction: column;
+  
+    }
+.meet-faces-cover .box-flex .meet-faces .face-box {
+  width: 200px;
+  height: 200px;
+}
+
 }
