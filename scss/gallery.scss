@@ -546,6 +546,12 @@ max-width: 312px;
             &::placeholder{
                 color: var(--primary);
             }
+            @media ($sm-1481){
+                height: 45px;
+            }
+            @media ($sm-1281){
+                height: 40px;
+            }
         }
         .option-wrp{
             margin-bottom: 40px;
