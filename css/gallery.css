@@ -1,5 +1,5 @@
 :root {
-  --primary: #227eca;
+  --primary: #06518E;
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
@@ -191,6 +191,9 @@
   .banner.gallery-bnr .bnr-cont .heading {
     max-width: 55%;
   }
+}
+.banner.gallery-bnr .bnr-cont .heading.gallery {
+  color: var(--primary);
 }
 .banner.gallery-bnr .bnr-cont .heading.providers {
   max-width: 690px;

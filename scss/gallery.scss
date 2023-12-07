@@ -86,6 +86,9 @@
                 @media ($sm-579){
                     max-width: 55%;
                 }
+                &.gallery{
+                    color: var(--primary);
+                }
                 &.providers{
                     max-width: 690px;
                     
