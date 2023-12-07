@@ -7,13 +7,17 @@ $(document).ready(function(){
         dots: true,
         prevArrow: "#prev",
         nextArrow: "#next",
-        fade: true
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
     $('.testimonial-slider').slick({
         dots: true,
         prevArrow: "#prevArrow",
         nextArrow: "#nextArrow",
-        fade: true
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
     $('.tranform-slide').slick({
         arrows: true,
