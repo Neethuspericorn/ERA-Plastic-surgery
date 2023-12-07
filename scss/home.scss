@@ -20,6 +20,10 @@
                 font-size: 15px;
                 line-height: 20px;
             }
+            @media ($sm-991)
+            {
+                font-size: 14px;
+            }
         }
     }
     .service-list-wrp{
@@ -33,7 +37,8 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            flex: 0 0 calc(25% - 20px);
+            // flex: 0 0 calc(25% - 20px);
+            flex: 1;
             @media ($sm-767){
                 flex: 0 0 100%;
                 flex-direction: row;
@@ -41,6 +46,8 @@
             .thumb-hldr{
                 border-radius :10px;
                 margin-bottom:20px;
+                flex: 1;
+                width: 100%;
                 img {
                     max-width:100%;
                     display:flex;
@@ -51,16 +58,33 @@
                     {
                         height: 260px;
                     }
+                    @media ($sm-991){
+                        height: 175px;
+                    }
+                    @media ($sm-767){
+                        height: auto;
+                    }
                 }
                 @media ($sm-767){
-                    max-width: 110px;
-                    margin-right: 20px;
+                    margin-right: 15px;
+                    margin-bottom: 10px;
+                    flex: 0 0 30%;
+                    
+                }
+                @media ($sm-579){
+                    margin-right: 15px;
+                    margin-bottom: 10px;
+                    flex: 0 0 30%;
+                    
                 }
             }
             .intro-content{
                 display: flex;
                 flex-direction: column;
-                width: 100%;
+                flex: 1;
+                @media ($lg-768){
+                    width: 100%;
+                }
                 .inner-arrow-list{
                     li{
 
@@ -103,6 +127,9 @@
             @media ($sm-1199){
                 padding: 40px 50px;
             }
+            @media ($sm-767){
+                padding: 20px 30px 10px;
+            }
             .link{
                 color: var(--primary);
                 text-decoration: none;
@@ -140,8 +167,11 @@
             @media ($sm-1281){
                 padding: 45px 0;
             }
-            @media ($sm-767){
-                padding: 40px 30px;
+            @media ($sm-991){
+                padding: 23px 30px;
+            }
+            @media ($sm-991){
+                padding: 30px;
             }
         }
         .inner-title{
@@ -154,13 +184,24 @@
             margin-top: 10px;
             font-weight: 500;
         }
+        @media ($sm-1281){
+            max-width: 60%;
+        }
+        @media ($sm-1199){
+            max-width: 60%;
+        }
+        @media ($sm-991){
+            max-width: 50%;
+        }
         @media ($sm-767){
             background-color: var(--white);
             order: 2;
+            max-width: 100%;
         }
     }
     .practice-wrp{
     display: flex;
+    position: relative;
     @media ($sm-767){
         flex-direction: column;
     }
@@ -176,11 +217,18 @@
             max-width: 470px;
             margin: 0 auto;
         }
+        @media ($sm-991){
+            position: absolute;
+            height: 100%;
+            right: 0px;
+            background-size: cover;
+        }
         @media ($sm-767){
             height: 300px;
             max-width: 436px;
             margin: 0 auto;
             order: 1;
+            position: static;
         }
         @media ($sm-579){
             height: 220px;
@@ -191,6 +239,9 @@
 }
 .certifications{
     padding: 52px 0;
+    @media ($sm-767){
+        padding-bottom: 15px;
+    }
     .accredit{
         display: flex;
         align-items: center;
@@ -206,6 +257,7 @@
          margin-bottom: 30px;
          height: auto;
         }
+
         span{
             display: block;
         }
@@ -216,6 +268,7 @@
         }
         .sub-inner-title{
             flex: 1;
+            font-weight: 400;
         }
     }
 }

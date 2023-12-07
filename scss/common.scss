@@ -165,6 +165,10 @@ body small text:    14px = 0.875rem
             position: relative;
             width: 100%;
             transition: linear 0.3s;
+            padding-right: 15px;
+            @media ($sm-767){
+                margin-bottom: 5px;
+            }
             &::after{
                 content: "\f054";
                 color: var(--primary);
@@ -188,7 +192,9 @@ body small text:    14px = 0.875rem
             }
         }
         .collapse{
-
+            @media ($sm-767){
+                padding-top: 5px;
+            }
         }
     }
 }
@@ -255,6 +261,7 @@ body small text:    14px = 0.875rem
     font-weight: 500;
     @media ($sm-991){
         font-size: 14px;
+        height: 45px;
     }
     &.btn-small{
         height: unset;

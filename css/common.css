@@ -285,6 +285,12 @@ body small text:    14px = 0.875rem
   position: relative;
   width: 100%;
   transition: linear 0.3s;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .inner-arrow-list li .link {
+    margin-bottom: 5px;
+  }
 }
 .inner-arrow-list li .link::after {
   content: "\f054";
@@ -303,6 +309,12 @@ body small text:    14px = 0.875rem
 .inner-arrow-list li:hover::after {
   transform: rotate(90deg);
 }
+@media (max-width: 767px) {
+  .inner-arrow-list li .collapse {
+    padding-top: 5px;
+  }
+}
+
 .container-padding {
   padding-left: 120px;
   padding-right: 120px;
@@ -379,6 +391,7 @@ body small text:    14px = 0.875rem
 @media (max-width: 991px) {
   .btn {
     font-size: 14px;
+    height: 45px;
   }
 }
 .btn.btn-small {

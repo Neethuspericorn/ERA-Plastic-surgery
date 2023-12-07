@@ -142,7 +142,7 @@
   display: flex;
   align-items: center;
 }
-@media (max-width: 579px) {
+@media (max-width: 767px) {
   .home-banner .banner-slider .banner-desc {
     position: absolute;
     order: 1;
@@ -189,18 +189,25 @@
 }
 @media (max-width: 767px) {
   .home-banner .banner-slider .banner-desc .heading {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 32px;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 579px) {
   .home-banner .banner-slider .banner-desc .heading {
-    max-width: 55%;
+    max-width: 200px;
+    font-size: 26px;
   }
 }
 .home-banner .banner-slider .banner-desc .heading span {
   display: block;
+}
+@media (max-width: 579px) {
+  .home-banner .banner-slider .banner-desc .heading span.sub {
+    max-width: 150px;
+    display: block;
+  }
 }
 .home-banner .banner-slider .banner-desc .bnr-desc {
   max-width: 580px;
@@ -243,7 +250,7 @@
     margin-bottom: 20px;
   }
 }
-@media (max-width: 579px) {
+@media (max-width: 767px) {
   .home-banner .banner-slider .banner-desc:not(.mobile) .bnr-desc {
     display: none;
   }
@@ -253,7 +260,7 @@
     margin-bottom: 20px;
   }
 }
-@media (max-width: 579px) {
+@media (max-width: 767px) {
   .home-banner .banner-slider .banner-desc:not(.mobile) .cta {
     display: none;
   }
@@ -266,8 +273,11 @@
 }
 .home-banner .banner-slider .mobile-desc-blk .bnr-desc {
   margin-bottom: 20px;
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
 }
-@media (max-width: 579px) {
+@media (max-width: 767px) {
   .home-banner .banner-slider .mobile-desc-blk {
     display: block;
   }
