@@ -8,6 +8,7 @@
         // padding-top: 94px;
         min-height: 520px;
         position: relative;
+       
         &::after{
             content: "";
             height: 59px;
@@ -19,20 +20,11 @@
 
         }
         @media ($sm-1679){
-            padding-top: 70px;
+            // padding-top: 70px;
             min-height: 420px;
         }
-        @media ($sm-1481){
-            padding-top: 70px;
-        }
-        @media ($sm-1281){
-            padding-top: 60px;
-        }
-        @media ($sm-767){
-            padding-top: 50px;
-        }
-        @media ($sm-579){
-            padding-top: 30px;
+        @media ($sm-1199){
+            min-height: 350px;
         }
         .banner-wrp-sub{
             @media ($sm-767){
@@ -43,12 +35,11 @@
         .bnr-cont {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
             padding-bottom: 59px;
             // margin-right: 100px;
             flex: 0 0 auto;
             width: 50%;
-            height: 100%;
             @media ($sm-1481){
                 padding-bottom:40px;
             }
@@ -56,11 +47,14 @@
                 padding-bottom:30px;
             }
             @media ($sm-991){
-                margin-right: 20px;;
+                margin-right: 20px;
+                margin-top: 30px;
             }
             @media ($sm-767){
                 padding-bottom:10px;
                 order: 2;
+                width: 100%;
+                margin-top: 30px;
             }
             @media ($sm-579){
                 padding-bottom: 10px;
@@ -129,15 +123,16 @@
                         font-size: 34px;
                         line-height: 32px;
                         max-width: 330px;
+                        margin-bottom: 20px;
                     }
                     @media ($sm-767){
-                        font-size: 26px;
-                        line-height: 28px;
+                        font-size: 35px;
+                        line-height: 37px;
                         margin-bottom: 10px;
-                        max-width: 230px;
+                        max-width: 340px;
                     }
                     @media ($sm-579){
-                        max-width: 100%;
+                        max-width: 340px;
                     }
                 }
                 &.contact{
@@ -210,6 +205,9 @@
                 max-width: 461px;
                 &.providers{
                     max-width: 461px;
+                    @media ($sm-1199){
+                        max-width: 420px;
+                    }
                 }
                 &.contact{
                     max-width: 395px;
@@ -223,13 +221,20 @@
             z-index: 2;
             max-width: 590px;
             margin-top: 94px;
+            @media ($sm-1679){
+                margin-top: 50px;
+                // margin-bottom: -40px;
+            }
             @media ($sm-991){
                 // margin-bottom: -40px;
+                margin-top: 60px;
             }
             @media ($sm-767){
                 max-width: 100%;
                 max-height: fit-content;
                 margin-bottom: 20px;
+                order: 2;
+                margin: 20px auto 0;
             }
 
             img {
@@ -240,6 +245,9 @@
     }
     .banner-wrp-sub{
         display: flex;
+        @media ($sm-767){
+            align-items: flex-start;
+        }
     }
 }
 
@@ -248,6 +256,9 @@
     padding: 140px 0 60px;
     @media ($sm-1679){
         padding: 120px 0 60px;
+    }
+    @media ($sm-1481){
+        padding: 40px 0 30px;
     }
     @media ($sm-767){
         padding: 40px 0 30px;
@@ -412,7 +423,7 @@ max-width: 312px;
     }
     @media ($sm-767) {
         padding-bottom: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     @media ($sm-579) {
         gap:0px;
@@ -522,6 +533,10 @@ max-width: 312px;
 
 .review-slide-wrp{
     margin-top: 30px;
+    margin-bottom: 55px;
+    @media ($sm-991){
+        padding: 0 22px;
+    }
     .page-tt-slider{
         .tt-slider{
             background-color: var(--light-secondary);
@@ -568,6 +583,20 @@ max-width: 312px;
     }
     .btn-arrows{
         color: #A1A1A1;
+        &.btn-prev{
+            @media ($sm-991){
+            left: -20px;
+            }
+        }
+        &.btn-next{
+            @media ($sm-991){
+            right: -20px;
+            }
+        }
+        
+    }
+    .slick-dots{
+        bottom: -55px;
     }
 }
 
@@ -582,8 +611,14 @@ max-width: 312px;
         flex: 1;
         max-width: 590px;
         width: 100%;
+        @media ($sm-767){
+            max-width: 100%;
+        }
         img{
             max-width: 100%;
+             @media ($sm-767){
+             width: 100%;}
+           
         }
         @media ($sm-1679){
             margin-right: 30px;

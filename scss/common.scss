@@ -220,6 +220,10 @@ body small text:    14px = 0.875rem
         padding-left: 30px;
         padding-right: 30px;
     }
+    // @media screen and ($sm-991){
+    //     padding-left: 15px;
+    //     padding-right: 15px;
+    // }
     &.mobile-0{
         @media screen and ($sm-767){
             padding: 0px;
