@@ -98,8 +98,7 @@
 }
 .faq-area .inner-arrow-list li .link:not(.collapsed)::after {
   content: "\f068";
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 .faq-area .inner-arrow-list .session-content {
   font-weight: 400;
@@ -112,8 +111,9 @@
   font-size: 20px;
   line-height: 23px;
   border-radius: 5px;
-  display: -ms-grid;
   display: grid;
   place-items: center;
   min-height: 57px;
 }
+
+/*# sourceMappingURL=faq.css.map */

@@ -166,7 +166,14 @@
   color: var(--white);
   font-weight: 700;
   margin-bottom: 25px;
-  font-size: 1.3rem;
+  font-size: 24px;
+  line-height: 27px;
+}
+@media (max-width: 1481px) {
+  .footer .footer-info .footer-cta .title {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 .footer .footer-info .col-footer-logo {
   max-width: 300px;
@@ -189,6 +196,11 @@
 .footer .footer-info .col-footer-logo .footer-logo img {
   width: 100%;
   max-width: 198px;
+}
+@media (max-width: 991px) {
+  .footer .footer-info .col-footer-logo .footer-logo img {
+    max-width: 150px;
+  }
 }
 @media screen and (max-width: 1367px) {
   .footer .footer-info .col-footer-logo {
@@ -285,12 +297,32 @@
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%;
-    padding-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer .footer-info .col-footer-info {
+    padding-top: 20px;
     padding-bottom: 30px;
   }
 }
 .footer .footer-info .col-footer-info .contact-info {
   max-width: 200px;
+}
+@media (max-width: 767px) {
+  .footer .footer-info .col-footer-info .contact-info {
+    max-width: 100%;
+  }
+}
+.footer .footer-info .col-footer-info .contact-info .info-tms {
+  font-family: "Gotham", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--white);
+  margin-bottom: 20px;
+  display: block;
 }
 .footer .footer-info .col-footer-cta {
   -webkit-box-flex: 0;
@@ -300,6 +332,9 @@
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
+}
+.footer .footer-info .col-footer-cta .btn {
+  font-weight: 700;
 }
 @media screen and (min-width: 992px) {
   .footer .footer-info .col-footer-cta {
@@ -319,6 +354,12 @@
     padding-bottom: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .footer .footer-info .col-footer-cta {
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+}
 
 .social-links {
   list-style: none;
@@ -331,6 +372,11 @@
           align-items: center;
   gap: 22px;
   margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .social-links {
+    margin-top: 40px;
+  }
 }
 .social-links.contact {
   gap: 13px;

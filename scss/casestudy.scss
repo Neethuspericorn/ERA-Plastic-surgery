@@ -1,10 +1,30 @@
 @import 'partials';
+.container-padding {
+    @media (max-width:575px)
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
 .banner.case-study {
     background: #06518E;
     height: 515px;
+    @media (max-width:575px)
+    {
+        height: 380px;
+    }
     .outer-div.d-flex {
-        padding: 80px 0px 50px;
+        padding:110px 0px 50px;
         justify-content: center;
+        @media ($sm-1679)
+        {
+            padding: 70px 0px 50px;
+        }
+        @media (max-width:575px)
+        {
+            padding: 40px 0px 30px;
+        }
         .bnr-cont
         {
             text-align: center;
@@ -13,46 +33,136 @@
                 font-weight: 700;
                 font-size: 14px;
                 text-transform: uppercase;
+                @media ($sm-1679)
+                {
+                    font-size: 13px;
+                }
             }
             h2
             {
                 color: #FFF;
-                font-size: 52px;
+                font-size: 60px;
+                @media ($sm-1679)
+                {
+                    font-size:48px;
+                }
+                @media ($sm-767)
+                {
+                    font-size: 40px;
+                }
+                @media (max-width:575px)
+                {
+                    font-size: 32px;
+                    line-height: 34px;
+                }
             }
             .session-content
             {
                 color: #FFF;
                 font-size: 20px;
+                @media ($sm-1679)
+                {
+                    font-size:17px;
+                }
+                @media ($sm-767)
+                {
+                    font-size:14px;
+                    margin-bottom: 0px;
+                }
             }
         }
         .img-case-study {
             margin-top: 50px;
+            text-align:center;
+            @media (max-width:575px)
+            {
+                margin-top: 0px;
+            }
             img
             {
                 height: 425px;
+                max-width: 100%;
+                border-radius: 13px;
+                @media ($sm-1679)
+                {
+                    height: 370px;
+                }
+                @media (max-width:575px)
+                {
+                    margin-top: 25px;
+                    height: 300px;
+                    object-fit: cover;
+                }
+                @media (max-width:413px)
+                {
+                    height: 270px;
+                }
+                @media (max-width:344px)
+                {
+                    height: 250px;
+                }
             }
         }
     }
 }
 .transformation-sliders
 {
-    margin-top: 205px;
+    margin-top: 245px;
     padding-bottom: 110px;
+    @media ($sm-1679)
+    {
+        margin-top: 125px;
+    }
+    @media ($sm-767)
+    {
+        margin-top: 110px;
+        padding-bottom:30px;
+    }
+    @media (max-width:575px)
+    {
+        margin-top: 96px;
+        padding-bottom: 20px;
+    }
     .content-section {
         margin-bottom: 125px;
         max-width: 55%;
         margin: 0 auto;
+        @media ($sm-1679)
+        {
+            max-width: 47%;
+        }
+        @media ($sm-1199)
+        {
+            max-width:50%;
+        }
+        @media ($sm-991)
+        {
+            max-width:60%;
+        }
+        @media ($sm-767)
+        {
+            max-width:90%;
+        }
         .paragraph-content
         {
             color: #000;
             font-size: 16px;
             margin-bottom: 27px;
+            font-weight: 400;
+            @media ($sm-1679)
+            {
+                font-size: 14px;
+            }
             h3
             {
                 color: #06518E;
                 font-weight: 700;
                 font-size: 20px;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
+                @media ($sm-1679)
+                {
+                    font-size: 17px;
+                }
             }
             .par-txt {
                 margin-bottom: 22px;
@@ -64,6 +174,10 @@
             margin-bottom: 25px;
             color: #000;
             font-size: 16px;
+            @media ($sm-1679)
+            {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -73,4 +187,12 @@
     padding-top: 21px;
     color: #C4C4C4;
     margin-top: 90px;
+    @media ($sm-1679)
+    {
+        font-size: 14px;
+    }
+    @media ($sm-767)
+    {
+        margin-top: 40px;
+    }
 }
