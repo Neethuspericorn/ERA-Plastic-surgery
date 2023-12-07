@@ -1,5 +1,5 @@
 :root {
-  --primary: #06518E;
+  --primary: #227eca;
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
@@ -76,7 +76,8 @@
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
 .navbar {
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
   z-index: 2;
 }
 .navbar .navbar-brand img {
@@ -138,7 +139,8 @@
 }
 @media screen and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
   }
 }
 @media screen and (max-width: 991px) {

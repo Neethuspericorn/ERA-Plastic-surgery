@@ -83,7 +83,37 @@ span{
     width: 100%;
    }
 
+   .link-a{
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 16px;
+font-weight: 700; 
+}
 
+.lg-para{
+    font-size: 20px;
+    font-weight: 400; 
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+}
+
+.video-link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    button{background-color: transparent;border: 0;}
+    span{
+        color: var(--secondary);
+        font-weight: 700;
+    }
+    img{
+        width: 30px;
+        margin-right:5px;
+    }
+}
 }
 
 .image-split-area{
@@ -146,6 +176,7 @@ span{
                     font-weight: 400;
                     font-size: 16px; 
                 }
+               
                 .md-title{
                     font-family:$primary_font;
                     font-size: 23px;
@@ -185,7 +216,9 @@ margin-bottom: 20px;
     }
 }
 
+
     }
+
 .mt{
     margin-top: 5px;
 }
@@ -209,6 +242,9 @@ margin-bottom: 20px;
             font-size: 16px;
             color: var(--text);
             margin-bottom: 15px;
+        }
+        .lg-para{
+
         }
     }
     .image-wrap{
