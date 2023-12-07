@@ -127,7 +127,8 @@
 @media (max-width: 991px) {
   .banner.gallery-bnr .bnr-cont {
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
+    width: 45%;
   }
 }
 @media (max-width: 767px) {
@@ -348,17 +349,6 @@
   position: relative;
   z-index: 2;
   max-width: 590px;
-  margin-top: 94px;
-}
-@media (max-width: 1679px) {
-  .banner.gallery-bnr .pull-dwn-wrp {
-    margin-top: 50px;
-  }
-}
-@media (max-width: 991px) {
-  .banner.gallery-bnr .pull-dwn-wrp {
-    margin-top: 60px;
-  }
 }
 @media (max-width: 767px) {
   .banner.gallery-bnr .pull-dwn-wrp {
@@ -376,6 +366,13 @@
 }
 .banner .banner-wrp-sub {
   display: flex;
+  padding-top: 94px;
+}
+@media (max-width: 1679px) {
+  .banner .banner-wrp-sub {
+    align-items: flex-start;
+    padding-top: 50px;
+  }
 }
 @media (max-width: 767px) {
   .banner .banner-wrp-sub {
