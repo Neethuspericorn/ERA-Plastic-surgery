@@ -165,7 +165,8 @@
 
 .article-section .article-cvr {
   display: flex;
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   padding-right: 50px;
   background-color: var(--light-secondary);
   overflow: hidden;
@@ -203,5 +204,3 @@
 .mt {
   margin-top: 5px;
 }
-
-/*# sourceMappingURL=article-section.css.map */
