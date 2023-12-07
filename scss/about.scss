@@ -37,3 +37,88 @@
         }
     }
 }
+
+.list-area-large{
+    .cont-head{
+        text-align: center;
+        strong{
+            color: var(--secondary);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 171.429% */
+            letter-spacing: 0.42px;
+            text-transform: uppercase; 
+
+        }
+        
+    }
+
+    .list-items-lg {
+        list-style-type: none; // Remove the default numbering
+        counter-reset: my-awesome-counter; // Reset the counter
+      
+        // Apply styles to li elements
+        margin-left: 0;
+        padding-left: 0;
+      
+        li {
+          counter-increment: my-awesome-counter; // Increment the counter for each li
+          display: flex;
+          text-align: left;
+          column-gap: 50px;
+          position: relative;
+          border-bottom: 1px solid #A1A1A1;
+          padding-bottom: 40px;
+          margin-top: 40px;
+          align-items: flex-start;
+          &:last-child{
+            border-bottom: 0;
+          }
+          // Apply styles to li::before pseudo-element
+          &::before {
+            content: counter(my-awesome-counter) " ";
+            color: var(--ternary);
+            font-family: $title_font;
+            font-size: 100px;
+            font-style: normal;
+            font-weight: 325; 
+            position: absolute;
+            top: -21px;
+            left: -2px;
+          }
+
+          .article-list-atrea{
+            padding-left: 65px;
+            flex-shrink: 1;
+            flex: 0 0 auto;
+            flex-shrink: 0;
+            width: 55%;
+             .title-li{
+              color: var(--primary);
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 27px;
+              font-family: $primary_font;
+              margin-bottom: 10px;
+                .para-li{
+                  font-size: 16px;
+                }
+             }
+          }
+          .light-cont{
+            background: var(--light-secondary);
+            border-radius: 10px; 
+            padding: 20px 30px;
+            // max-width: 488px;
+            .small{
+              font-family: $primary_font;
+              font-size: 14px;
+              margin-bottom: 8px;
+               
+            }
+          }
+        }
+      }
+}

@@ -4,8 +4,10 @@
 .tab-section{
     position: relative;
     .tab-cover{
+      margin-top: -40px;
         .tab-head{
-              
+              position: relative;
+              z-index: 9;
               .nav-tabs{
                 border: 0;
                 li{

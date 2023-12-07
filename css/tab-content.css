@@ -1,5 +1,5 @@
 :root {
-  --primary: #06518E;
+  --primary: #227eca;
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
@@ -77,6 +77,13 @@
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
 .tab-section {
   position: relative;
+}
+.tab-section .tab-cover {
+  margin-top: -40px;
+}
+.tab-section .tab-cover .tab-head {
+  position: relative;
+  z-index: 9;
 }
 .tab-section .tab-cover .tab-head .nav-tabs {
   border: 0;

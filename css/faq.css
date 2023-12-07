@@ -1,5 +1,5 @@
 :root {
-  --primary: #06518E;
+  --primary: #227eca;
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
@@ -98,12 +98,8 @@
 }
 .faq-area .inner-arrow-list li .link:not(.collapsed)::after {
   content: "\f068";
-<<<<<<< HEAD
   -webkit-transform: none;
           transform: none;
-=======
-  transform: none;
->>>>>>> d5d369259d366024efb64a92220c5d8d18701f88
 }
 .faq-area .inner-arrow-list .session-content {
   font-weight: 400;
@@ -116,10 +112,7 @@
   font-size: 20px;
   line-height: 23px;
   border-radius: 5px;
-<<<<<<< HEAD
   display: -ms-grid;
-=======
->>>>>>> d5d369259d366024efb64a92220c5d8d18701f88
   display: grid;
   place-items: center;
   min-height: 57px;

@@ -1,5 +1,5 @@
 :root {
-  --primary: #06518E;
+  --primary: #227eca;
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
@@ -324,6 +324,7 @@
   width: 100%;
   background: url(../img/EsterHeadshot.png) no-repeat center center;
   background-size: cover;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 @media (max-width: 1281px) {
@@ -611,7 +612,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
@@ -625,16 +625,6 @@
     -webkit-column-gap: 0;
        -moz-column-gap: 0;
             column-gap: 0;
-=======
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-}
-@media (max-width: 579px) {
-  .our-process .steps-wrp {
-    flex-direction: column;
-    -moz-column-gap: 0;
-         column-gap: 0;
->>>>>>> d5d369259d366024efb64a92220c5d8d18701f88
   }
 }
 .our-process .steps-wrp .steps-blks {
@@ -648,26 +638,16 @@
 }
 @media (max-width: 991px) {
   .our-process .steps-wrp .steps-blks {
-<<<<<<< HEAD
     -webkit-column-gap: 20px;
        -moz-column-gap: 20px;
             column-gap: 20px;
-=======
-    -moz-column-gap: 20px;
-         column-gap: 20px;
->>>>>>> d5d369259d366024efb64a92220c5d8d18701f88
   }
 }
 @media (max-width: 579px) {
   .our-process .steps-wrp .steps-blks {
-<<<<<<< HEAD
     -webkit-column-gap: 0px;
        -moz-column-gap: 0px;
             column-gap: 0px;
-=======
-    -moz-column-gap: 0px;
-         column-gap: 0px;
->>>>>>> d5d369259d366024efb64a92220c5d8d18701f88
   }
 }
 .our-process .steps-wrp .steps-blks li {
