@@ -158,20 +158,8 @@ body small text:    14px = 0.875rem
 }
 @media (max-width: 1199px) {
   .session-title {
-    font-size: 30px;
-    line-height: 32px;
-  }
-}
-@media (max-width: 991px) {
-  .session-title {
-    font-size: 30px;
-    line-height: 38px;
-  }
-}
-@media (max-width: 767px) {
-  .session-title {
-    font-size: 25px;
-    line-height: 33px;
+    font-size: 35px;
+    line-height: 37px;
   }
 }
 
@@ -184,12 +172,6 @@ body small text:    14px = 0.875rem
   .session-content {
     font-size: 16px;
     line-height: 24px;
-  }
-}
-@media (max-width: 1199px) {
-  .session-content {
-    font-size: 14px;
-    line-height: 22px;
   }
 }
 
@@ -261,18 +243,7 @@ body small text:    14px = 0.875rem
 @media (max-width: 1679px) {
   .inner-arrow-list li {
     font-size: 16px;
-    line-height: 22px;
-  }
-}
-@media (max-width: 1199px) {
-  .inner-arrow-list li {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-@media (max-width: 767px) {
-  .inner-arrow-list li {
-    flex-direction: column;
+    line-height: 24px;
   }
 }
 .inner-arrow-list li .link {
@@ -308,6 +279,15 @@ body small text:    14px = 0.875rem
 }
 .inner-arrow-list li:hover::after {
   transform: rotate(90deg);
+}
+.inner-arrow-list li .collapse {
+  color: #666;
+}
+@media (max-width: 1679px) {
+  .inner-arrow-list li .collapse .session-content {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 @media (max-width: 767px) {
   .inner-arrow-list li .collapse {
@@ -414,5 +394,3 @@ body small text:    14px = 0.875rem
   border: 1px solid var(--secondary);
   color: var(--primary);
 }
-
-/*# sourceMappingURL=common.css.map */

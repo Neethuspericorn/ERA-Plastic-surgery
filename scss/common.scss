@@ -63,17 +63,17 @@ body small text:    14px = 0.875rem
         line-height: 32px;
     }
     @media ($sm-1199){
-        font-size: 30px;
-        line-height: 32px;
+        font-size: 35px;
+        line-height: 37px;
     }
-    @media ($sm-991){
-        font-size: 30px;
-        line-height: 38px;
-    }
-    @media ($sm-767){
-        font-size: 25px;
-        line-height: 33px;
-    }
+    // @media ($sm-991){
+    //     font-size: 30px;
+    //     line-height: 38px;
+    // }
+    // @media ($sm-767){
+    //     font-size: 25px;
+    //     line-height: 33px;
+    // }
 }
 .session-content{
     font-size: 16px;
@@ -82,10 +82,6 @@ body small text:    14px = 0.875rem
     @media ($sm-1679){
         font-size: 16px;
         line-height: 24px;
-    }
-    @media ($sm-1199){
-        font-size: 14px;
-        line-height: 22px; 
     }
 }
 .inner-title{
@@ -145,15 +141,15 @@ body small text:    14px = 0.875rem
         flex-direction: column;
         @media ($sm-1679){
             font-size: 16px;
-            line-height: 22px;
+            line-height: 24px;
         }
-        @media ($sm-1199){
-            font-size: 14px;
-            line-height: 22px;
-        }
-        @media ($sm-767){
-            flex-direction: column;
-        }
+        // @media ($sm-1199){
+        //     font-size: 14px;
+        //     line-height: 22px;
+        // }
+        // @media ($sm-767){
+        //     flex-direction: column;
+        // }
         
         .link{
             text-decoration: none;
@@ -192,6 +188,13 @@ body small text:    14px = 0.875rem
             }
         }
         .collapse{
+            color: #666;
+            .session-content{
+                @media ($sm-1679){
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
             @media ($sm-767){
                 padding-top: 5px;
             }
@@ -284,3 +287,4 @@ body small text:    14px = 0.875rem
         color: var(--primary);
     }
 }
+

@@ -79,11 +79,22 @@
   background-color: var(--light-secondary);
   flex: 1;
   position: relative;
-  padding-top: 94px;
+  min-height: 520px;
+  position: relative;
+}
+.banner.gallery-bnr::after {
+  content: "";
+  height: 59px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
 }
 @media (max-width: 1679px) {
   .banner.gallery-bnr {
     padding-top: 70px;
+    min-height: 420px;
   }
 }
 @media (max-width: 1481px) {
@@ -116,7 +127,9 @@
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 59px;
-  margin-right: 100px;
+  flex: 0 0 auto;
+  width: 50%;
+  height: 100%;
 }
 @media (max-width: 1481px) {
   .banner.gallery-bnr .bnr-cont {
@@ -341,12 +354,9 @@
 }
 .banner.gallery-bnr .pull-dwn-wrp {
   position: relative;
-  margin-bottom: -59px;
-}
-@media (max-width: 991px) {
-  .banner.gallery-bnr .pull-dwn-wrp {
-    margin-bottom: -40px;
-  }
+  z-index: 2;
+  max-width: 590px;
+  margin-top: 94px;
 }
 @media (max-width: 767px) {
   .banner.gallery-bnr .pull-dwn-wrp {
