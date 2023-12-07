@@ -178,6 +178,17 @@
     width: 100%;
   }
 }
+@media (max-width: 991px) {
+  .help-wrp .inner-title {
+    min-height: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .help-wrp .inner-title {
+    min-height: unset;
+  }
+}
+
 .full-width-wrap {
   display: flex;
 }

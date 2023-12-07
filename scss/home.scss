@@ -93,6 +93,14 @@
             }
         }
     }
+    .inner-title{
+        @media ($sm-991){
+            min-height: 40px;
+        }
+        @media ($sm-991){
+            min-height: unset;
+        }
+    }
 }
 .full-width-wrap{
     display: flex;
