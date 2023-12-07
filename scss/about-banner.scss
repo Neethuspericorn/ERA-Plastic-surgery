@@ -1,11 +1,22 @@
 @import 'partials';
 
-.service-banner{
-    min-height: 580px;
+.banner-area{
+    min-height: 520px;
     overflow: hidden;
-    background: linear-gradient(90deg, #06518E 0%, #2F96D0 100%);
+    background: var(--Extra-Light-Blue, #E5F5FA);
     display: flex;
     overflow: hidden;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        background-color: var(--white);
+        bottom: 0;
+        height: 65px;
+        width: 100%;
+        z-index: 9;
+
+    }
     .fade-sl{
       display: flex;
       height: 100%;
@@ -35,10 +46,14 @@
             font-weight: 700;
         }
         .page-title{
-            color: var(--white);
+            color: var(--primary);
             margin-bottom: 20px;
-            font-size: 55px;
-            line-height: 63px;
+            font-size: 66px;
+            line-height: 68px;
+          
+            span{
+                color: var(--secondary);
+            }
         }
         p{
             color: var(--white);
@@ -50,14 +65,15 @@
         }
     }
   .services-bnr-img{
-    max-width: 800px;
+    // max-width: 800px;
     width: 100%;
     position: relative;
     display: flex;
     margin-top: auto;
+    margin-left: 10px;
     // bottom: -25px;
     img{
-      max-width: 900px;
+      max-width: 100%;
     }
   }
   .right-end-image{
@@ -74,11 +90,11 @@
   }
 
   .banner-container{
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 120px;
-    padding-right: 120px;
+    // max-width: 1440px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // padding-left: 120px;
+    // padding-right: 120px;
 }
 
 
@@ -101,38 +117,44 @@
   
 }
 
-
+.banner-area .services-bnr-img{
+    position: relative;
+    z-index: 99;
+    .video-wrap{
+        cursor: pointer;
+    }
+}
 @media(max-width:1679px){
-  .service-banner .bnr-content-cvr .page-title {
+  .banner-area .bnr-content-cvr .page-title {
     margin-bottom: 20px;
     font-size: 47px;
     line-height: 57px;
   }
-  .service-banner .bnr-content-cvr p {
+  .banner-area .bnr-content-cvr p {
 
     margin-bottom: 30px;
     font-size: 14px;
   }
-  .service-banner .services-bnr-img img {
+  .banner-area .services-bnr-img img {
     max-width: 800px;
     width: 600px;
   }
-  .service-banner {
+  .banner-area {
     min-height: 470px;
   }
 }
 
 @media (max-width: 1281px) {
-  .service-banner .bnr-content-cvr .page-title {
+  .banner-area .bnr-content-cvr .page-title {
     margin-bottom: 20px;
     font-size: 40px;
     line-height: 47px;
   }
-  .service-banner .services-bnr-img img {
+  .banner-area .services-bnr-img img {
     max-width: 800px;
     width: 490px;
   }
-  .service-banner {
+  .banner-area {
     min-height: 420px;
   }
 }
