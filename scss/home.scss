@@ -1,6 +1,9 @@
 @import 'partials';
 .help-wrp{
     padding: 85px 0;
+    @media ($sm-1199){
+        padding: 60px 0;
+    }
     @media ($sm-767){
         padding: 40px 0;
     }

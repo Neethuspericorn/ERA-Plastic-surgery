@@ -78,6 +78,11 @@
 .help-wrp {
   padding: 85px 0;
 }
+@media (max-width: 1199px) {
+  .help-wrp {
+    padding: 60px 0;
+  }
+}
 @media (max-width: 767px) {
   .help-wrp {
     padding: 40px 0;
