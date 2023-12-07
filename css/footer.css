@@ -187,6 +187,11 @@
   width: 100%;
   max-width: 198px;
 }
+@media (max-width: 991px) {
+  .footer .footer-info .col-footer-logo .footer-logo img {
+    max-width: 150px;
+  }
+}
 @media screen and (max-width: 1367px) {
   .footer .footer-info .col-footer-logo {
     max-width: 240px;

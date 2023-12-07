@@ -93,6 +93,9 @@
                 img{
                     width: 100%;
                     max-width: 198px;
+                    @media ($sm-991){
+                        max-width: 150px;
+                    }
                 }
             }
             order: 1;
