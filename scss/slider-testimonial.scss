@@ -19,7 +19,6 @@
 
         .heading {
             font-size: 60px;
-
             @media ($sm-1679) {
                 font-size: 50px;
                 line-height: 52px;
@@ -102,6 +101,9 @@
     margin-right: auto;
     position: relative;
     z-index: 2;
+    @media ($sm-767){
+        padding: 0 30px;
+    }
 
     .tt-slider {
         width: 100%;
@@ -131,10 +133,17 @@
 
         &.btn-prev {
             left: -50px;
+            @media ($sm-767){
+            left: 0px;
+            }
         }
 
         &.btn-next {
             right: -50px;
+            @media ($sm-767){
+            right: 0px;
+            }
+
         }
     }
 
