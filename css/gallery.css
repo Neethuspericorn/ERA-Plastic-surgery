@@ -1,5 +1,5 @@
 :root {
-  --primary: #227eca;
+  --primary: #06518E;
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
@@ -110,7 +110,10 @@
 }
 @media (max-width: 767px) {
   .banner.gallery-bnr .banner-wrp-sub {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .banner.gallery-bnr .bnr-cont {
@@ -145,7 +148,9 @@
 @media (max-width: 767px) {
   .banner.gallery-bnr .bnr-cont {
     padding-bottom: 10px;
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 @media (max-width: 579px) {
@@ -361,6 +366,7 @@
 @media (max-width: 579px) {
   .banner.gallery-bnr .pull-dwn-wrp {
     max-width: 100%;
+    max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
     max-height: fit-content;
     margin-bottom: 20px;
@@ -601,7 +607,10 @@
 @media (max-width: 579px) {
   .providers-info-wrp {
     gap: 0px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .providers-info-wrp .provider-pic {

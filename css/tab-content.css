@@ -1,5 +1,5 @@
 :root {
-  --primary: #227eca;
+  --primary: #06518E;
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
@@ -101,4 +101,9 @@
   line-height: 24px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .tab-section .tab-cover {
+    margin-top: 0;
+  }
 }
