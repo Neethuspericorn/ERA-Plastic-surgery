@@ -51,20 +51,20 @@ body small text:    14px = 0.875rem
     font-family: $title_font;
     margin-bottom: 20px;
     @media ($sm-1679){
-        font-size: 54px; 
-        line-height: 60px;
+        font-size: 50px; 
+        line-height: 52px;
     }
     @media ($sm-1481){
-        font-size: 48px;
-        line-height: 54px;
+        font-size: 40px;
+        line-height: 42px;
     }
     @media ($sm-1281){
-        font-size: 42px;
-        line-height: 48px;
+        font-size: 30px;
+        line-height: 32px;
     }
     @media ($sm-1199){
-        font-size: 36px;
-        line-height: 42px;
+        font-size: 30px;
+        line-height: 32px;
     }
     @media ($sm-991){
         font-size: 30px;

@@ -188,7 +188,7 @@
     min-height: 40px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .help-wrp .inner-title {
     min-height: unset;
   }
