@@ -373,6 +373,11 @@
     padding: 120px 0 60px;
   }
 }
+@media (max-width: 767px) {
+  .transformation-sliders {
+    padding: 40px 0 30px;
+  }
+}
 .transformation-sliders .slide-img-wrp {
   padding: 0 79px;
 }
