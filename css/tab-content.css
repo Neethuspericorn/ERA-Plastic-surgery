@@ -75,95 +75,13 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
-.video-section {
-  margin: 81px 0;
-}
-.video-section .title-lg {
-  font-family: "ChampionGothic", sans-serif;
-  margin-bottom: 81px;
-  text-align: center;
-  color: var(--primary);
-  font-size: 55px;
-  line-height: 62px;
-  font-weight: 275;
-}
-.video-section p {
-  color: var(--text);
-  font-size: 16px;
-}
-
-.video-tumb-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 44px;
-     -moz-column-gap: 44px;
-          column-gap: 44px;
-}
-.video-tumb-content .content-sm .title-lg {
-  margin-bottom: 17px;
-  text-align: left;
-  font-size: 48px;
-  line-height: 53px;
-}
-.video-tumb-content .video-thumbs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 17px;
-     -moz-column-gap: 17px;
-          column-gap: 17px;
-}
-.video-tumb-content .video-thumbs .thumb {
-  width: 253px;
-  height: 253px;
-  border-radius: 10px;
+.tab-section {
   position: relative;
 }
-.video-tumb-content .video-thumbs .thumb .play-button img {
-  width: 33px;
-}
-.video-tumb-content .video-thumbs .thumb img {
-  width: 100%;
-}
-
-.video-wrap {
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
-.video-wrap .play-button {
-  position: absolute;
-  background-color: transparent;
+.tab-section .tab-cover .tab-head .nav-tabs {
   border: 0;
-  padding: 0;
 }
-.video-wrap .play-button img {
-  width: 69px;
-}
-
-@media (max-width: 1679px) {
-  .video-wrap .play-button {
-    width: 50px;
-  }
-  .video-tumb-content .video-thumbs .thumb {
-    width: 200px;
-    height: 200px;
-  }
-  .video-tumb-content .video-thumbs .thumb .play-button img {
-    width: 23px;
-  }
-  .video-tumb-content .content-sm .title-lg {
-    margin-bottom: 17px;
-    font-size: 40px;
-    line-height: 41px;
-  }
-  .video-section p {
-    font-size: 14px;
-  }
+.tab-section .tab-cover .tab-head .nav-link {
+  border: 0 !important;
+  padding-left: 0;
 }

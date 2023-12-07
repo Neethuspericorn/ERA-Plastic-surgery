@@ -76,7 +76,7 @@
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
 .service-banner {
-  height: 580px;
+  min-height: 580px;
   overflow: hidden;
   background: -webkit-gradient(linear, left top, right top, from(#06518E), to(#2F96D0));
   background: linear-gradient(90deg, #06518E 0%, #2F96D0 100%);
@@ -147,6 +147,9 @@
   display: flex;
   margin-top: auto;
 }
+.service-banner .services-bnr-img img {
+  max-width: 900px;
+}
 .service-banner .right-end-image .services-bnr-img {
   margin-left: auto;
   -webkit-box-pack: end;
@@ -183,4 +186,37 @@
 }
 .service-banner .box-full {
   position: relative;
+}
+
+@media (max-width: 1679px) {
+  .service-banner .bnr-content-cvr .page-title {
+    margin-bottom: 20px;
+    font-size: 47px;
+    line-height: 57px;
+  }
+  .service-banner .bnr-content-cvr p {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .service-banner .services-bnr-img img {
+    max-width: 800px;
+    width: 600px;
+  }
+  .service-banner {
+    min-height: 470px;
+  }
+}
+@media (max-width: 1281px) {
+  .service-banner .bnr-content-cvr .page-title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .service-banner .services-bnr-img img {
+    max-width: 800px;
+    width: 490px;
+  }
+  .service-banner {
+    min-height: 420px;
+  }
 }

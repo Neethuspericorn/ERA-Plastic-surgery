@@ -69,3 +69,24 @@
 
 
 
+   @media(max-width:1679px){
+   .video-wrap .play-button{
+    width: 50px;
+  }
+  .video-tumb-content .video-thumbs .thumb {
+    width: 200px;
+    height: 200px;
+   
+  }
+  .video-tumb-content .video-thumbs .thumb .play-button img {
+    width: 23px;
+  }
+  .video-tumb-content .content-sm .title-lg {
+    margin-bottom: 17px;
+    font-size: 40px;
+    line-height: 41px;
+  }
+  .video-section p {
+    font-size: 14px;
+  }
+}

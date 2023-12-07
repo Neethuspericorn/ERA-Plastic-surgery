@@ -26,12 +26,12 @@ $('.before-after-slide').slick({
   });
 
 
-  $('.fade-sl').slick({
-    infinite: true,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    speed: 500,
-    fade: true,
-    arrows: false,
-    cssEase: 'linear'
-  });
+//   $('.fade-sl').slick({
+//     infinite: true,
+//     autoplay: false,
+//     autoplaySpeed: 2000,
+//     speed: 500,
+//     fade: true,
+//     arrows: false,
+//     cssEase: 'linear'
+//   });

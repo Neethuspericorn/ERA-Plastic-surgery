@@ -1,0 +1,23 @@
+@import 'partials';
+
+
+.tab-section{
+    position: relative;
+    .tab-cover{
+        .tab-head{
+              
+              .nav-tabs{
+                border: 0;
+              }
+              .nav-link{
+                border: 0 !important;
+                padding-left: 0;
+              }
+        }
+
+      
+    }
+
+    .content-main{
+    }
+}
