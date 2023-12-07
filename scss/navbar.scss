@@ -12,6 +12,23 @@
            }
         }
     }
+    .navbar-toggler{
+        border: none;
+        box-shadow: none;
+        outline: none;
+        .navbar-toggler-icon{
+            background: none;
+            &::after{
+                content: "\f0c9";
+                font-family: 'Fontawesome';
+                color: var(--primary);
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
     .navbar-collapse{
         @media screen and ($sm-991){
             margin-left: -30px;

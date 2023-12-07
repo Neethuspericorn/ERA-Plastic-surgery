@@ -1,44 +1,87 @@
 @import 'partials';
-.section-page-tt-slider{
+
+.section-page-tt-slider {
     background: linear-gradient(90deg, var(--light) 0%, var(--light_trans) 100%);
     padding-top: 80px;
     padding-bottom: 80px;
-    &.no-bg-slider{
+    @media ($sm-767){
+        padding: 40px 0;
+    }
+    &.no-bg-slider {
         background: #E5F5FA !important;
-        &::after{
-            display: none;
+        &::after {
+         display: none;
         }
     }
-    .title-col{
+
+    .title-col {
         margin-bottom: 30px;
-        .heading
-        {
+
+        .heading {
             font-size: 60px;
-            @media ($sm-1679)
-            {
-                font-size:48px;
+
+            @media ($sm-1679) {
+                font-size: 50px;
+                line-height: 52px;
+            }
+
+            @media ($sm-1481) {
+                font-size: 40px;
+                line-height: 42px;
+            }
+
+            @media ($sm-1281) {
+                font-size: 30px;
+                line-height: 32px;
+            }
+
+            @media ($sm-1199) {
+                font-size: 30px;
+                line-height: 32px;
+            }
+
+            @media ($sm-991) {
+                font-size: 30px;
+                line-height: 38px;
+            }
+
+            @media ($sm-767) {
+                font-size: 25px;
+                line-height: 33px;
             }
         }
-        .subtitle{
+
+        .subtitle {
             max-width: 765px;
             margin: auto;
             font-size: 20px;
             color: var(--text);
-            @media ($sm-1679)
-            {
+
+            @media ($sm-1679) {
                 max-width: 710px;
                 font-size: 18px;
             }
+            @media ($sm-1481) {
+                max-width: 600px;
+                font-size: 16px;
+            }
+            @media ($sm-1199) {
+                max-width: 525px;
+                font-size: 14px;
+            }
         }
     }
-    &.home-tt-slider{
+
+    &.home-tt-slider {
         position: relative;
-        background: linear-gradient(90deg,var(--ternary) 0%, rgba(229, 245, 250, 0.80) 100%);
+        background: linear-gradient(90deg, var(--ternary) 0%, rgba(229, 245, 250, 0.80) 100%);
+
         .container {
             position: relative;
             z-index: 2;
         }
-        &::after{
+
+        &::after {
             content: '';
             inset: 0;
             background-image: url(../img/home-tts-bg.jpg);
@@ -49,16 +92,18 @@
         }
     }
 
-     
+
 }
-.page-tt-slider{
+
+.page-tt-slider {
     max-width: 590px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     z-index: 2;
-    .tt-slider{
+
+    .tt-slider {
         width: 100%;
         padding: 30px;
         border-radius: 10px;
@@ -66,54 +111,65 @@
         align-items: center;
         justify-content: center;
         background-color: var(--white);
-        min-height: 225px;  
-        .text-desc
-        {
+        min-height: 225px;
+
+        .text-desc {
             font-size: 16px;
+            @media ($sm-767){
+            font-size: 14px;
+            }
         }
     }
-    .btn-arrows{
+
+    .btn-arrows {
         position: absolute;
         top: 50%;
         z-index: 3;
         background-color: transparent;
         border: none;
         transform: translateY(-50%);
-        &.btn-prev{
+
+        &.btn-prev {
             left: -50px;
         }
-        &.btn-next{
+
+        &.btn-next {
             right: -50px;
         }
     }
-    .slick-dots{
+
+    .slick-dots {
         bottom: -55px;
-        li{
-            button{
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            &:before{
-                content: '';
-                width: 10px;
-                height: 10px;
-                background-color: var(--primary);
-                position: relative;
-                border-radius: 10px;
-                opacity: 0.5;
+
+        li {
+            button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                &:before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    background-color: var(--primary);
+                    position: relative;
+                    border-radius: 10px;
+                    opacity: 0.5;
                 }
             }
-            &.slick-active{
-                button{
-                    &:before{
+
+            &.slick-active {
+                button {
+                    &:before {
                         opacity: 1;
                     }
-                } 
+                }
             }
-        } 
+        }
     }
-    .slide{
-        .user{
+
+    .slide {
+        .user {
             color: var(--secondary);
             text-transform: uppercase;
             font-weight: 700;
