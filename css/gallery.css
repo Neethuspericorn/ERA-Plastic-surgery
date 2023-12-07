@@ -512,15 +512,27 @@
 
 .providers-info-wrp {
   display: flex;
+  flex-wrap: wrap;
   gap: 62px;
   border-bottom: 1px solid #C4C4C4;
   padding-bottom: 77px;
   margin-bottom: 77px;
 }
+@media (max-width: 1679px) {
+  .providers-info-wrp {
+    gap: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .providers-info-wrp {
+    gap: 30px;
+  }
+}
 .providers-info-wrp .provider-pic {
   max-width: 243px;
+  width: 100%;
   border-radius: 10px;
-  flex-shrink: 0;
+  flex: 0 0 auto;
 }
 .providers-info-wrp .provider-pic img {
   max-width: 100%;
@@ -528,7 +540,13 @@
 }
 .providers-info-wrp .provider-deatil-wrp {
   max-width: 590px;
-  flex: 1;
+  width: 100%;
+  flex: 0 0 auto;
+}
+@media (max-width: 991px) {
+  .providers-info-wrp .provider-deatil-wrp {
+    width: calc(100% - 273px);
+  }
 }
 .providers-info-wrp .provider-deatil-wrp .provider-highlight {
   margin-bottom: 20px;
@@ -580,7 +598,10 @@
   margin-bottom: 60px;
 }
 .providers-info-wrp .provider-deatil-wrp .affiliation-blk .blks {
-  flex: 0 0 auto;
+  flex: 1;
+}
+.providers-info-wrp .provider-deatil-wrp .affiliation-blk .blks img {
+  max-width: 100%;
 }
 
 .review-slide-wrp {
