@@ -16,30 +16,29 @@
             font-size: 60px;
             line-height: 62px;
             margin-bottom: 22px;
+
             @media ($sm-1679){
-                font-size: 54px; 
-                line-height: 60px;
-            }
-            @media ($sm-1481){
-                font-size: 48px;
-                line-height: 54px;
-            }
-            @media ($sm-1281){
-                font-size: 42px;
-                line-height: 48px;
-            }
-            @media ($sm-1199){
-                font-size: 36px;
-                line-height: 42px;
-            }
-            @media ($sm-991){
-                font-size: 30px;
-                line-height: 38px;
+                font-size: 50px;
+                line-height: 52px;
             }
             @media ($sm-767){
-                font-size: 25px;
-                line-height: 33px;
+                font-size: 50px;
+                line-height: 52px;
+                max-width: 338px;
+                margin: 0 auto 22px;
             }
+             @media (max-width:380px){
+                font-size: 42px;
+                line-height: 54px;
+                max-width: 270px;
+                margin: 0 auto 22px;
+            }
+        }
+        .schedule-txt{
+            font-size: 16px;
+            line-height: 24px;
+            font-family: $primary_font;
+            font-weight: 400;
         }
     }
     .footer-info{
@@ -77,10 +76,10 @@
                 margin-bottom: 25px;
                 font-size: 24px;
                 line-height: 27px;
-                @media ($sm-1481){
-                    font-size: 20px;
-                line-height: 23px;
-                }
+               
+            }
+            @media ($sm-767){
+                margin-bottom: 50px;
             }
         }
         .col-footer-logo{
@@ -170,6 +169,10 @@
                     color: var(--white);
                     margin-bottom: 20px;
                     display: block;
+                    .phone{
+                        color: #fff;
+                        text-decoration: none;
+                    }
                 }
             }
         }
