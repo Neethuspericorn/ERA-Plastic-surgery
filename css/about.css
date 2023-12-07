@@ -82,15 +82,9 @@
   margin-top: 50px;
 }
 .meet-faces-cover .box-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 100px;
-     -moz-column-gap: 100px;
-          column-gap: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  column-gap: 100px;
+  justify-content: center;
 }
 .meet-faces-cover .box-flex .meet-faces .face-box {
   width: 243px;
@@ -100,18 +94,10 @@
   overflow: hidden;
 }
 .meet-faces-cover .box-flex .name-rol {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   margin-top: 25px;
 }
 .meet-faces-cover .box-flex .name-rol strong {
@@ -123,3 +109,5 @@
   color: var(--text);
   font-size: 16px;
 }
+
+/*# sourceMappingURL=about.css.map */
