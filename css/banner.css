@@ -81,6 +81,7 @@
 }
 @media (max-width: 579px) {
   .home-banner {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(65.24%, #EEF8FC), to(rgba(238, 248, 252, 0)));
     background: linear-gradient(180deg, #EEF8FC 65.24%, rgba(238, 248, 252, 0) 100%);
   }
 }
@@ -89,28 +90,43 @@
 }
 @media (max-width: 579px) {
   .home-banner .banner-slider .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0px;
   }
 }
 .home-banner .banner-slider .banner-img {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   max-height: 662px;
   aspect-ratio: 2.175;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .home-banner .banner-slider .banner-img img {
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100%;
-  object-position: right;
+  -o-object-position: right;
+     object-position: right;
 }
 @media (max-width: 767px) {
   .home-banner .banner-slider .banner-img {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 @media (max-width: 579px) {
@@ -123,28 +139,39 @@
 }
 @media (max-width: 579px) {
   .home-banner .banner-slider .banner-img.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 302px;
   }
 }
 .home-banner .banner-slider .banner-img.mobile img {
   height: inherit;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home-banner .banner-slider .banner-desc {
   position: absolute;
   top: 0px;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 579px) {
   .home-banner .banner-slider .banner-desc {
     position: absolute;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     padding: 30px 20px 0;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 .home-banner .banner-slider .banner-desc .heading {
@@ -269,5 +296,3 @@
     display: block;
   }
 }
-
-/*# sourceMappingURL=banner.css.map */
