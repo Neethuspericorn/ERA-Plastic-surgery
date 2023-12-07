@@ -602,7 +602,7 @@
 }
 @media (max-width: 991px) {
   .providers-info-wrp .provider-deatil-wrp {
-    width: calc(100% - 273px);
+    width: calc(100% - 180px);
   }
 }
 @media (max-width: 579px) {

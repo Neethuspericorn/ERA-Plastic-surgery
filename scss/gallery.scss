@@ -420,7 +420,7 @@ max-width: 312px;
         width: 100%;
         flex: 0 0 auto;
         @media ($sm-991){
-            width:calc(100% - 273px)
+            width:calc(100% - 180px)
         }
         @media ($sm-579) {
             width: 100%;
