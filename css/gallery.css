@@ -553,16 +553,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 62px;
   border-bottom: 1px solid #C4C4C4;
   padding-bottom: 77px;
   margin-bottom: 77px;
 }
+@media (max-width: 1679px) {
+  .providers-info-wrp {
+    gap: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .providers-info-wrp {
+    gap: 30px;
+  }
+}
 .providers-info-wrp .provider-pic {
   max-width: 243px;
+  width: 100%;
   border-radius: 10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 .providers-info-wrp .provider-pic img {
   max-width: 100%;
@@ -570,9 +584,15 @@
 }
 .providers-info-wrp .provider-deatil-wrp {
   max-width: 590px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+@media (max-width: 991px) {
+  .providers-info-wrp .provider-deatil-wrp {
+    width: calc(100% - 273px);
+  }
 }
 .providers-info-wrp .provider-deatil-wrp .provider-highlight {
   margin-bottom: 20px;
@@ -637,9 +657,12 @@
   margin-bottom: 60px;
 }
 .providers-info-wrp .provider-deatil-wrp .affiliation-blk .blks {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.providers-info-wrp .provider-deatil-wrp .affiliation-blk .blks img {
+  max-width: 100%;
 }
 
 .review-slide-wrp {
@@ -762,6 +785,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  height: 50px;
 }
 .schedule-consult-wrp .consultation-form .form-control::-webkit-input-placeholder, .schedule-consult-wrp .consultation-form .form-select::-webkit-input-placeholder {
   color: var(--primary);
@@ -777,6 +801,16 @@
 }
 .schedule-consult-wrp .consultation-form .form-control::placeholder, .schedule-consult-wrp .consultation-form .form-select::placeholder {
   color: var(--primary);
+}
+@media (max-width: 1481px) {
+  .schedule-consult-wrp .consultation-form .form-control, .schedule-consult-wrp .consultation-form .form-select {
+    height: 45px;
+  }
+}
+@media (max-width: 1281px) {
+  .schedule-consult-wrp .consultation-form .form-control, .schedule-consult-wrp .consultation-form .form-select {
+    height: 40px;
+  }
 }
 .schedule-consult-wrp .consultation-form .option-wrp {
   margin-bottom: 40px;
