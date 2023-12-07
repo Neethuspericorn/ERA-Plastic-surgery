@@ -1,5 +1,5 @@
 :root {
-  --primary: #06518E;
+  --primary: #227eca;
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
@@ -85,6 +85,9 @@
   display: flex;
   column-gap: 100px;
   justify-content: center;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  justify-content: center;
 }
 .meet-faces-cover .box-flex .meet-faces .face-box {
   width: 243px;
@@ -110,4 +113,76 @@
   font-size: 16px;
 }
 
-/*# sourceMappingURL=about.css.map */
+.list-area-large .cont-head {
+  text-align: center;
+}
+.list-area-large .cont-head strong {
+  color: var(--secondary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.list-area-large .list-items-lg {
+  list-style-type: none;
+  counter-reset: my-awesome-counter;
+  margin-left: 0;
+  padding-left: 0;
+}
+.list-area-large .list-items-lg li {
+  counter-increment: my-awesome-counter;
+  display: flex;
+  text-align: left;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  position: relative;
+  border-bottom: 1px solid #A1A1A1;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  align-items: flex-start;
+}
+.list-area-large .list-items-lg li:last-child {
+  border-bottom: 0;
+}
+.list-area-large .list-items-lg li::before {
+  content: counter(my-awesome-counter) " ";
+  color: var(--ternary);
+  font-family: "ChampionGothic", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 325;
+  position: absolute;
+  top: -21px;
+  left: -2px;
+}
+.list-area-large .list-items-lg li .article-list-atrea {
+  padding-left: 65px;
+  flex-shrink: 1;
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 55%;
+}
+.list-area-large .list-items-lg li .article-list-atrea .title-li {
+  color: var(--primary);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  font-family: "Gotham", sans-serif;
+  margin-bottom: 10px;
+}
+.list-area-large .list-items-lg li .article-list-atrea .title-li .para-li {
+  font-size: 16px;
+}
+.list-area-large .list-items-lg li .light-cont {
+  background: var(--light-secondary);
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+.list-area-large .list-items-lg li .light-cont .small {
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+}

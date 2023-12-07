@@ -1,5 +1,5 @@
 :root {
-  --primary: #06518E;
+  --primary: #227eca;
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
@@ -96,6 +96,9 @@
   display: flex;
   align-items: center;
   column-gap: 44px;
+  align-items: center;
+  -moz-column-gap: 44px;
+       column-gap: 44px;
 }
 .video-tumb-content .content-sm .title-lg {
   margin-bottom: 17px;
@@ -106,6 +109,8 @@
 .video-tumb-content .video-thumbs {
   display: flex;
   column-gap: 17px;
+  -moz-column-gap: 17px;
+       column-gap: 17px;
 }
 .video-tumb-content .video-thumbs .thumb {
   width: 253px;

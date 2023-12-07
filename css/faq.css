@@ -1,5 +1,5 @@
 :root {
-  --primary: #06518E;
+  --primary: #227eca;
   --secondary: #2F96D0;
   --ternary: #5FCBEC;
   --light: #CCEBF6;
@@ -115,3 +115,5 @@
   place-items: center;
   min-height: 57px;
 }
+
+/*# sourceMappingURL=faq.css.map */
