@@ -4,6 +4,7 @@
   --ternary: #5FCBEC;
   --light: #CCEBF6;
   --light-secondary: #E5F5FA;
+  --hover_blue:#EEF8FC;
   --text: #000000;
   --border: #C4C4C4;
   --white: #ffffff;
@@ -96,19 +97,12 @@
 }
 .tab-section .tab-cover .tab-head .nav-tabs {
   border: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .tab-section .tab-cover .tab-head .nav-tabs .nav-item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 .tab-section .tab-cover .tab-head .nav-tabs li:first-child .nav-link {
   padding-left: 0;
