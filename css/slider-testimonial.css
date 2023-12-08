@@ -10,6 +10,7 @@
   --white: #ffffff;
   --light_blue: #CCEBF6;
   --divider-line:#C4C4C4;
+  --radio_color:#A1A1A1;
 }
 
 @font-face {
@@ -77,6 +78,7 @@
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
 .section-page-tt-slider {
+  background: -webkit-gradient(linear, left top, right top, from(var(--light)), to(var(--light_trans)));
   background: linear-gradient(90deg, var(--light) 0%, var(--light_trans) 100%);
   padding-top: 80px;
   padding-bottom: 80px;
@@ -150,6 +152,7 @@
 }
 .section-page-tt-slider.home-tt-slider {
   position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(var(--ternary)), to(rgba(229, 245, 250, 0.8)));
   background: linear-gradient(90deg, var(--ternary) 0%, rgba(229, 245, 250, 0.8) 100%);
 }
 .section-page-tt-slider.home-tt-slider .container {
@@ -183,9 +186,15 @@
   width: 100%;
   padding: 30px;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: var(--white);
   min-height: 225px;
 }
@@ -211,7 +220,8 @@
   z-index: 3;
   background-color: transparent;
   border: none;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .page-tt-slider .btn-arrows.btn-prev {
   left: -50px;
@@ -233,9 +243,15 @@
   bottom: -55px;
 }
 .page-tt-slider .slick-dots li button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .page-tt-slider .slick-dots li button:before {
   content: "";

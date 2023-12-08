@@ -1,0 +1,324 @@
+:root {
+  --primary: #06518E;
+  --secondary: #2F96D0;
+  --ternary: #5FCBEC;
+  --light: #CCEBF6;
+  --light-secondary: #E5F5FA;
+  --hover_blue:#EEF8FC;
+  --text: #000000;
+  --border: #C4C4C4;
+  --white: #ffffff;
+  --light_blue: #CCEBF6;
+  --divider-line:#C4C4C4;
+  --radio_color:#A1A1A1;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Light.eot");
+  src: url("../fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Light.woff2") format("woff2"), url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.ttf") format("truetype"), url("../fonts/Gotham-Light.svg#Gotham-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Bold.eot");
+  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Book.eot");
+  src: url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book.woff2") format("woff2"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  /* heavy  */
+  font-family: "ChampionGothic";
+  src: url("../fonts/ChampionGothic-Heavyweight.eot");
+  src: local("../fonts/Champion Gothic Heavyweight"), local("ChampionGothic-Heavyweight"), url("../fonts/ChampionGothic-Heavyweight.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampionGothic-Heavyweight.woff2") format("woff2"), url("../fonts/ChampionGothic-Heavyweight.woff") format("woff"), url("../fonts/ChampionGothic-Heavyweight.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  /* normal - 400  */
+  font-family: "ChampionGothic";
+  src: url("../fonts/ChampionGothic-Middleweight.eot");
+  src: local("../fonts/Champion Gothic Middleweight"), local("ChampionGothic-Middleweight"), url("../fonts/ChampionGothic-Middleweight.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampionGothic-Middleweight.woff2") format("woff2"), url("../fonts/ChampionGothic-Middleweight.woff") format("woff"), url("../fonts/ChampionGothic-Middleweight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  /* titles  */
+  font-family: "ChampionGothic";
+  src: url("../fonts/ChampionGothic-Lightweight.eot");
+  src: local("../fonts/Champion Gothic Lightweight"), local("ChampionGothic-Lightweight"), url("../fonts/ChampionGothic-Lightweight.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampionGothic-Lightweight.woff2") format("woff2"), url("../fonts/ChampionGothic-Lightweight.woff") format("woff"), url("../fonts/ChampionGothic-Lightweight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.banner.gallery {
+  background-color: var(--light-secondary);
+  flex: 1;
+  position: relative;
+  margin-bottom: 130px;
+  padding-top: 94px;
+}
+@media (max-width: 1679px) {
+  .banner.gallery {
+    margin-bottom: 80px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 1481px) {
+  .banner.gallery {
+    margin-bottom: 70px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 1281px) {
+  .banner.gallery {
+    margin-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+@media (max-width: 840px) {
+  .banner.gallery {
+    padding-top: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .banner.gallery {
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 579px) {
+  .banner.gallery {
+    padding-top: 30px;
+  }
+}
+.banner.gallery .bnr-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  padding-bottom: 59px;
+  max-width: 400px;
+}
+@media (max-width: 1481px) {
+  .banner.gallery .bnr-cont {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 1281px) {
+  .banner.gallery .bnr-cont {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .banner.gallery .bnr-cont {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 840px) {
+  .banner.gallery .bnr-cont {
+    padding-bottom: 12px;
+  }
+}
+.banner.gallery .bnr-cont .heading {
+  font-size: 74px;
+  line-height: 72px;
+  max-width: 400px;
+  font-family: "ChampionGothic", sans-serif;
+}
+@media (max-width: 1679px) {
+  .banner.gallery .bnr-cont .heading {
+    font-size: 60px;
+    line-height: 58px;
+  }
+}
+@media (max-width: 1481px) {
+  .banner.gallery .bnr-cont .heading {
+    font-size: 54px;
+    line-height: 62px;
+  }
+}
+@media (max-width: 1281px) {
+  .banner.gallery .bnr-cont .heading {
+    font-size: 44px;
+    line-height: 52px;
+    max-width: 370px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner.gallery .bnr-cont .heading {
+    font-size: 38px;
+    line-height: 44px;
+    max-width: 260px;
+  }
+}
+@media (max-width: 767px) {
+  .banner.gallery .bnr-cont .heading {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    max-width: 200px;
+  }
+}
+@media (max-width: 579px) {
+  .banner.gallery .bnr-cont .heading {
+    max-width: 55%;
+  }
+}
+.banner.gallery .bnr-cont .session-content {
+  color: var(--text);
+}
+.banner.gallery .bnr-cont .session-content.schedule {
+  max-width: 461px;
+}
+.banner.gallery .pull-dwn-wrp {
+  position: relative;
+  margin-bottom: -59px;
+}
+@media (max-width: 991px) {
+  .banner.gallery .pull-dwn-wrp {
+    margin-bottom: -40px;
+  }
+}
+@media (max-width: 840px) {
+  .banner.gallery .pull-dwn-wrp {
+    margin-bottom: -96px;
+    text-align: center;
+  }
+}
+.banner.gallery .pull-dwn-wrp img {
+  max-width: 100%;
+  max-height: 420px;
+  border-radius: 10px;
+}
+@media (max-width: 840px) {
+  .banner.gallery .pull-dwn-wrp img {
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 840px) {
+  .banner.gallery .outer-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.banner.gallery .outer-div .bnr-txt-out {
+  width: 54%;
+}
+@media (max-width: 1679px) {
+  .banner.gallery .outer-div .bnr-txt-out {
+    width: 55%;
+  }
+}
+@media (max-width: 840px) {
+  .banner.gallery .outer-div .bnr-txt-out {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.banner.gallery .outer-div .bnr-txt-out .bnr-cont {
+  max-width: 600px;
+}
+@media (max-width: 1679px) {
+  .banner.gallery .outer-div .bnr-txt-out .bnr-cont {
+    max-width: 492px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner.gallery .outer-div .bnr-txt-out .bnr-cont {
+    max-width: 455px;
+  }
+}
+@media (max-width: 840px) {
+  .banner.gallery .outer-div .bnr-txt-out .bnr-cont {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+.banner.gallery .outer-div .bnr-txt-out .bnr-cont .heading {
+  font-size: 69px;
+  line-height: 72px;
+  max-width: 100% !important;
+  margin-bottom: 25px;
+}
+@media (max-width: 1679px) {
+  .banner.gallery .outer-div .bnr-txt-out .bnr-cont .heading {
+    font-size: 57px;
+    line-height: 65px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner.gallery .outer-div .bnr-txt-out .bnr-cont .heading {
+    font-size: 52px;
+    line-height: 51px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner.gallery .outer-div .bnr-txt-out .bnr-cont .heading {
+    font-size: 45px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 991px) {
+  .banner.gallery .outer-div .bnr-txt-out .bnr-cont .heading {
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 570px) {
+  .banner.gallery .outer-div .bnr-txt-out .bnr-cont .heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 460px) {
+  .banner.gallery .outer-div .bnr-txt-out .bnr-cont .heading {
+    font-size: 35px;
+    line-height: 37px;
+  }
+}
+.banner.gallery .outer-div .image-div {
+  width: 46%;
+}
+@media (max-width: 1679px) {
+  .banner.gallery .outer-div .image-div {
+    width: 45%;
+  }
+}
+@media (max-width: 840px) {
+  .banner.gallery .outer-div .image-div {
+    width: 100%;
+  }
+}
+
+.transformation-sliders .margin-cl-top {
+  margin-top: 150px;
+}

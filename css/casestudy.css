@@ -10,6 +10,7 @@
   --white: #ffffff;
   --light_blue: #CCEBF6;
   --divider-line:#C4C4C4;
+  --radio_color:#A1A1A1;
 }
 
 @font-face {
@@ -94,7 +95,9 @@
 }
 .banner.case-study .outer-div.d-flex {
   padding: 110px 0px 50px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1679px) {
   .banner.case-study .outer-div.d-flex {
