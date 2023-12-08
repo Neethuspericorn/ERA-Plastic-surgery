@@ -366,14 +366,14 @@
   }
 }
 .transformation-sliders .story-outer .story-dtl {
-  padding: 0px 50px 0px 92px;
+  padding: 0px 120px 0px 92px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media (max-width: 1679px) {
   .transformation-sliders .story-outer .story-dtl {
-    padding: 0px 70px 0px 12px;
+    padding: 0px 150px 0px 12px;
   }
 }
 @media (max-width: 1260px) {

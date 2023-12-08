@@ -639,6 +639,12 @@
     width: 100%;
   }
 }
+@media (max-width: 1199px) and (max-width: 1199px) {
+  .section-transformation-wrappper .transform-wrapper .trans-img {
+    order: -1;
+    margin-bottom: 33px;
+  }
+}
 @media (max-width: 1199px) and (max-width: 700px) {
   .section-transformation-wrappper .transform-wrapper .trans-img {
     order: -1;
@@ -661,6 +667,7 @@
   .consultation-outer-wrapper .consult-inner-wrapper {
     flex-direction: column;
     margin-top: 20px;
+    margin-bottom: 50px;
   }
 }
 .consultation-outer-wrapper .consult-inner-wrapper .consult-image-wrapper {
@@ -949,6 +956,91 @@
 @media (max-width: 767px) {
   .our-process .process-content {
     padding: 40px 30px;
+  }
+}
+
+section.video-section {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+@media (max-width: 1679px) {
+  section.video-section {
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 1199px) {
+  section.video-section {
+    padding-top: 0px;
+  }
+}
+section.video-section .content-vid-sub {
+  max-width: 214px;
+}
+@media (max-width: 1199px) {
+  section.video-section .content-vid-sub {
+    max-width: 100%;
+  }
+}
+section.video-section .video-tumb-content .content-sm .title-lg {
+  font-size: 60px;
+  line-height: 57px;
+}
+@media (max-width: 1679px) {
+  section.video-section .video-tumb-content .content-sm .title-lg {
+    font-size: 47px;
+    line-height: 43px;
+  }
+}
+section.video-section .content-sm {
+  width: 30%;
+}
+@media (max-width: 1199px) {
+  section.video-section .content-sm {
+    width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  section.video-section .video-tumb-content {
+    column-gap: 73px;
+  }
+}
+@media (max-width: 1199px) {
+  section.video-section .video-tumb-content .content-sm .title-lg {
+    font-size: 42px;
+  }
+}
+@media (max-width: 1199px) {
+  section.video-section .video-tumb-content .content-sm .title-lg br {
+    display: none;
+  }
+}
+section.video-section .video-thumbs {
+  width: 70%;
+  column-gap: 0px;
+}
+@media (max-width: 1199px) {
+  section.video-section .video-thumbs {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+section.video-section .video-thumbs .thumb {
+  margin-right: 25px;
+}
+section.video-section .thumb.video-wrap:last-child {
+  margin-right: 0;
+}
+@media (max-width: 1679px) {
+  section.video-section .video-tumb-content .video-thumbs .thumb {
+    width: 250px;
+    height: 240px;
+  }
+}
+@media (max-width: 1199px) {
+  section.video-section .video-tumb-content .video-thumbs .thumb {
+    width: 240px;
+    height: 240px;
   }
 }
 
