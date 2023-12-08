@@ -115,4 +115,12 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .video-modal .modal-dialog, .vertical-modal .modal-dialog {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /*# sourceMappingURL=modal.css.map */

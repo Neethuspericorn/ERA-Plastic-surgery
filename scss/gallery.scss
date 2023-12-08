@@ -16,7 +16,7 @@
             background-color: #fff;
             position: absolute;
             bottom: 0px;
-            z-index: 1;
+            z-index:0;
 
         }
         @media ($sm-1679){
@@ -240,7 +240,7 @@
         .pull-dwn-wrp {
             position: relative;
             // margin-bottom: -59px;
-            z-index: 2;
+            z-index:1;
             max-width: 590px;
             // margin-top: 94px;
             @media ($sm-1679){
