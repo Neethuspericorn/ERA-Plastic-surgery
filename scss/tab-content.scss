@@ -8,14 +8,21 @@
 
 
       margin-top: -40px;
+      .tab-head::-webkit-scrollbar {
+        width: 0px;
+    }
         .tab-head{
               position: relative;
               z-index: 9;
              overflow: hidden;
              scrollbar-color: #ddd #fff; /* Optional: customize scrollbar colors */
              height: 50px;
-            
-             &:hover{
+             @media (max-width:1150px)
+             {
+                height: auto;
+             }
+             @media (max-width:600px)
+             {
                 scrollbar-width: thin;
                 overflow-x: auto;
                 overflow-y: hidden;
@@ -26,9 +33,17 @@
               display: flex;
               justify-content: space-between;
               flex-wrap: nowrap;
-  .nav-item {
-    flex: 0 0 auto;
-  }
+              @media (max-width:1150px)
+              {
+                  flex-wrap:wrap;
+              }
+              @media (max-width:600px)
+              {
+                flex-wrap: nowrap;
+              }
+              .nav-item {
+                flex: 0 0 auto;
+              }
                 li{
                   &:first-child .nav-link{
                     padding-left: 0;
@@ -46,6 +61,14 @@
                 letter-spacing: 0.42px;
                 text-transform: uppercase;
                 white-space: nowrap;
+                @media (max-width:1150px)
+                {
+                  padding: 5px 6px;
+                }
+                @media (max-width:600px)
+                {
+                  padding: 5px 15px;
+                }
               }
         }
 

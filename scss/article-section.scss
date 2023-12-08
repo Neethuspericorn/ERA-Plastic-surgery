@@ -56,7 +56,8 @@
       
         .img-wrap{
      img{
-        width: 100%;
+        // width: 100%;
+        max-width: 100%;
      }
         }
         .content-wrap{
@@ -445,8 +446,17 @@ margin-bottom: 20px;
       .content-main .image-wrap-sm {
           // max-width: 90%;
         }
+        .slider-with-content{
+          padding: 15px 0;
+        }
+        .image-split-area .image-content-otr .img-wrap img {
+          max-width: 100%;
+        }
     }
     @media (max-width: 991px) { 
+
+
+      
       .spacing-md {
         padding-left: 15px;
       }
@@ -476,9 +486,44 @@ margin-bottom: 20px;
             .content-main {
                 margin-top: 0 !important;
               }
+
+              .article-section .image-content-otr .img-wrap {
+ text-align: center;
+              }
+
+              .article-section .image-content-otr .content-wrap .title-md {
+                font-size: 20px;
+              }
+              .article-section .image-content-otr .img-wrap img{
+                // max-height: 300px;
+              }
+              .article-section .image-content-otr .pdg-rgt{
+                padding-right: 0;
+              }
             }
             
             @media (max-width: 767px) {
+              .article-section .image-content-otr .content-wrap .title-md{
+                margin-bottom: 8px;
+              }
+              .article-section.bg-fill {
+                padding-top: 32px;
+                padding-bottom: 42px;
+              }
+              .image-content-otr{
+                display: flex;
+                flex-direction: column;
+                .content-wrap{
+                  order: 2;
+                }
+              }
+              .article-section {
+                margin: 30px 0;
+              }
+              .article-section .image-content-otr .img-wrap {
+                margin-top:10px;
+                margin-bottom: 30px;
+              }
               .content-main .image-wrap{
                 display: block;
               }
@@ -516,7 +561,12 @@ margin-bottom: 20px;
               font-size: 14px;
             }
         }
-
+        @media (max-width: 600px) 
+        {
+          .tab-section .tab-cover .content-main {
+            margin-top: 0px !important;
+          }
+        }
         @media (max-width: 579px) {
           .content-main .mt-lg {
             margin-top:20px !important;

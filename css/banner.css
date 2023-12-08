@@ -329,5 +329,9 @@
     display: block;
   }
 }
+.home-banner .banner-slider .mobile-desc-blk .cta {
+  font-size: 16px;
+  font-weight: 500;
+}
 
 /*# sourceMappingURL=banner.css.map */

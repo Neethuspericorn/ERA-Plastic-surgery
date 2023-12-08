@@ -118,4 +118,28 @@
   min-height: 57px;
 }
 
+@media (max-width: 991px) {
+  .faq-area .title-lg {
+    margin-bottom: 30px;
+  }
+  .faq-area .inner-arrow-list li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .faq-area .inner-arrow-list {
+    margin: 0 auto 50px;
+  }
+  .faq-area .box-title {
+    min-height: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .faq-area .inner-arrow-list li .link {
+    font-size: 15px;
+  }
+  .faq-area .inner-arrow-list .session-content {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=faq.css.map */
