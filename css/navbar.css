@@ -263,3 +263,8 @@ body.menu-open {
     color: var(--secondary);
   }
 }
+@media (max-width: 991px) {
+  .navbar .nav-item .dropdown-menu .dropdown-item:hover, .navbar .nav-item .dropdown-menu .dropdown-item:focus, .navbar .nav-item .dropdown-menu .dropdown-item:active {
+    background-color: #265a8f;
+  }
+}

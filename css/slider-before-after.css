@@ -315,6 +315,7 @@
   .before-after-slide .box-full img {
     max-height: auto !important;
   }
+<<<<<<< HEAD
   .before-after-slide .box-full {
     margin: 0 25px;
   }
@@ -322,3 +323,8 @@
     max-width: 100%;
   }
 }
+=======
+}
+
+/*# sourceMappingURL=slider-before-after.css.map */
+>>>>>>> fa3ab9495e537f7c224b9a0b285016efe99543e6
