@@ -82,12 +82,15 @@
   margin-top: 50px;
 }
 .meet-faces-cover .box-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  column-gap: 100px;
-  justify-content: center;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
-  justify-content: center;
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .meet-faces-cover .box-flex .meet-faces .face-box {
   width: 243px;
@@ -100,10 +103,18 @@
   display: flex;
 }
 .meet-faces-cover .box-flex .name-rol {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 25px;
 }
 .meet-faces-cover .box-flex .name-rol strong {
@@ -116,6 +127,9 @@
   font-size: 16px;
 }
 
+.list-area-large {
+  padding: 0 15px;
+}
 .list-area-large .cont-head {
   text-align: center;
 }
@@ -136,15 +150,20 @@
 }
 .list-area-large .list-items-lg li {
   counter-increment: my-awesome-counter;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: left;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
   position: relative;
   border-bottom: 1px solid #A1A1A1;
   padding-bottom: 40px;
   margin-top: 40px;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .list-area-large .list-items-lg li:last-child {
   border-bottom: 0;
@@ -162,9 +181,13 @@
 }
 .list-area-large .list-items-lg li .article-list-atrea {
   padding-left: 65px;
-  flex-shrink: 1;
-  flex: 0 0 auto;
-  flex-shrink: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 55%;
 }
 .list-area-large .list-items-lg li .article-list-atrea .title-li {
@@ -258,12 +281,21 @@
   }
 }
 @media (max-width: 991px) {
+  .list-area-large .list-items-lg li .article-list-atrea .title-li {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .meet-faces-cover .box-flex .meet-faces .face-box {
     width: 150px;
     height: 150px;
   }
 }
 @media (max-width: 767px) {
+  .list-area-large .list-items-lg li {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
   .meet-faces-cover .title-lg {
     margin-bottom: 45px !important;
   }
@@ -284,14 +316,8 @@
     width: 240px;
     height: 240px;
   }
-}
-@media (max-width: 579px) {
-  .list-area-large .list-items-lg li .article-list-atrea {
-    width: 100%;
-  }
-  .list-area-large .list-items-lg li .light-cont {
-    margin-left: 25px;
-    margin-top: 25px;
+  .list-area-large .list-items-lg {
+    padding-left: 15px;
   }
   .list-area-large .list-items-lg li {
     -webkit-box-orient: vertical;
@@ -299,8 +325,33 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .list-area-large .list-items-lg li .light-cont {
+    margin-left: 40px;
+    margin-top: 25px;
+  }
+  .list-area-large .list-items-lg li .article-list-atrea {
+    width: 100%;
+  }
+}
+@media (max-width: 579px) {
+  .list-area-large .list-items-lg li::before {
+    font-size: 60px;
+    top: -23px;
+  }
+  .list-area-large .list-items-lg li .article-list-atrea {
+    padding-left: 40px;
+  }
+  .list-area-large .list-items-lg {
+    padding-left: 10px;
+  }
+  .meet-faces-cover .title-lg {
+    margin-bottom: 35px !important;
+  }
   .meet-faces-cover .box-flex .meet-faces .face-box {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+  }
+  .list-area-large .list-items-lg li:last-child {
+    padding-bottom: 0;
   }
 }
