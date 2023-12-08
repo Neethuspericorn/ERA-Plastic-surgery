@@ -255,8 +255,12 @@ margin-bottom: 20px;
         } 
     }
     .image-wrap-sm{
-        max-width: 488px;
+        // max-width: 488px;
         width: 100%;
+        img{
+          max-width: 100%;
+          max-height: 480px;
+        }
     }
     .tag-line{
         color: var(--primary);
@@ -280,6 +284,10 @@ margin-bottom: 20px;
         }
     }
 }
+
+ .spacing-md{
+  padding-left: 100px;
+ }
 
 @media(max-width:1679px){
 
@@ -331,8 +339,11 @@ margin-bottom: 20px;
         height: 45px;
     }
   }
-  .content-main .image-wrap-sm {
-    max-width: 460px;
+  .spacing-md {
+    padding-left: 0;
+  }
+  .content-main .image-wrap-sm img{
+    max-height: 330px;
   }
   .article-section .lg-para {
     font-size: 18px;
@@ -347,7 +358,12 @@ margin-bottom: 20px;
     font-size: 14px;
   }
 }
+@media (max-width: 1341px) {
 
+  .spacing-md {
+    padding-left: 50px;
+  }
+}
 @media (max-width: 1281px) {
     .article-section .article-cvr .article-content .lg-title {
       font-size: 36px;
@@ -398,10 +414,16 @@ margin-bottom: 20px;
         font-size: 16px;
       }
       .content-main .image-wrap-sm {
-          max-width: 90%;
+          // max-width: 90%;
         }
     }
     @media (max-width: 991px) { 
+      .spacing-md {
+        padding-left: 15px;
+      }
+        .content-main .image-wrap-sm {
+            // max-width: 85%;
+          }
         .content-main .ps-md {
             padding-left: 0;
           }
@@ -428,6 +450,15 @@ margin-bottom: 20px;
             }
             
             @media (max-width: 767px) {
+              .content-main .image-wrap{
+                display: block;
+              }
+              .content-main .mt-lg {
+                margin-top: 30px !important;
+              }
+                .custom-mrg-lg{
+                    margin-bottom:20px !important;
+                }
                 .custom-mrg{
                     margin-top: 0;
                 }
@@ -436,19 +467,31 @@ margin-bottom: 20px;
                     line-height: 37px;
                 }
             .content-main .image-wrap-sm {
-              max-width:100%;
+              // max-width:100%;
               height: auto;
               margin-bottom:30px;
               display: block;
               text-align: center;
             }
             .article_otr{
-                margin-bottom: 35px;
+                // margin-bottom: 35px;
             }
-            
+            .article-section .video-link img {
+              width: 25px;
+             
+            }
+            .article-section .video-link button{
+              text-align: left;
+            }
+            .article-section .video-link span{
+              font-size: 14px;
+            }
         }
 
         @media (max-width: 579px) {
+          .content-main .mt-lg {
+            margin-top:20px !important;
+          }
             .article-section .title-lg {
                 font-size: 28px;
                 line-height: 33px;
