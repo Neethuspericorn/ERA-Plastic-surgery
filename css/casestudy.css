@@ -93,9 +93,7 @@
 }
 .banner.case-study .outer-div.d-flex {
   padding: 110px 0px 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 @media (max-width: 1679px) {
   .banner.case-study .outer-div.d-flex {

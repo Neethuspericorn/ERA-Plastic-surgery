@@ -2,6 +2,9 @@
 .home-banner{
     background-color: #EEF8FC;
     max-height: 662px;
+    @media ($sm-767){
+        max-height: unset;
+    }
     @media ($sm-579){
         background: linear-gradient(180deg, #EEF8FC 65.24%, rgba(238, 248, 252, 0) 100%);
     }
@@ -31,6 +34,7 @@
             }
             @media ($sm-767){
                 order: 2;
+                max-height: unset;
             }
             &.desktop{
                 @media ($sm-579){
@@ -41,11 +45,17 @@
                 display: none;
                 @media ($sm-579){
                     display: flex;
-                    height:302px;
+                    height:auto;
                 }
                 img{
                     height: inherit;
                     object-fit: cover;
+                    @media ($sm-767){
+                        aspect-ratio: 0.8083;
+                        height: auto;
+                        object-position: bottom right;
+                        max-height: 600px;
+                    }
                 }
             }
         }
@@ -70,42 +80,53 @@
                 max-width: 750px;
                 @media ($sm-1679){
                     font-size: 60px;
-                    line-height: 58px;
+                    line-height: 62px;
                     max-width: 600px;
                     
                 }
                 @media ($sm-1481){
-                    font-size: 54px;
-                    line-height: 62px;
+                    font-size: 42px;
+                    line-height: 44px;
                 }
                 @media ($sm-1281){
-                    font-size: 44px;
-                    line-height: 52px;
+                    font-size: 42px;
+                    line-height: 44px;
                 }
                 @media ($sm-1281){
-                    font-size: 34px;
-                    line-height: 42px;
+                    font-size: 42px;
+                    line-height: 44px;
                 }
                 @media ($sm-991){
-                    font-size: 30px;
-                    line-height: 32px;
-                }
-                @media ($sm-767){
-                    font-size: 30px;
-                    line-height: 32px;
+                    font-size: 35px;
+                    line-height: 37px;
                     margin-bottom: 10px;
                 }
-                @media ($sm-579){
-                    max-width: 200px;
-                    font-size: 26px;
+                @media ($sm-767){
+                    font-size: 40px;
+                    line-height: 42px;
+                    margin-bottom: 10px;
+                }
+                @media ($sm-479){
+                    max-width: 100%;
+                    font-size: 40px;
+                    line-height: 42px;
+                }
+                @media (max-width:390px){
+                    max-width: 100%;
+                    font-size: 32px;
+                    line-height: 34px;
                 }
                 span{
                     display: block;
                     &.sub{
                         @media ($sm-579){
-                        max-width: 150px;
+                        max-width: 210px;
                         display: block;
                         }
+                        @media ($sm-479){
+                            max-width: 180px;
+                            display: block;
+                            }
                     }
                 }
             }
@@ -115,10 +136,10 @@
                 color: var(--text);
                 @media ($sm-1679){
                     font-size: 18px;
-                    max-width: 477px;
+                    max-width: 434px;
                 }
                 @media ($sm-991){
-                    font-size: 14px;
+                    font-size: 16px;
                 }
                
             }
@@ -138,6 +159,9 @@
             &:not(.mobile){
                 .bnr-desc{
                     margin-bottom: 30px;
+                    @media ($sm-991){
+                        margin-bottom: 20px;
+                    }
                     @media ($sm-767){
                         margin-bottom: 20px;
                     }

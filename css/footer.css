@@ -96,39 +96,31 @@
 }
 @media (max-width: 1679px) {
   .footer .have-questions .heading {
-    font-size: 54px;
-    line-height: 60px;
-  }
-}
-@media (max-width: 1481px) {
-  .footer .have-questions .heading {
-    font-size: 48px;
-    line-height: 54px;
-  }
-}
-@media (max-width: 1281px) {
-  .footer .have-questions .heading {
-    font-size: 42px;
-    line-height: 48px;
-  }
-}
-@media (max-width: 1199px) {
-  .footer .have-questions .heading {
-    font-size: 36px;
-    line-height: 42px;
-  }
-}
-@media (max-width: 991px) {
-  .footer .have-questions .heading {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 50px;
+    line-height: 52px;
   }
 }
 @media (max-width: 767px) {
   .footer .have-questions .heading {
-    font-size: 25px;
-    line-height: 33px;
+    font-size: 50px;
+    line-height: 52px;
+    max-width: 338px;
+    margin: 0 auto 22px;
   }
+}
+@media (max-width: 380px) {
+  .footer .have-questions .heading {
+    font-size: 42px;
+    line-height: 54px;
+    max-width: 270px;
+    margin: 0 auto 22px;
+  }
+}
+.footer .have-questions .schedule-txt {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gotham", sans-serif;
+  font-weight: 400;
 }
 .footer .footer-info {
   padding-top: 50px;
@@ -169,10 +161,9 @@
   font-size: 24px;
   line-height: 27px;
 }
-@media (max-width: 1481px) {
-  .footer .footer-info .footer-cta .title {
-    font-size: 20px;
-    line-height: 23px;
+@media (max-width: 767px) {
+  .footer .footer-info .footer-cta {
+    margin-bottom: 50px;
   }
 }
 .footer .footer-info .col-footer-logo {
@@ -323,6 +314,10 @@
   color: var(--white);
   margin-bottom: 20px;
   display: block;
+}
+.footer .footer-info .col-footer-info .contact-info .info-tms .phone {
+  color: #fff;
+  text-decoration: none;
 }
 .footer .footer-info .col-footer-cta {
   -webkit-box-flex: 0;
