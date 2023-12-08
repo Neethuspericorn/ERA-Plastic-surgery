@@ -177,11 +177,6 @@
                         line-height: 51px;
                         margin-bottom: 18px;
                     }
-                    @media (max-width:1199px)
-                    {
-                        font-size: 45px;
-                        line-height: 48px;
-                    }
                     @media ($sm-991)
                     {
                         font-size: 40px;
@@ -193,8 +188,9 @@
                     }
                     @media (max-width:460px)
                     {
-                        font-size: 35px;
-                        line-height: 37px;
+                        font-size: 36px;
+                        line-height: 42px;
+                        margin-bottom: 11px;
                     }
                 }
             }

@@ -166,6 +166,10 @@ body{
                         background-color: var(--hover_blue);
                         color: var(--secondary);
                     }
+                    @media ($sm-991)
+                    {
+                        background-color: #265a8f;
+                    }
                 }
             }
         }

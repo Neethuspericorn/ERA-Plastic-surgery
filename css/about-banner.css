@@ -92,7 +92,7 @@
   bottom: 0;
   height: 65px;
   width: 100%;
-  z-index: 9;
+  z-index: 0;
 }
 .banner-area .fade-sl {
   display: flex;
@@ -171,7 +171,7 @@
 .banner-area .services-bnr-img {
   position: relative;
   justify-content: flex-end;
-  z-index: 99;
+  z-index: 1;
 }
 .banner-area .services-bnr-img .video-wrap {
   cursor: pointer;

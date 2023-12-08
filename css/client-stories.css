@@ -286,12 +286,6 @@
     margin-bottom: 18px;
   }
 }
-@media (max-width: 1199px) {
-  .banner.gallery .outer-div .bnr-txt-out .bnr-cont .heading {
-    font-size: 45px;
-    line-height: 48px;
-  }
-}
 @media (max-width: 991px) {
   .banner.gallery .outer-div .bnr-txt-out .bnr-cont .heading {
     font-size: 40px;
@@ -305,8 +299,9 @@
 }
 @media (max-width: 460px) {
   .banner.gallery .outer-div .bnr-txt-out .bnr-cont .heading {
-    font-size: 35px;
-    line-height: 37px;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 11px;
   }
 }
 .banner.gallery .outer-div .image-div {
