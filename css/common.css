@@ -223,17 +223,10 @@ body small text:    14px = 0.875rem
 .inner-arrow-list {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 12px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .inner-arrow-list li {
   list-style: none;
@@ -243,16 +236,9 @@ body small text:    14px = 0.875rem
   padding-bottom: 5px;
   cursor: pointer;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: flex-start;
+  flex-direction: column;
 }
 @media (max-width: 1679px) {
   .inner-arrow-list li {
@@ -263,19 +249,12 @@ body small text:    14px = 0.875rem
 .inner-arrow-list li .link {
   text-decoration: none;
   color: var(--text);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex: 1;
+  align-items: flex-start;
   margin-bottom: 10px;
   position: relative;
   width: 100%;
-  -webkit-transition: linear 0.3s;
   transition: linear 0.3s;
   padding-right: 15px;
 }
@@ -296,26 +275,24 @@ body small text:    14px = 0.875rem
   right: 0px;
 }
 .inner-arrow-list li .link:not(.collapsed)::after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .inner-arrow-list li:hover::after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-.inner-arrow-list li .collapse {
-  color: #666;
+  transform: rotate(90deg);
 }
 @media (max-width: 1679px) {
-  .inner-arrow-list li .collapse .session-content {
+  .inner-arrow-list li .expansion-wrp .session-content {
     font-size: 14px;
     line-height: 20px;
   }
 }
 @media (max-width: 767px) {
-  .inner-arrow-list li .collapse {
+  .inner-arrow-list li .expansion-wrp {
     padding-top: 5px;
   }
+}
+.inner-arrow-list li .collapse {
+  color: #666;
 }
 
 .container-padding {
@@ -391,15 +368,9 @@ body small text:    14px = 0.875rem
   border-radius: 5px;
   height: 50px;
   font-size: 16px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 15px 25px;
   font-weight: 500;
 }

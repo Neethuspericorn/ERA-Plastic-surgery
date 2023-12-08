@@ -187,8 +187,7 @@ body small text:    14px = 0.875rem
             transform: rotate(90deg)
             }
         }
-        .collapse{
-            color: #666;
+        .expansion-wrp{
             .session-content{
                 @media ($sm-1679){
                     font-size: 14px;
@@ -198,6 +197,18 @@ body small text:    14px = 0.875rem
             @media ($sm-767){
                 padding-top: 5px;
             }
+        }
+        .collapse{
+            color: #666;
+            // .session-content{
+            //     @media ($sm-1679){
+            //         font-size: 14px;
+            //         line-height: 20px;
+            //     }
+            // }
+            // @media ($sm-767){
+            //     padding-top: 5px;
+            // }
         }
     }
 }
