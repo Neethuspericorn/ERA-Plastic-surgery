@@ -103,7 +103,7 @@
     min-height: 350px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 840px) {
   .banner.gallery-bnr .banner-wrp-sub {
     flex-direction: column;
     padding-top: 40px;
@@ -132,6 +132,13 @@
     padding-bottom: 30px;
   }
 }
+@media (max-width: 1199px) {
+  .banner.gallery-bnr .bnr-cont {
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 45%;
+  }
+}
 @media (max-width: 991px) {
   .banner.gallery-bnr .bnr-cont {
     margin-right: 20px;
@@ -139,7 +146,7 @@
     width: 45%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 840px) {
   .banner.gallery-bnr .bnr-cont {
     padding-bottom: 10px;
     order: 2;
@@ -229,6 +236,7 @@
     font-size: 38px;
     line-height: 40px;
     max-width: 330px;
+    margin-top: 0px;
   }
 }
 @media (max-width: 991px) {
@@ -239,12 +247,13 @@
     margin-bottom: 20px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 840px) {
   .banner.gallery-bnr .bnr-cont .heading.providers {
     font-size: 35px;
     line-height: 37px;
     margin-bottom: 10px;
-    max-width: 340px;
+    max-width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 579px) {
@@ -350,6 +359,18 @@
     max-width: 420px;
   }
 }
+@media (max-width: 840px) {
+  .banner.gallery-bnr .bnr-cont .session-content.providers {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .banner.gallery-bnr .bnr-cont .session-content.providers {
+    max-width: 100%;
+    text-align: center;
+  }
+}
 .banner.gallery-bnr .bnr-cont .session-content.contact {
   max-width: 395px;
 }
@@ -358,9 +379,10 @@
   z-index: 2;
   max-width: 590px;
 }
-@media (max-width: 767px) {
+@media (max-width: 840px) {
   .banner.gallery-bnr .pull-dwn-wrp {
     max-width: 100%;
+    max-height: -moz-fit-content;
     max-height: fit-content;
     margin-bottom: 20px;
     order: 2;
@@ -765,7 +787,8 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   margin-bottom: 60px;
 }
 .providers-info-wrp .provider-deatil-wrp .affiliation-blk .blks {
@@ -1013,6 +1036,9 @@
   line-height: 20px;
   height: 50px;
 }
+.schedule-consult-wrp .consultation-form .form-control::-moz-placeholder, .schedule-consult-wrp .consultation-form .form-select::-moz-placeholder {
+  color: var(--primary);
+}
 .schedule-consult-wrp .consultation-form .form-control::placeholder, .schedule-consult-wrp .consultation-form .form-select::placeholder {
   color: var(--primary);
 }
@@ -1054,5 +1080,3 @@
     margin-top: 30px;
   }
 }
-
-/*# sourceMappingURL=gallery.css.map */
