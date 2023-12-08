@@ -173,6 +173,7 @@
         }
     }
     .content-area-lft{
+        max-width: 460px;
         &.white{
             .inner-title{
                 color: var(--white);
@@ -192,6 +193,10 @@
                     font-size: 16px;
                     line-height: 24px;
                 }
+                @media (max-width:1100px){
+                    font-size: 14px;
+                    line-height: 22px;
+                }
                 @media ($sm-767){
                     color: var(--text);
                 }
@@ -202,7 +207,7 @@
             @media ($sm-1281){
                 padding: 45px 0;
             }
-            @media ($sm-991){
+            @media ($sm-1199){
                 padding: 23px 30px;
             }
             @media ($sm-991){
@@ -251,6 +256,9 @@
         @media ($sm-1281){
             max-width: 470px;
             margin: 0 auto;
+        }
+        @media (max-width:1100px){
+            max-width: 540px;
         }
         @media ($sm-991){
             position: absolute;
