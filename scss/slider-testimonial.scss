@@ -56,6 +56,9 @@
                 max-width: 610px;
                 font-size: 16px;
             }
+            @media ($sm-767) {
+                max-width: 328px;
+            }
         }
     }
 

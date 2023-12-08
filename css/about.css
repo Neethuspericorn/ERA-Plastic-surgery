@@ -83,7 +83,8 @@
 }
 .meet-faces-cover .box-flex {
   display: flex;
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   justify-content: center;
 }
 .meet-faces-cover .box-flex .meet-faces .face-box {
@@ -133,7 +134,8 @@
   counter-increment: my-awesome-counter;
   display: flex;
   text-align: left;
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   position: relative;
   border-bottom: 1px solid #A1A1A1;
   padding-bottom: 40px;
@@ -231,7 +233,8 @@
     height: 180px;
   }
   .meet-faces-cover .box-flex {
-    column-gap: 50px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
   }
   .list-area-large .list-items-lg li::before {
     font-size: 50px;
@@ -290,5 +293,3 @@
     height: 200px;
   }
 }
-
-/*# sourceMappingURL=about.css.map */
