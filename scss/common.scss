@@ -302,4 +302,9 @@ body small text:    14px = 0.875rem
         color: var(--primary);
     }
 }
+.custom-row{
+    @media ($sm-767){
+        margin: 0;
+    }
+}
 
