@@ -179,8 +179,7 @@
   .banner.case-study .outer-div.d-flex .img-case-study img {
     margin-top: 25px;
     height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (max-width: 413px) {
@@ -295,3 +294,5 @@
     margin-top: 40px;
   }
 }
+
+/*# sourceMappingURL=casestudy.css.map */
