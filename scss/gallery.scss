@@ -236,6 +236,12 @@
                         text-align: center;
                     }
                 }
+                &.schedule{
+                    @media (max-width:840px){
+                        max-width: 100%;
+                        text-align: center;
+                    }
+                }
             }
         }
 

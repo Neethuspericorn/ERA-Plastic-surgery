@@ -376,6 +376,12 @@
     text-align: center;
   }
 }
+@media (max-width: 840px) {
+  .banner.gallery-bnr .bnr-cont .session-content.schedule {
+    max-width: 100%;
+    text-align: center;
+  }
+}
 .banner.gallery-bnr .pull-dwn-wrp {
   position: relative;
   z-index: 1;
