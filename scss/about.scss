@@ -129,7 +129,7 @@
   .content-main {
     margin-top: 50px !important;
     .image-wrap{
-      max-width: 450px;
+      max-width: 560px;
       
     }
   }
@@ -271,4 +271,9 @@
     .list-area-large .list-items-lg li:last-child{
       padding-bottom: 0;
     }
+}
+.image-right-outr
+{
+  display:flex;
+  justify-content:end;
 }
