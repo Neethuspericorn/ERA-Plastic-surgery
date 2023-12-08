@@ -39,6 +39,9 @@
             line-height: 24px;
             font-family: $primary_font;
             font-weight: 400;
+            @media ($sm-767){
+                max-width: 380px;
+            }
         }
     }
     .footer-info{
@@ -48,7 +51,7 @@
         color: var(--white);
         @media screen and ($sm-991){
             padding-top: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
         }
         .col{
             padding-top: 10px;
@@ -79,7 +82,7 @@
                
             }
             @media ($sm-767){
-                margin-bottom: 50px;
+                margin-bottom: 30px;
             }
         }
         .col-footer-logo{

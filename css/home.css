@@ -98,6 +98,11 @@
   margin: 0 auto 50px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .help-wrp .title-floater {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 400px) {
   .help-wrp .title-floater .session-title {
     font-size: 30px;
@@ -148,7 +153,8 @@
   display: flex;
   height: 280px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1679px) {
   .help-wrp .service-list-wrp .services-intro .thumb-hldr img {
@@ -230,7 +236,8 @@
   }
 }
 .full-width-wrap .poster-blk video {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
 }
 .full-width-wrap .poster-content {
@@ -272,6 +279,22 @@
 @media (max-width: 1679px) {
   .full-width-wrap .poster-content .shell-wrp .session-content {
     max-width: 440px;
+  }
+}
+.full-width-wrap .poster-content .shell-wrp .link-step {
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  display: none;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .full-width-wrap .poster-content .shell-wrp .link-step {
+    display: block;
   }
 }
 .full-width-wrap .content-area-lft {
@@ -327,8 +350,16 @@
 @media (max-width: 991px) {
   .full-width-wrap .content-area-lft.padding-y {
     padding: 30px;
-    padding-left: 5px;
+    padding-left: 30px;
     padding-right: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .full-width-wrap .content-area-lft.padding-y {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 58px;
+    padding-top: 45px;
   }
 }
 .full-width-wrap .content-area-lft .inner-title {
@@ -341,9 +372,13 @@
 }
 .full-width-wrap .content-area-lft .btn-white {
   margin-top: 10px;
-  font-weight: 500;
-  background-color: var(--secondary);
-  color: var(--white);
+}
+@media (max-width: 767px) {
+  .full-width-wrap .content-area-lft .btn-white {
+    font-weight: 500;
+    background-color: var(--secondary);
+    color: var(--white);
+  }
 }
 @media (max-width: 767px) {
   .full-width-wrap .content-area-lft .btn-white {
@@ -387,7 +422,6 @@
   width: 100%;
   background: url(../img/EsterHeadshot.png) no-repeat center center;
   background-size: cover;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 @media (max-width: 1281px) {
@@ -694,7 +728,8 @@
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   height: 430px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1679px) {
   .consultation-outer-wrapper .consult-inner-wrapper .consult-image-wrapper img {
@@ -885,12 +920,14 @@
 }
 .our-process .steps-wrp {
   display: flex;
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 @media (max-width: 579px) {
   .our-process .steps-wrp {
     flex-direction: column;
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
 }
 .our-process .steps-wrp .steps-blks {
@@ -901,12 +938,14 @@
 }
 @media (max-width: 991px) {
   .our-process .steps-wrp .steps-blks {
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
 }
 @media (max-width: 579px) {
   .our-process .steps-wrp .steps-blks {
-    column-gap: 0px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
   }
 }
 .our-process .steps-wrp .steps-blks li {
@@ -961,11 +1000,15 @@
     display: flex;
     background: #E5F5FA -46.201px -20.301px/131.64% 131.963% no-repeat;
     padding: 0px;
+    margin-left: -12px;
+    margin-right: -12px;
   }
 }
 .our-process .mobile-only img {
-  object-fit: contain;
-  object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
 }
 @media (max-width: 767px) {
@@ -1016,7 +1059,8 @@ section.video-section .content-sm {
 }
 @media (max-width: 1280px) {
   section.video-section .video-tumb-content {
-    column-gap: 73px;
+    -moz-column-gap: 73px;
+         column-gap: 73px;
   }
 }
 @media (max-width: 1199px) {
@@ -1031,7 +1075,8 @@ section.video-section .content-sm {
 }
 section.video-section .video-thumbs {
   width: 70%;
-  column-gap: 0px;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
 }
 @media (max-width: 1199px) {
   section.video-section .video-thumbs {
@@ -1058,5 +1103,3 @@ section.video-section .thumb.video-wrap:last-child {
     height: 240px;
   }
 }
-
-/*# sourceMappingURL=home.css.map */
