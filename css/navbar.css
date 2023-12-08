@@ -88,7 +88,8 @@ body.menu-open {
 }
 .navbar .navbar-brand img {
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 991px) {
   .navbar .navbar-brand img {
@@ -124,17 +125,22 @@ body.menu-open {
 }
 @media screen and (max-width: 991px) {
   .navbar .navbar-collapse {
+    transition: transform 0.3s;
     padding-left: 40px;
     padding-right: 30px;
     padding-bottom: 15px;
     padding-top: 33px;
     background-color: var(--primary);
     position: fixed;
-    top: 81px;
+    top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 9;
+    transform: translateX(100%);
+  }
+  .navbar .navbar-collapse.show {
+    transform: translateX(0);
   }
 }
 .navbar .navbar-nav .nav-link {
@@ -240,5 +246,3 @@ body.menu-open {
     color: var(--secondary);
   }
 }
-
-/*# sourceMappingURL=navbar.css.map */
