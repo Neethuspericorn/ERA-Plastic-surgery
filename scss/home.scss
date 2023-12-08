@@ -220,6 +220,8 @@
             }
             @media ($sm-991){
                 padding: 30px;
+                padding-left: 5px;
+                padding-right:55px;
             }
         }
         .inner-title{
@@ -273,6 +275,7 @@
             height: 100%;
             right: 0px;
             background-size: cover;
+            max-width:480px;
         }
         @media ($sm-767){
             height: 300px;
@@ -331,6 +334,16 @@
     @media (max-width:700px)
     {
         display: block !important;
+    }
+}
+section.full-width-wrap.secondary_bg.our-practice
+{
+    .container.container-custom.container-padding.mobile-0
+    {
+        @media (max-width:990px)
+        {
+            padding-right: 0px;
+        }
     }
 }
 .section-transformation-wrappper

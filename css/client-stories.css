@@ -356,14 +356,13 @@
 }
 @media (max-width: 991px) {
   .transformation-sliders .story-outer .story-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (max-width: 740px) {
   .transformation-sliders .story-outer .story-img img {
     width: 100%;
-    height: 260px;
+    max-height: 260px;
   }
 }
 .transformation-sliders .story-outer .story-dtl {
@@ -440,3 +439,5 @@
     font-size: 14px;
   }
 }
+
+/*# sourceMappingURL=client-stories.css.map */
