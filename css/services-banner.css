@@ -4,6 +4,7 @@
   --ternary: #5FCBEC;
   --light: #CCEBF6;
   --light-secondary: #E5F5FA;
+  --hover_blue:#EEF8FC;
   --text: #000000;
   --border: #C4C4C4;
   --white: #ffffff;
@@ -100,6 +101,7 @@
   flex: 0 0 auto;
   width: 50%;
   height: 100%;
+  padding: 45px 0;
 }
 .service-banner .bnr-content-cvr .btn-secondary {
   min-width: 150px;
@@ -191,3 +193,5 @@
     min-height: 420px;
   }
 }
+
+/*# sourceMappingURL=services-banner.css.map */

@@ -4,6 +4,7 @@
   --ternary: #5FCBEC;
   --light: #CCEBF6;
   --light-secondary: #E5F5FA;
+  --hover_blue:#EEF8FC;
   --text: #000000;
   --border: #C4C4C4;
   --white: #ffffff;
@@ -78,6 +79,41 @@
 .container-padding-lg {
   padding-left: 150px;
   padding-right: 150px;
+}
+@media screen and (max-width: 1481px) {
+  .container-padding-lg {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .container-padding-lg {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .container-padding-lg {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container-padding-lg {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-padding-lg {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-padding-lg.mobile-0 {
+    padding: 0px;
+  }
 }
 
 .article-section {
@@ -199,6 +235,9 @@
 .article-section .article-cvr {
   display: flex;
   column-gap: 100px;
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
   padding-right: 50px;
   background-color: var(--light-secondary);
   overflow: hidden;
@@ -325,6 +364,9 @@
 }
 
 @media (max-width: 1679px) {
+  .article-section .article-cvr .article-img {
+    min-height: 300;
+  }
   .content-main .article_otr .para {
     font-size: 14px;
     margin-bottom: 10px;
@@ -353,6 +395,9 @@
   }
   .article-section .article-cvr {
     column-gap: 70px;
+    -webkit-column-gap: 70px;
+       -moz-column-gap: 70px;
+            column-gap: 70px;
   }
   .article-section {
     margin: 60px 0;
@@ -399,6 +444,9 @@
   }
   .article-section .article-cvr {
     column-gap: 50px;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
   }
   .article-section .article-cvr .article-img {
     max-width: 50%;
@@ -411,10 +459,6 @@
   }
 }
 @media (max-width: 1199px) {
-  .container-padding-lg {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   .article-section .title-lg {
     margin-bottom: 40px;
   }
@@ -455,10 +499,18 @@
   }
   .content-main .image-wrap {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
   }
   .content-main {

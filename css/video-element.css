@@ -4,6 +4,7 @@
   --ternary: #5FCBEC;
   --light: #CCEBF6;
   --light-secondary: #E5F5FA;
+  --hover_blue:#EEF8FC;
   --text: #000000;
   --border: #C4C4C4;
   --white: #ffffff;
@@ -93,9 +94,17 @@
 }
 
 .video-tumb-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   column-gap: 44px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 44px;
+     -moz-column-gap: 44px;
+          column-gap: 44px;
 }
 .video-tumb-content .content-sm .title-lg {
   margin-bottom: 17px;
@@ -104,8 +113,13 @@
   line-height: 53px;
 }
 .video-tumb-content .video-thumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   column-gap: 17px;
+  -webkit-column-gap: 17px;
+     -moz-column-gap: 17px;
+          column-gap: 17px;
 }
 .video-tumb-content .video-thumbs .thumb {
   width: 253px;
@@ -122,6 +136,7 @@
 
 .video-wrap {
   position: relative;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -211,3 +226,62 @@
 }
 
 /*# sourceMappingURL=video-element.css.map */
+
+@media (max-width: 1199px) {
+  .video-tumb-content .content-sm .title-lg {
+    margin-bottom: 17px;
+    font-size: 37px;
+    line-height: 40px;
+  }
+  .video-tumb-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .video-tumb-content .video-thumbs .thumb {
+    width: 160px;
+    height: 160px;
+  }
+  .video-tumb-content .content-sm {
+    margin-bottom: 25px;
+  }
+  .video-tumb-content .content-sm .title-lg, .video-tumb-content .content-sm p {
+    text-align: center;
+  }
+  .video-tumb-content .video-thumbs {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+@media (max-width: 767px) {
+  .video-tumb-content .video-thumbs .thumb:last-child {
+    margin-bottom: 0;
+  }
+  .video-section {
+    margin: 40px 0 0px;
+  }
+  .video-tumb-content .content-sm .title-lg {
+    font-size: 33px;
+    line-height: 37px;
+  }
+  .video-tumb-content .content-sm {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 579px) {
+  .video-tumb-content .video-thumbs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .video-tumb-content .video-thumbs .thumb {
+    margin-bottom: 20px;
+  }
+  .video-tumb-content .video-thumbs .thumb {
+    width: 220px;
+    height: 220px;
+  }
+}

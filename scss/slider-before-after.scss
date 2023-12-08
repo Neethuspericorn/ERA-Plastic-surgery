@@ -159,9 +159,23 @@
 .bg-fill-light{
     background-color: var( --light);
 }
+
 @media(max-width:1679px){
-.before-after-slide .box-full .overlay-fill span{
-    font-size: 45px;
+    .before-after-slide .box-full .overlay-fill span{
+        font-size: 45px;
+    }
+
+.before-after-slide .slick-next{
+ right: 0;
+}
+.before-after-slide .slick-prev{
+    left: 0;
+   }
+}
+@media(max-width:767px){
+
+.slider-with-content{
+  margin-top: 55px;
 }
 
 }

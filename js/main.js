@@ -23,6 +23,10 @@ $(document).ready(function(){
         arrows: true,
         fade: true
     })
+    $(".navbar-toggler").click(function(){
+        $("body").toggleClass("menu-open");
+    });
+    
 });
 
 

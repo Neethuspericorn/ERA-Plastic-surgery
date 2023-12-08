@@ -4,6 +4,7 @@
   --ternary: #5FCBEC;
   --light: #CCEBF6;
   --light-secondary: #E5F5FA;
+  --hover_blue:#EEF8FC;
   --text: #000000;
   --border: #C4C4C4;
   --white: #ffffff;
@@ -177,8 +178,7 @@
   .banner.case-study .outer-div.d-flex .img-case-study img {
     margin-top: 25px;
     height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (max-width: 413px) {
@@ -293,3 +293,5 @@
     margin-top: 40px;
   }
 }
+
+/*# sourceMappingURL=casestudy.css.map */

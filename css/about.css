@@ -4,6 +4,7 @@
   --ternary: #5FCBEC;
   --light: #CCEBF6;
   --light-secondary: #E5F5FA;
+  --hover_blue:#EEF8FC;
   --text: #000000;
   --border: #C4C4C4;
   --white: #ffffff;
@@ -85,6 +86,12 @@
   display: flex;
   column-gap: 100px;
   justify-content: center;
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .meet-faces-cover .box-flex .meet-faces .face-box {
   width: 243px;
@@ -92,6 +99,8 @@
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .meet-faces-cover .box-flex .name-rol {
@@ -235,6 +244,9 @@
   }
   .meet-faces-cover .box-flex {
     column-gap: 50px;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
   }
   .list-area-large .list-items-lg li::before {
     font-size: 50px;
@@ -277,7 +289,10 @@
     margin-bottom: 50px;
   }
   .meet-faces-cover .box-flex {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .meet-faces-cover .box-flex .meet-faces .face-box {
     width: 240px;
@@ -287,7 +302,10 @@
     padding-left: 15px;
   }
   .list-area-large .list-items-lg li {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .list-area-large .list-items-lg li .light-cont {
     margin-left: 40px;
