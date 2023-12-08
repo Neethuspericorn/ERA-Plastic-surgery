@@ -10,6 +10,7 @@
   --white: #ffffff;
   --light_blue: #CCEBF6;
   --divider-line:#C4C4C4;
+  --radio_color:#A1A1A1;
 }
 
 @font-face {
@@ -86,12 +87,6 @@
   display: flex;
   column-gap: 100px;
   justify-content: center;
-  -webkit-column-gap: 100px;
-     -moz-column-gap: 100px;
-          column-gap: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .meet-faces-cover .box-flex .meet-faces .face-box {
   width: 243px;
@@ -99,8 +94,6 @@
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .meet-faces-cover .box-flex .name-rol {
@@ -244,9 +237,6 @@
   }
   .meet-faces-cover .box-flex {
     column-gap: 50px;
-    -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
-            column-gap: 50px;
   }
   .list-area-large .list-items-lg li::before {
     font-size: 50px;
@@ -289,10 +279,7 @@
     margin-bottom: 50px;
   }
   .meet-faces-cover .box-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .meet-faces-cover .box-flex .meet-faces .face-box {
     width: 240px;
@@ -302,10 +289,7 @@
     padding-left: 15px;
   }
   .list-area-large .list-items-lg li {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .list-area-large .list-items-lg li .light-cont {
     margin-left: 40px;

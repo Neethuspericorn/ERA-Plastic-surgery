@@ -10,6 +10,7 @@
   --white: #ffffff;
   --light_blue: #CCEBF6;
   --divider-line:#C4C4C4;
+  --radio_color:#A1A1A1;
 }
 
 @font-face {
@@ -341,6 +342,14 @@
 .full-width-wrap .content-area-lft .btn-white {
   margin-top: 10px;
   font-weight: 500;
+  background-color: var(--secondary);
+  color: var(--white);
+}
+@media (max-width: 767px) {
+  .full-width-wrap .content-area-lft .btn-white {
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 @media (max-width: 1281px) {
   .full-width-wrap .content-area-lft {
@@ -822,6 +831,11 @@
 .our-process .title-pop {
   text-align: center;
   margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .our-process .title-pop {
+    margin-bottom: 35px;
+  }
 }
 .our-process .title-pop .session-title {
   margin: 0 auto 10px;

@@ -10,6 +10,7 @@
   --white: #ffffff;
   --light_blue: #CCEBF6;
   --divider-line:#C4C4C4;
+  --radio_color:#A1A1A1;
 }
 
 @font-face {
@@ -1034,7 +1035,7 @@
   line-height: 20px;
 }
 .schedule-consult-wrp .consultation-form .option-wrp .form-check-input {
-  border-color: #A1A1A1;
+  border-color: var(--radio_color);
 }
 .schedule-consult-wrp .consultation-form .option-wrp .form-check-input:checked {
   background-color: var(--primary);
