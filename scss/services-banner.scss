@@ -177,6 +177,9 @@
 
 
 @media (max-width:767px) {
+  .service-banner .services-bnr-img{
+    justify-content: center;
+  }
   .service-banner .bnr-content-cvr{
     padding: 30px 0;
   }
@@ -208,7 +211,7 @@
   @media (max-width:579px) {
 
   .service-banner .services-bnr-img img {
-    max-width: 800px;
+    max-width: 100%;
     width: 100%;
   }
 
