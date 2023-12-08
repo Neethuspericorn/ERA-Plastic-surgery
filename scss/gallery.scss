@@ -171,14 +171,12 @@
                         line-height: 44px;
                         max-width: 330px;
                     }
-                    @media ($sm-767){
-                        font-size: 26px;
-                        line-height: 30px;
+                    @media (max-width:840px){
+                        font-size: 35px;
+                        line-height: 37px;
                         margin-bottom: 10px;
-                        max-width: 200px;
-                    }
-                    @media ($sm-579){
-                        max-width: 55%;
+                        max-width: 100%;
+                        text-align: center;
                     }
                 }
                 &.schedule{
@@ -233,6 +231,10 @@
                 }
                 &.contact{
                     max-width: 395px;
+                    @media (max-width:840px){
+                        max-width: 100%;
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -242,6 +244,7 @@
             // margin-bottom: -59px;
             z-index:1;
             max-width: 590px;
+            border-radius: 10px;
             // margin-top: 94px;
             @media ($sm-1679){
                 // margin-top: 50px;
@@ -262,6 +265,9 @@
             img {
                 max-width: 100%;
                 max-height: 420px;
+                @media (max-width:840px){
+                    max-height: 350px;
+                }
             }
         }
     }
