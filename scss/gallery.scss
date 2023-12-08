@@ -27,7 +27,7 @@
             min-height: 350px;
         }
         .banner-wrp-sub{
-            @media ($sm-767){
+            @media (max-width:840px){
                 flex-direction: column;
                 padding-top: 40px;
             }
@@ -51,12 +51,17 @@
             @media ($sm-1281){
                 padding-bottom:30px;
             }
+            @media ($sm-1199){
+                margin-right: 20px;
+                margin-top: 0px;
+                width: 45%;
+            }
             @media ($sm-991){
                 margin-right: 20px;
                 margin-top: 0px;
                 width: 45%;
             }
-            @media ($sm-767){
+            @media (max-width:840px){
                 padding-bottom:10px;
                 order: 2;
                 width: 100%;
@@ -124,6 +129,7 @@
                         font-size: 38px;
                         line-height: 40px;
                         max-width: 330px;
+                        margin-top: 0px;
                         
                     }
                     @media ($sm-991){
@@ -132,11 +138,12 @@
                         max-width: 330px;
                         margin-bottom: 20px;
                     }
-                    @media ($sm-767){
+                    @media (max-width:840px){
                         font-size: 35px;
                         line-height: 37px;
                         margin-bottom: 10px;
-                        max-width: 340px;
+                        max-width: 100%;
+                        text-align: center;
                     }
                     @media ($sm-579){
                         max-width: 340px;
@@ -215,6 +222,14 @@
                     @media ($sm-1199){
                         max-width: 420px;
                     }
+                    @media (max-width:840px){
+                        max-width: 100%;
+                        text-align: center;
+                    }
+                    @media ($sm-767){
+                        max-width: 100%;
+                        text-align: center;
+                    }
                 }
                 &.contact{
                     max-width: 395px;
@@ -236,7 +251,7 @@
                 // margin-bottom: -40px;
                 // margin-top: 60px;
             }
-            @media ($sm-767){
+            @media (max-width:840px){
                 max-width: 100%;
                 max-height: fit-content;
                 margin-bottom: 20px;

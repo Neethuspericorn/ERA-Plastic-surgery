@@ -240,6 +240,12 @@
       max-height: auto !important;
     }
   }
+  .before-after-slide .box-full{
+    margin: 0 25px;
+  }
+  .before-after-slide .box-full {
+    max-width: 100%;
+  }
 }
 
 @media(max-width:479px){
