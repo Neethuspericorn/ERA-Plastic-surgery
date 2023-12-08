@@ -78,6 +78,18 @@
     .content-main{
     }
 }
+
+@media (max-width:1199px) {
+
+.tab-section .tab-cover{
+   .content-wrap{
+    padding-right: 40px;
+   }
+}
+
+}
+
+
 @media (max-width:991px) {
 
 .tab-section .tab-cover {
@@ -87,7 +99,9 @@
 
 
 @media (max-width:767px) {
-
+  .tab-section .tab-cover .content-wrap{
+    padding-right: 0;
+  }
   .tab-section .tab-cover {
     margin-top: 15px;
   }
