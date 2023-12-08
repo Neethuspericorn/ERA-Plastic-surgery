@@ -53,7 +53,7 @@
             @media ($sm-1199){
                 padding-left: 10px;
                 padding-right: 10px;
-                font-size: 15px;
+                font-size: 14px;
             }
             @media screen and ($sm-991){
                 color: var(--white);
@@ -66,6 +66,9 @@
         .nav-link-btn{
             text-align: center;
             color: var(--white);
+            @media ($sm-1281){
+                height: 40px;
+            }
         }
     }
 

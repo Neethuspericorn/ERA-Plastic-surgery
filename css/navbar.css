@@ -133,7 +133,7 @@
   .navbar .navbar-nav .nav-link {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -145,6 +145,11 @@
 .navbar .navbar-nav .nav-link-btn {
   text-align: center;
   color: var(--white);
+}
+@media (max-width: 1281px) {
+  .navbar .navbar-nav .nav-link-btn {
+    height: 40px;
+  }
 }
 .navbar .nav-item .dropdown-menu {
   top: calc(100% + 18px);
