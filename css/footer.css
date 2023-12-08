@@ -127,6 +127,7 @@
 @media (max-width: 767px) {
   .footer .have-questions .schedule-txt {
     max-width: 380px;
+    margin: 0 auto 20px;
   }
 }
 .footer .footer-info {
