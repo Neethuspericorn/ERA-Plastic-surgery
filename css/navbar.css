@@ -88,8 +88,7 @@ body.menu-open {
 }
 .navbar .navbar-brand img {
   max-height: 50px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 @media (max-width: 991px) {
   .navbar .navbar-brand img {
@@ -246,3 +245,5 @@ body.menu-open {
     color: var(--secondary);
   }
 }
+
+/*# sourceMappingURL=navbar.css.map */
