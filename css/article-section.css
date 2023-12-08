@@ -671,6 +671,11 @@
     padding-top: 25px;
   }
 }
+@media (max-width: 600px) {
+  .tab-section .tab-cover .content-main {
+    margin-top: 0px !important;
+  }
+}
 @media (max-width: 579px) {
   .image-split-area .img-wrap img {
     max-height: auto !important;

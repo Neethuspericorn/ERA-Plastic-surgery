@@ -80,16 +80,11 @@
 .service-banner {
   min-height: 580px;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(#06518E), to(#2F96D0));
   background: linear-gradient(90deg, #06518E 0%, #2F96D0 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
 .service-banner .fade-sl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
@@ -97,25 +92,14 @@
   height: 100%;
 }
 .service-banner .banner-cvr {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
 .service-banner .bnr-content-cvr {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 auto;
   width: 50%;
   height: 100%;
   padding: 45px 0;
@@ -145,8 +129,6 @@
   max-width: 800px;
   width: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: auto;
 }
@@ -155,9 +137,7 @@
 }
 .service-banner .right-end-image .services-bnr-img {
   margin-left: auto;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -205,21 +185,12 @@
   }
 }
 .service-banner .bnr-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .service-banner .bnr-flex .left-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   max-width: 60%;
 }
 .service-banner .box-full {
@@ -258,6 +229,7 @@
     min-height: 420px;
   }
 }
+<<<<<<< HEAD
 @media (max-width: 991px) {
   .service-banner .services-bnr-img img {
     max-width: 800px;
@@ -296,3 +268,7 @@
             flex-direction: column;
   }
 }
+=======
+
+/*# sourceMappingURL=services-banner.css.map */
+>>>>>>> 8b8b5ede4e63077aeb601fa78c3d4cedb6d8398c

@@ -83,6 +83,9 @@
 .tab-section .tab-cover {
   margin-top: -40px;
 }
+.tab-section .tab-cover .tab-head::-webkit-scrollbar {
+  width: 0px;
+}
 .tab-section .tab-cover .tab-head {
   position: relative;
   z-index: 9;
@@ -90,11 +93,18 @@
   scrollbar-color: #ddd #fff; /* Optional: customize scrollbar colors */
   height: 50px;
 }
-.tab-section .tab-cover .tab-head:hover {
-  scrollbar-width: thin;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
+@media (max-width: 1150px) {
+  .tab-section .tab-cover .tab-head {
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .tab-section .tab-cover .tab-head {
+    scrollbar-width: thin;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
 }
 .tab-section .tab-cover .tab-head .nav-tabs {
   border: 0;
@@ -106,6 +116,18 @@
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+@media (max-width: 1150px) {
+  .tab-section .tab-cover .tab-head .nav-tabs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .tab-section .tab-cover .tab-head .nav-tabs {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 .tab-section .tab-cover .tab-head .nav-tabs .nav-item {
   -webkit-box-flex: 0;
@@ -126,6 +148,16 @@
   letter-spacing: 0.42px;
   text-transform: uppercase;
   white-space: nowrap;
+}
+@media (max-width: 1150px) {
+  .tab-section .tab-cover .tab-head .nav-link {
+    padding: 5px 6px;
+  }
+}
+@media (max-width: 600px) {
+  .tab-section .tab-cover .tab-head .nav-link {
+    padding: 5px 15px;
+  }
 }
 @media (max-width: 991px) {
   .tab-section .tab-cover {

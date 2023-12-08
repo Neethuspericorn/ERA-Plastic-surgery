@@ -124,6 +124,11 @@
   font-family: "Gotham", sans-serif;
   font-weight: 400;
 }
+@media (max-width: 767px) {
+  .footer .have-questions .schedule-txt {
+    max-width: 380px;
+  }
+}
 .footer .footer-info {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -133,7 +138,7 @@
 @media screen and (max-width: 991px) {
   .footer .footer-info {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
 }
 .footer .footer-info .col {
@@ -165,7 +170,7 @@
 }
 @media (max-width: 767px) {
   .footer .footer-info .footer-cta {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 .footer .footer-info .col-footer-logo {

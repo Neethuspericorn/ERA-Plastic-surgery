@@ -95,9 +95,7 @@
 }
 .banner.case-study .outer-div.d-flex {
   padding: 110px 0px 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 @media (max-width: 1679px) {
   .banner.case-study .outer-div.d-flex {
@@ -181,8 +179,7 @@
   .banner.case-study .outer-div.d-flex .img-case-study img {
     margin-top: 25px;
     height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (max-width: 413px) {
@@ -297,3 +294,5 @@
     margin-top: 40px;
   }
 }
+
+/*# sourceMappingURL=casestudy.css.map */

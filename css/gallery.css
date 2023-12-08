@@ -125,11 +125,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 59px;
+  padding-bottom: 105px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: 50%;
+}
+@media (max-width: 1679px) {
+  .banner.gallery-bnr .bnr-cont {
+    margin-top: 29px;
+  }
 }
 @media (max-width: 1481px) {
   .banner.gallery-bnr .bnr-cont {
@@ -217,7 +222,7 @@
 }
 @media (max-width: 1679px) {
   .banner.gallery-bnr .bnr-cont .heading.providers {
-    font-size: 60px;
+    font-size: 54px;
     line-height: 58px;
     max-width: 520px;
   }
