@@ -771,7 +771,7 @@ max-width: 312px;
                 line-height: 20px;
             }
             .form-check-input{
-                border-color: var(--primary);
+                border-color: var(--radio_color);
                 &:checked{
                     background-color: var(--primary);
                 }

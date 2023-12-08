@@ -231,6 +231,12 @@
         .btn-white{
             margin-top: 10px;
             font-weight: 500;
+            background-color: var(--secondary);
+            color: var(--white);
+            @media ($sm-767){
+                font-size: 16px;
+                font-weight: 500;
+            }
         }
         @media ($sm-1281){
             max-width: 60%;
@@ -657,6 +663,9 @@
     .title-pop{
         text-align: center;
         margin-bottom: 50px;
+        @media ($sm-767){
+            margin-bottom: 35px;
+        }
         .session-title{
             // max-width: 340px;
             margin: 0 auto 10px;
@@ -671,6 +680,7 @@
                 line-height: 37px;
                 max-width: 390px;
             }
+            
             @media (max-width:470px){
                 font-size: 30px;
                 line-height: 37px;

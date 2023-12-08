@@ -199,21 +199,29 @@
             }
         }
         .mobile-desc-blk{
-            padding: 35px 37px;
+            padding: 35px 30px 40px;
             background-color: var(--light_blue);
             color: var(--text);
             display: none;
             .bnr-desc{
                 margin-bottom: 20px;
                 font-family: $primary_font;
-                font-size: 14px;
-                line-height: 22px;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--text);
+               @media ($sm-579){
+                max-width: 350px;
+               }
             }
             // @media ($sm-579){
             //     display: block;
             // }
             @media (max-width:700px){
                 display: block;
+            }
+            .cta{
+                font-size: 16px;
+                font-weight: 500;
             }
         }
     }
