@@ -284,8 +284,8 @@
 }
 @media (max-width: 991px) {
   .slider-with-content .before-after-slide {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .before-after-slide .box-full {
     max-width: 480px;
@@ -296,8 +296,23 @@
   }
 }
 @media (max-width: 767px) {
+  .slider-with-content .content-wrap .label-info .icon {
+    width: 22px;
+  }
+  .before-after-slide .slick-next {
+    right: -10px;
+  }
+  .before-after-slide .slick-prev {
+    left: -10px;
+  }
+  .before-after-slide .slick-arrow {
+    border: 2px solid #fff;
+  }
   .slider-with-content {
     margin-top: 55px;
     padding-bottom: 45px;
+  }
+  .before-after-slide .box-full img {
+    max-height: auto !important;
   }
 }

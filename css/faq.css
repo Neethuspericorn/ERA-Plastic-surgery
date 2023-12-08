@@ -121,6 +121,12 @@
 }
 
 @media (max-width: 991px) {
+  .article-section.mt {
+    margin-top: 0;
+  }
+  .faq-area {
+    margin: 70px 0 auto;
+  }
   .faq-area .title-lg {
     margin-bottom: 30px;
   }
