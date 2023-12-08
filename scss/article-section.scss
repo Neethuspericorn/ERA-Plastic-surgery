@@ -516,7 +516,12 @@ margin-bottom: 20px;
               font-size: 14px;
             }
         }
-
+        @media (max-width: 600px) 
+        {
+          .tab-section .tab-cover .content-main {
+            margin-top: 0px !important;
+          }
+        }
         @media (max-width: 579px) {
           .content-main .mt-lg {
             margin-top:20px !important;
