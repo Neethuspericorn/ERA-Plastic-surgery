@@ -58,6 +58,7 @@
      img{
         // width: 100%;
         max-width: 100%;
+        border-radius: 10px;
      }
         }
         .content-wrap{
@@ -215,6 +216,9 @@ a{
                     margin-bottom: 15px;
                     font-style: normal; 
                     color: var(--primary);
+                    @media ($sm-1441){
+                      font-size: 20px;
+                    }
                 }
                 .btn-otr{
                   margin-top:10px;

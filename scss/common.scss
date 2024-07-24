@@ -308,3 +308,22 @@ body small text:    14px = 0.875rem
     }
 }
 
+.common-listing{
+ margin-left: 0px;
+ padding-left: 15px;
+ margin-top: 10px;
+ @media ($sm-1679){
+    margin-top: 5px;
+ }
+ @media ($sm-1441){
+    margin-top: 0px;
+ }
+ li{
+    line-height: 2;
+    font-size: 16px;
+    @media ($sm-1679){
+        font-size: 14px;
+        line-height: 1.6;
+    }
+ }
+}
